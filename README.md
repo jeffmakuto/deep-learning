@@ -10,6 +10,8 @@ Top-level scripts and folders
 - `customer_segmentation/` — End-to-end customer segmentation workflow built around a Kaggle supermarket transactions dataset. Includes helpers, a notebook (`notebooks/segmentation_analysis.ipynb`), exported HTML report, and an analysis README.
 - `decision_trees/` — Notebook and exported HTML demonstrating decision tree ensemble methods and workflows.
 - `linear_regression/` — A small linear regression demo notebook and exported HTML.
+- `neural_networks/` — MNIST handwritten digit recognition using CNN. Demonstrates deep learning for computer vision.
+- `image_classification/` — CIFAR-10 image classification using deep CNN. Complete project with training, evaluation, comprehensive metrics, and detailed performance report. Achieves 87% test accuracy.
 - `my_logs/` — Example TensorBoard run logs created by `examples/california_housing.py` when training with callbacks.
 
 Quick start (Windows PowerShell)
