@@ -422,3 +422,6 @@ FodyWeavers.xsd
 .venv/
 env/
 venv/
+
+# 
+models/
