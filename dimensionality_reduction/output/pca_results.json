@@ -1,0 +1,84 @@
+{
+  "dataset": {
+    "name": "Iris Dataset",
+    "n_samples": 150,
+    "n_features": 4,
+    "n_classes": 3,
+    "classes": [
+      "setosa",
+      "versicolor",
+      "virginica"
+    ]
+  },
+  "pca_analysis": {
+    "explained_variance_ratio": [
+      0.7296244541329989,
+      0.22850761786701768,
+      0.0366892188928287,
+      0.005178709107154903
+    ],
+    "cumulative_variance": [
+      0.7296244541329989,
+      0.9581320720000166,
+      0.9948212908928453,
+      1.0000000000000002
+    ],
+    "variance_2_components": 0.9581320720000166,
+    "variance_3_components": 0.9948212908928453
+  },
+  "component_loadings": {
+    "PC1": {
+      "sepal length (cm)": 0.5210659146701196,
+      "sepal width (cm)": -0.26934744250594356,
+      "petal length (cm)": 0.5804130957962949,
+      "petal width (cm)": 0.5648565357793615
+    },
+    "PC2": {
+      "sepal length (cm)": 0.3774176155645679,
+      "sepal width (cm)": 0.9232956595407152,
+      "petal length (cm)": 0.024491609085585897,
+      "petal width (cm)": 0.06694198696805831
+    },
+    "PC3": {
+      "sepal length (cm)": 0.7195663527008168,
+      "sepal width (cm)": -0.24438177951439966,
+      "petal length (cm)": -0.14212636933390296,
+      "petal width (cm)": -0.6342727371109234
+    },
+    "PC4": {
+      "sepal length (cm)": -0.2612862799524533,
+      "sepal width (cm)": 0.12350961958551943,
+      "petal length (cm)": 0.8014492463359881,
+      "petal width (cm)": -0.5235971345661903
+    }
+  },
+  "classification_results": {
+    "1_components": {
+      "accuracy": 0.8888888888888888,
+      "variance_preserved": 71.8429196336663
+    },
+    "2_components": {
+      "accuracy": 0.8888888888888888,
+      "variance_preserved": 96.0212354793745
+    },
+    "3_components": {
+      "accuracy": 0.9111111111111111,
+      "variance_preserved": 99.55462925665913
+    },
+    "4_components": {
+      "accuracy": 0.9111111111111111,
+      "variance_preserved": 100.0
+    }
+  },
+  "reconstruction_errors": {
+    "1_components": 0.27037554586700135,
+    "2_components": 0.041867927999983595,
+    "3_components": 0.005178709107154798,
+    "4_components": 1.5776576436339375e-30
+  },
+  "best_performance": {
+    "n_components": 3,
+    "accuracy": 0.9111111111111111,
+    "variance_preserved": 99.55462925665913
+  }
+}
