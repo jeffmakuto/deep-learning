@@ -1,0 +1,1001 @@
+customer_id,age,gender,city,registration_date,customer_segment,is_premium_member,email_subscribed,preferred_category,total_orders,lifetime_value
+C00001,59,Other,San Jose,2023-05-16,Premium,True,False,Home & Garden,0,0.0
+C00002,58,Other,San Jose,2023-09-26,Regular,True,True,Electronics,0,0.0
+C00003,62,M,Houston,2023-10-21,Premium,False,False,Beauty,0,0.0
+C00004,44,Other,Houston,2023-03-19,Regular,False,True,Home & Garden,0,0.0
+C00005,31,Other,Philadelphia,2023-09-23,Budget,False,False,Sports,0,0.0
+C00006,47,Other,Philadelphia,2023-03-30,Budget,False,False,Food & Beverages,0,0.0
+C00007,33,F,Dallas,2023-04-09,Regular,True,False,Toys,0,0.0
+C00008,31,Other,San Diego,2023-12-27,Regular,False,False,Toys,0,0.0
+C00009,25,Other,Dallas,2023-05-28,Regular,False,False,Home & Garden,0,0.0
+C00010,20,F,Los Angeles,2023-05-29,Regular,False,False,Food & Beverages,0,0.0
+C00011,30,Other,Phoenix,2023-04-20,Budget,False,True,Clothing,0,0.0
+C00012,65,Other,Houston,2023-11-12,Premium,True,True,Books,0,0.0
+C00013,24,F,Philadelphia,2023-01-27,Budget,False,True,Home & Garden,0,0.0
+C00014,53,M,San Antonio,2023-01-03,Budget,False,False,Books,0,0.0
+C00015,36,F,Phoenix,2024-01-23,Budget,True,True,Books,0,0.0
+C00016,65,Other,New York,2023-10-01,Premium,False,True,Electronics,0,0.0
+C00017,68,F,Chicago,2023-07-23,Budget,False,True,Electronics,0,0.0
+C00018,54,Other,Los Angeles,2023-06-02,Regular,False,False,Food & Beverages,0,0.0
+C00019,72,Other,San Diego,2023-03-10,Regular,True,True,Sports,0,0.0
+C00020,64,F,Phoenix,2023-03-25,Budget,True,True,Sports,0,0.0
+C00021,54,Other,Houston,2023-06-01,Premium,False,False,Sports,0,0.0
+C00022,43,Other,Los Angeles,2023-02-14,Premium,True,False,Sports,0,0.0
+C00023,18,F,San Antonio,2023-05-08,Premium,False,False,Sports,0,0.0
+C00024,55,Other,San Jose,2023-06-04,Premium,False,False,Books,0,0.0
+C00025,60,M,San Diego,2023-02-01,Regular,True,False,Toys,0,0.0
+C00026,25,Other,Phoenix,2023-12-20,Regular,True,True,Home & Garden,0,0.0
+C00027,27,F,San Jose,2023-09-02,Regular,False,False,Books,0,0.0
+C00028,33,Other,San Jose,2024-01-26,Premium,False,False,Clothing,0,0.0
+C00029,25,M,Dallas,2023-10-16,Budget,True,True,Home & Garden,0,0.0
+C00030,72,Other,San Diego,2023-06-17,Premium,True,False,Clothing,0,0.0
+C00031,46,M,San Diego,2023-09-19,Premium,False,False,Electronics,0,0.0
+C00032,47,Other,Phoenix,2023-10-14,Budget,True,False,Toys,0,0.0
+C00033,65,M,San Jose,2023-01-02,Premium,True,False,Sports,0,0.0
+C00034,22,Other,New York,2023-12-25,Premium,False,True,Toys,0,0.0
+C00035,29,M,San Antonio,2023-07-29,Regular,False,False,Beauty,0,0.0
+C00036,23,Other,Dallas,2023-07-12,Premium,False,True,Home & Garden,0,0.0
+C00037,43,Other,Chicago,2023-10-03,Budget,True,True,Electronics,0,0.0
+C00038,47,Other,Dallas,2023-06-02,Regular,False,True,Books,0,0.0
+C00039,40,M,Phoenix,2023-08-24,Premium,True,True,Beauty,0,0.0
+C00040,67,M,Houston,2023-11-11,Premium,True,True,Electronics,0,0.0
+C00041,56,Other,New York,2023-08-17,Premium,True,False,Food & Beverages,0,0.0
+C00042,52,M,New York,2023-04-30,Premium,False,True,Sports,0,0.0
+C00043,56,Other,Philadelphia,2023-10-23,Premium,False,True,Books,0,0.0
+C00044,37,F,New York,2023-07-31,Budget,True,False,Food & Beverages,0,0.0
+C00045,40,Other,San Antonio,2023-01-25,Budget,False,False,Beauty,0,0.0
+C00046,37,F,Chicago,2023-03-18,Budget,False,True,Books,0,0.0
+C00047,72,Other,Chicago,2023-06-03,Regular,True,False,Beauty,0,0.0
+C00048,51,M,San Antonio,2023-10-13,Premium,False,True,Sports,0,0.0
+C00049,23,F,Philadelphia,2023-11-28,Premium,True,True,Toys,0,0.0
+C00050,61,Other,San Jose,2023-07-13,Premium,True,True,Books,0,0.0
+C00051,31,F,Phoenix,2023-09-03,Premium,True,True,Clothing,0,0.0
+C00052,66,F,Houston,2024-01-18,Budget,True,False,Books,0,0.0
+C00053,38,F,San Antonio,2023-10-10,Regular,False,False,Toys,0,0.0
+C00054,50,F,San Diego,2023-07-04,Premium,False,False,Books,0,0.0
+C00055,38,F,New York,2023-07-09,Budget,True,True,Electronics,0,0.0
+C00056,53,Other,San Jose,2023-05-14,Budget,False,False,Home & Garden,0,0.0
+C00057,39,M,San Antonio,2023-04-11,Budget,True,False,Sports,0,0.0
+C00058,66,F,San Diego,2023-05-12,Regular,True,False,Home & Garden,0,0.0
+C00059,64,Other,San Diego,2023-03-13,Premium,True,True,Clothing,0,0.0
+C00060,21,M,San Antonio,2023-12-09,Premium,True,True,Home & Garden,0,0.0
+C00061,31,Other,San Diego,2023-01-05,Regular,True,False,Food & Beverages,0,0.0
+C00062,18,Other,Dallas,2023-01-09,Regular,True,True,Toys,0,0.0
+C00063,36,M,Dallas,2023-10-02,Budget,False,True,Clothing,0,0.0
+C00064,51,M,Houston,2023-02-19,Premium,False,False,Toys,0,0.0
+C00065,23,F,San Antonio,2023-07-23,Regular,True,True,Toys,0,0.0
+C00066,70,M,New York,2023-12-17,Premium,False,False,Beauty,0,0.0
+C00067,48,M,New York,2023-10-10,Budget,True,True,Food & Beverages,0,0.0
+C00068,59,F,San Jose,2023-08-11,Premium,True,True,Books,0,0.0
+C00069,74,Other,San Diego,2023-12-21,Regular,True,True,Toys,0,0.0
+C00070,54,Other,New York,2023-10-06,Premium,False,True,Books,0,0.0
+C00071,27,Other,San Antonio,2023-10-28,Premium,False,True,Books,0,0.0
+C00072,71,F,Dallas,2023-10-18,Regular,False,True,Clothing,0,0.0
+C00073,65,F,New York,2023-09-14,Premium,False,True,Clothing,0,0.0
+C00074,56,Other,San Jose,2023-06-24,Regular,False,True,Toys,0,0.0
+C00075,49,M,Philadelphia,2023-08-19,Budget,False,False,Home & Garden,0,0.0
+C00076,55,Other,San Antonio,2023-12-15,Premium,False,True,Clothing,0,0.0
+C00077,35,M,San Antonio,2023-02-12,Budget,True,False,Sports,0,0.0
+C00078,24,M,New York,2023-07-04,Regular,False,False,Toys,0,0.0
+C00079,26,M,Chicago,2023-02-22,Regular,False,False,Clothing,0,0.0
+C00080,23,F,Dallas,2023-01-14,Premium,False,False,Electronics,0,0.0
+C00081,44,F,Los Angeles,2023-05-30,Budget,True,True,Beauty,0,0.0
+C00082,26,F,Phoenix,2023-03-28,Regular,False,True,Clothing,0,0.0
+C00083,45,F,San Antonio,2023-03-27,Regular,False,True,Sports,0,0.0
+C00084,33,Other,San Diego,2023-05-09,Budget,True,False,Clothing,0,0.0
+C00085,37,M,San Antonio,2023-03-11,Regular,False,False,Food & Beverages,0,0.0
+C00086,45,Other,San Jose,2023-06-21,Premium,False,False,Books,0,0.0
+C00087,38,M,San Antonio,2023-09-03,Regular,False,False,Books,0,0.0
+C00088,42,F,San Antonio,2023-06-16,Regular,True,True,Home & Garden,0,0.0
+C00089,67,Other,New York,2023-12-16,Budget,False,True,Food & Beverages,0,0.0
+C00090,71,Other,Los Angeles,2023-05-30,Regular,False,True,Toys,0,0.0
+C00091,34,Other,Chicago,2023-05-04,Budget,False,False,Clothing,0,0.0
+C00092,56,F,San Jose,2023-08-18,Regular,False,True,Sports,0,0.0
+C00093,75,Other,San Jose,2023-12-26,Budget,True,True,Books,0,0.0
+C00094,60,F,Chicago,2023-12-03,Budget,True,False,Sports,0,0.0
+C00095,24,M,Los Angeles,2023-08-09,Regular,True,True,Food & Beverages,0,0.0
+C00096,43,F,San Jose,2023-07-11,Budget,True,False,Electronics,0,0.0
+C00097,24,F,San Antonio,2023-09-05,Premium,True,True,Sports,0,0.0
+C00098,39,F,Houston,2023-06-09,Budget,False,False,Food & Beverages,0,0.0
+C00099,46,Other,San Diego,2023-02-19,Regular,True,False,Electronics,0,0.0
+C00100,25,M,Philadelphia,2023-12-30,Budget,True,True,Books,0,0.0
+C00101,29,Other,Chicago,2023-09-22,Regular,False,False,Books,0,0.0
+C00102,58,M,Chicago,2023-07-27,Budget,False,False,Electronics,0,0.0
+C00103,57,M,San Diego,2024-01-13,Budget,False,False,Electronics,0,0.0
+C00104,31,M,Phoenix,2023-12-27,Budget,True,True,Home & Garden,0,0.0
+C00105,38,M,San Diego,2023-07-07,Premium,False,False,Sports,0,0.0
+C00106,42,Other,San Antonio,2023-11-02,Budget,True,False,Sports,0,0.0
+C00107,57,M,Phoenix,2023-08-23,Budget,True,True,Sports,0,0.0
+C00108,33,F,Los Angeles,2023-03-02,Premium,False,True,Beauty,0,0.0
+C00109,56,M,San Jose,2023-08-03,Regular,False,True,Food & Beverages,0,0.0
+C00110,52,Other,Chicago,2023-11-22,Budget,True,False,Toys,0,0.0
+C00111,29,F,San Diego,2023-03-13,Budget,True,False,Electronics,0,0.0
+C00112,26,M,San Antonio,2023-09-06,Budget,False,False,Food & Beverages,0,0.0
+C00113,63,F,San Diego,2023-08-01,Premium,True,True,Books,0,0.0
+C00114,20,F,Houston,2023-05-30,Budget,False,True,Food & Beverages,0,0.0
+C00115,65,F,Dallas,2023-10-17,Budget,True,True,Toys,0,0.0
+C00116,52,F,Dallas,2024-02-01,Premium,False,True,Beauty,0,0.0
+C00117,65,Other,Houston,2023-02-22,Regular,True,False,Toys,0,0.0
+C00118,73,M,San Diego,2023-06-28,Premium,True,True,Sports,0,0.0
+C00119,57,Other,San Antonio,2023-12-30,Premium,True,True,Books,0,0.0
+C00120,54,F,Dallas,2023-01-31,Regular,True,False,Toys,0,0.0
+C00121,54,F,Dallas,2023-05-29,Budget,True,True,Beauty,0,0.0
+C00122,35,Other,Chicago,2023-01-31,Budget,True,True,Home & Garden,0,0.0
+C00123,38,M,San Antonio,2023-12-31,Regular,True,False,Beauty,0,0.0
+C00124,46,M,Los Angeles,2023-07-12,Regular,False,False,Food & Beverages,0,0.0
+C00125,38,Other,New York,2023-09-07,Budget,True,False,Sports,0,0.0
+C00126,68,Other,San Antonio,2023-02-02,Premium,False,True,Food & Beverages,0,0.0
+C00127,38,F,Philadelphia,2023-05-18,Budget,True,False,Sports,0,0.0
+C00128,66,M,New York,2023-12-16,Premium,False,True,Clothing,0,0.0
+C00129,46,F,New York,2023-03-22,Regular,True,True,Toys,0,0.0
+C00130,73,F,Los Angeles,2023-03-23,Budget,False,False,Clothing,0,0.0
+C00131,60,Other,Chicago,2023-07-10,Premium,False,False,Books,0,0.0
+C00132,59,M,Los Angeles,2023-08-08,Premium,True,False,Clothing,0,0.0
+C00133,55,M,Dallas,2023-03-09,Budget,False,True,Electronics,0,0.0
+C00134,39,M,San Antonio,2023-12-23,Budget,True,False,Clothing,0,0.0
+C00135,42,M,Los Angeles,2023-04-28,Premium,False,False,Toys,0,0.0
+C00136,42,M,Chicago,2023-03-12,Premium,True,True,Food & Beverages,0,0.0
+C00137,64,M,Chicago,2023-06-29,Regular,False,True,Clothing,0,0.0
+C00138,26,M,San Jose,2023-02-21,Budget,False,False,Beauty,0,0.0
+C00139,68,M,Houston,2023-06-11,Regular,True,True,Toys,0,0.0
+C00140,62,M,Phoenix,2024-02-03,Premium,True,False,Toys,0,0.0
+C00141,21,M,San Diego,2023-11-27,Regular,True,True,Food & Beverages,0,0.0
+C00142,56,M,Dallas,2023-11-23,Premium,False,False,Home & Garden,0,0.0
+C00143,73,Other,San Antonio,2023-07-18,Regular,True,False,Clothing,0,0.0
+C00144,55,M,New York,2023-01-09,Regular,True,True,Electronics,0,0.0
+C00145,50,F,Dallas,2023-07-23,Regular,False,False,Clothing,0,0.0
+C00146,52,Other,San Jose,2023-11-24,Premium,False,True,Toys,0,0.0
+C00147,50,M,Chicago,2023-02-10,Budget,False,False,Clothing,0,0.0
+C00148,62,F,Houston,2023-06-08,Premium,True,True,Beauty,0,0.0
+C00149,47,Other,San Jose,2023-03-01,Premium,False,True,Clothing,0,0.0
+C00150,63,M,New York,2023-01-07,Premium,False,False,Toys,0,0.0
+C00151,41,M,Phoenix,2023-03-27,Budget,True,True,Sports,0,0.0
+C00152,35,Other,Los Angeles,2023-08-08,Regular,True,False,Food & Beverages,0,0.0
+C00153,41,M,San Diego,2023-09-19,Budget,True,False,Home & Garden,0,0.0
+C00154,67,M,San Jose,2023-05-11,Budget,True,True,Electronics,0,0.0
+C00155,72,M,Houston,2023-01-23,Premium,False,False,Beauty,0,0.0
+C00156,29,M,Dallas,2023-03-18,Budget,False,True,Sports,0,0.0
+C00157,44,Other,Philadelphia,2023-05-08,Regular,True,False,Clothing,0,0.0
+C00158,61,M,Chicago,2023-09-15,Premium,True,False,Clothing,0,0.0
+C00159,73,F,Phoenix,2023-08-27,Regular,True,False,Electronics,0,0.0
+C00160,30,F,San Jose,2023-07-08,Regular,True,False,Sports,0,0.0
+C00161,49,M,Dallas,2023-10-30,Premium,True,True,Beauty,0,0.0
+C00162,32,Other,Philadelphia,2023-01-13,Budget,True,False,Electronics,0,0.0
+C00163,60,F,Phoenix,2024-01-24,Premium,True,True,Beauty,0,0.0
+C00164,21,M,Phoenix,2023-09-09,Premium,True,True,Beauty,0,0.0
+C00165,75,F,San Diego,2023-12-25,Budget,True,True,Home & Garden,0,0.0
+C00166,70,F,Los Angeles,2023-11-23,Budget,True,False,Home & Garden,0,0.0
+C00167,36,F,Philadelphia,2023-05-02,Regular,False,False,Food & Beverages,0,0.0
+C00168,32,M,Houston,2023-05-20,Premium,True,True,Clothing,0,0.0
+C00169,46,F,Philadelphia,2023-03-26,Regular,True,False,Books,0,0.0
+C00170,37,F,Phoenix,2023-08-20,Premium,True,True,Toys,0,0.0
+C00171,62,Other,New York,2023-12-27,Premium,False,True,Clothing,0,0.0
+C00172,33,F,San Antonio,2023-12-31,Budget,True,False,Toys,0,0.0
+C00173,19,F,San Diego,2023-03-31,Budget,True,True,Food & Beverages,0,0.0
+C00174,69,M,Los Angeles,2023-02-22,Premium,True,True,Home & Garden,0,0.0
+C00175,70,F,Philadelphia,2023-04-12,Budget,True,False,Clothing,0,0.0
+C00176,22,M,San Diego,2023-01-12,Premium,True,False,Clothing,0,0.0
+C00177,47,M,Chicago,2023-01-22,Budget,False,False,Food & Beverages,0,0.0
+C00178,42,Other,San Antonio,2023-01-16,Premium,False,True,Home & Garden,0,0.0
+C00179,35,F,Chicago,2023-05-21,Premium,True,False,Food & Beverages,0,0.0
+C00180,74,Other,San Diego,2023-07-30,Premium,True,False,Beauty,0,0.0
+C00181,44,M,Dallas,2023-03-12,Premium,True,False,Sports,0,0.0
+C00182,52,F,Philadelphia,2023-09-03,Budget,False,False,Toys,0,0.0
+C00183,19,F,San Jose,2023-04-03,Premium,True,False,Electronics,0,0.0
+C00184,51,F,San Jose,2023-08-30,Premium,True,True,Books,0,0.0
+C00185,33,F,Dallas,2023-12-03,Budget,True,True,Beauty,0,0.0
+C00186,71,M,Chicago,2023-07-01,Premium,False,False,Electronics,0,0.0
+C00187,62,F,San Jose,2023-12-27,Budget,True,True,Food & Beverages,0,0.0
+C00188,37,M,San Diego,2023-10-05,Premium,True,True,Books,0,0.0
+C00189,32,M,Dallas,2023-11-05,Regular,True,False,Books,0,0.0
+C00190,39,Other,Chicago,2023-03-08,Regular,True,True,Home & Garden,0,0.0
+C00191,63,M,Los Angeles,2023-10-28,Budget,False,True,Sports,0,0.0
+C00192,60,F,San Jose,2023-12-27,Premium,False,False,Sports,0,0.0
+C00193,28,Other,San Antonio,2023-03-11,Budget,False,False,Home & Garden,0,0.0
+C00194,53,Other,San Jose,2023-12-29,Regular,True,True,Beauty,0,0.0
+C00195,64,Other,Phoenix,2023-06-07,Premium,True,True,Beauty,0,0.0
+C00196,54,M,Chicago,2024-01-30,Budget,False,True,Clothing,0,0.0
+C00197,27,F,Los Angeles,2023-09-12,Premium,False,False,Home & Garden,0,0.0
+C00198,74,M,Philadelphia,2023-11-22,Regular,True,False,Books,0,0.0
+C00199,62,M,Philadelphia,2023-05-08,Regular,True,True,Electronics,0,0.0
+C00200,46,Other,San Antonio,2023-07-17,Premium,False,False,Beauty,0,0.0
+C00201,52,F,Los Angeles,2023-06-29,Regular,True,True,Food & Beverages,0,0.0
+C00202,69,M,Phoenix,2023-02-07,Premium,False,False,Clothing,0,0.0
+C00203,39,M,San Antonio,2023-02-07,Premium,True,True,Sports,0,0.0
+C00204,57,F,New York,2023-11-01,Regular,True,False,Home & Garden,0,0.0
+C00205,24,F,Houston,2023-01-28,Premium,False,False,Toys,0,0.0
+C00206,33,M,New York,2023-06-02,Regular,False,True,Electronics,0,0.0
+C00207,18,F,Los Angeles,2023-07-04,Regular,False,True,Clothing,0,0.0
+C00208,31,M,Phoenix,2023-01-14,Premium,False,True,Toys,0,0.0
+C00209,48,F,Phoenix,2023-07-23,Premium,False,True,Sports,0,0.0
+C00210,41,M,San Diego,2023-07-15,Premium,False,False,Food & Beverages,0,0.0
+C00211,32,F,San Jose,2023-05-15,Premium,True,True,Clothing,0,0.0
+C00212,40,Other,San Antonio,2023-12-09,Budget,True,True,Beauty,0,0.0
+C00213,44,Other,San Diego,2023-09-25,Budget,True,False,Toys,0,0.0
+C00214,43,Other,New York,2023-02-10,Budget,True,True,Food & Beverages,0,0.0
+C00215,28,M,Houston,2023-03-30,Premium,True,False,Clothing,0,0.0
+C00216,45,M,Chicago,2023-12-16,Budget,False,False,Clothing,0,0.0
+C00217,42,Other,San Antonio,2023-02-14,Budget,False,False,Food & Beverages,0,0.0
+C00218,68,Other,San Jose,2023-01-07,Budget,False,True,Beauty,0,0.0
+C00219,27,Other,San Jose,2023-03-18,Budget,True,True,Clothing,0,0.0
+C00220,73,Other,Philadelphia,2023-05-27,Regular,False,False,Food & Beverages,0,0.0
+C00221,56,F,New York,2023-10-20,Premium,False,False,Home & Garden,0,0.0
+C00222,56,Other,San Antonio,2023-11-13,Premium,False,False,Books,0,0.0
+C00223,65,F,Phoenix,2023-01-26,Regular,True,False,Toys,0,0.0
+C00224,35,F,Los Angeles,2023-06-09,Premium,True,False,Food & Beverages,0,0.0
+C00225,70,F,Phoenix,2024-02-01,Budget,False,True,Books,0,0.0
+C00226,31,F,San Diego,2023-08-15,Budget,False,True,Home & Garden,0,0.0
+C00227,37,Other,Dallas,2023-02-03,Regular,True,True,Home & Garden,0,0.0
+C00228,74,M,New York,2023-04-09,Premium,True,False,Electronics,0,0.0
+C00229,63,M,Phoenix,2023-07-04,Regular,False,False,Clothing,0,0.0
+C00230,19,M,Philadelphia,2023-12-15,Regular,False,True,Food & Beverages,0,0.0
+C00231,53,F,Philadelphia,2023-10-28,Premium,False,True,Toys,0,0.0
+C00232,42,M,Chicago,2023-01-15,Budget,True,True,Books,0,0.0
+C00233,31,F,San Antonio,2023-12-13,Budget,True,True,Food & Beverages,0,0.0
+C00234,59,M,San Jose,2023-03-09,Premium,True,False,Toys,0,0.0
+C00235,63,Other,Phoenix,2023-12-31,Regular,False,False,Food & Beverages,0,0.0
+C00236,31,F,Phoenix,2023-05-10,Budget,False,True,Electronics,0,0.0
+C00237,60,F,Dallas,2023-09-19,Budget,False,False,Clothing,0,0.0
+C00238,22,F,Phoenix,2023-09-04,Budget,False,False,Toys,0,0.0
+C00239,63,Other,Phoenix,2023-12-02,Premium,True,True,Electronics,0,0.0
+C00240,43,Other,Philadelphia,2023-11-04,Budget,True,True,Food & Beverages,0,0.0
+C00241,34,F,San Antonio,2023-06-01,Regular,True,True,Sports,0,0.0
+C00242,63,M,Dallas,2024-01-07,Budget,False,False,Toys,0,0.0
+C00243,71,Other,Dallas,2023-03-29,Premium,False,True,Food & Beverages,0,0.0
+C00244,65,F,Dallas,2023-03-07,Premium,False,True,Books,0,0.0
+C00245,32,Other,Phoenix,2023-07-01,Regular,False,False,Toys,0,0.0
+C00246,36,F,Los Angeles,2023-10-27,Regular,True,True,Food & Beverages,0,0.0
+C00247,50,M,San Antonio,2023-04-10,Budget,False,False,Electronics,0,0.0
+C00248,26,M,Philadelphia,2023-03-19,Regular,False,True,Sports,0,0.0
+C00249,29,M,San Diego,2024-01-02,Regular,True,False,Electronics,0,0.0
+C00250,46,F,Houston,2023-01-03,Premium,True,False,Clothing,0,0.0
+C00251,57,F,San Antonio,2023-03-08,Regular,False,False,Beauty,0,0.0
+C00252,20,Other,Houston,2023-01-03,Budget,False,True,Sports,0,0.0
+C00253,71,Other,Houston,2024-01-23,Premium,True,True,Books,0,0.0
+C00254,74,F,Phoenix,2023-12-22,Premium,True,False,Toys,0,0.0
+C00255,22,M,Phoenix,2023-03-27,Regular,False,False,Beauty,0,0.0
+C00256,26,F,San Diego,2023-12-18,Regular,True,True,Beauty,0,0.0
+C00257,32,M,Chicago,2023-01-10,Premium,True,True,Clothing,0,0.0
+C00258,63,Other,New York,2023-07-07,Regular,False,True,Electronics,0,0.0
+C00259,24,Other,New York,2023-12-05,Premium,True,False,Food & Beverages,0,0.0
+C00260,25,Other,Phoenix,2023-07-14,Regular,True,True,Electronics,0,0.0
+C00261,44,Other,Los Angeles,2023-06-04,Budget,False,True,Beauty,0,0.0
+C00262,50,Other,San Jose,2023-02-23,Premium,False,True,Clothing,0,0.0
+C00263,30,Other,Houston,2023-09-12,Regular,True,False,Beauty,0,0.0
+C00264,28,M,Dallas,2023-06-01,Regular,True,False,Sports,0,0.0
+C00265,18,M,Los Angeles,2023-05-01,Premium,False,True,Clothing,0,0.0
+C00266,50,M,Los Angeles,2024-02-04,Regular,True,False,Toys,0,0.0
+C00267,47,M,Los Angeles,2023-05-16,Premium,True,False,Sports,0,0.0
+C00268,38,F,Los Angeles,2023-12-13,Premium,True,True,Home & Garden,0,0.0
+C00269,59,M,Philadelphia,2023-12-06,Regular,False,False,Clothing,0,0.0
+C00270,70,F,Chicago,2023-07-10,Premium,False,False,Food & Beverages,0,0.0
+C00271,71,F,San Diego,2023-05-20,Regular,True,True,Home & Garden,0,0.0
+C00272,64,M,Chicago,2023-12-23,Premium,False,False,Food & Beverages,0,0.0
+C00273,57,F,Philadelphia,2023-04-03,Budget,True,True,Food & Beverages,0,0.0
+C00274,25,F,San Diego,2023-09-07,Premium,True,False,Sports,0,0.0
+C00275,63,Other,Dallas,2023-01-07,Budget,True,False,Clothing,0,0.0
+C00276,60,Other,Houston,2023-08-10,Regular,False,False,Home & Garden,0,0.0
+C00277,75,Other,New York,2023-10-13,Premium,True,False,Food & Beverages,0,0.0
+C00278,22,F,Philadelphia,2023-03-26,Premium,False,False,Electronics,0,0.0
+C00279,32,Other,San Antonio,2023-09-17,Regular,True,True,Food & Beverages,0,0.0
+C00280,69,Other,San Diego,2023-08-16,Premium,False,False,Sports,0,0.0
+C00281,49,Other,New York,2023-03-02,Premium,False,False,Electronics,0,0.0
+C00282,53,M,Los Angeles,2023-10-13,Budget,False,True,Food & Beverages,0,0.0
+C00283,41,M,Houston,2023-06-24,Regular,False,False,Sports,0,0.0
+C00284,46,M,Los Angeles,2024-01-02,Budget,True,True,Sports,0,0.0
+C00285,71,Other,Phoenix,2023-07-01,Budget,False,True,Electronics,0,0.0
+C00286,49,M,San Antonio,2023-03-26,Premium,False,True,Books,0,0.0
+C00287,72,F,Houston,2023-03-03,Regular,True,False,Clothing,0,0.0
+C00288,44,M,San Jose,2024-01-23,Premium,False,False,Home & Garden,0,0.0
+C00289,18,Other,New York,2023-09-13,Budget,False,False,Home & Garden,0,0.0
+C00290,55,M,Chicago,2023-12-21,Premium,False,False,Beauty,0,0.0
+C00291,56,Other,Houston,2023-08-03,Regular,False,False,Toys,0,0.0
+C00292,69,M,Chicago,2023-08-20,Regular,False,False,Books,0,0.0
+C00293,31,Other,Phoenix,2023-04-13,Budget,False,True,Home & Garden,0,0.0
+C00294,52,Other,Philadelphia,2023-09-15,Budget,True,False,Food & Beverages,0,0.0
+C00295,54,Other,San Antonio,2023-10-26,Budget,False,False,Electronics,0,0.0
+C00296,24,M,San Antonio,2023-09-25,Premium,True,True,Books,0,0.0
+C00297,66,M,Phoenix,2023-05-17,Budget,False,True,Electronics,0,0.0
+C00298,68,F,Houston,2023-12-20,Budget,True,False,Food & Beverages,0,0.0
+C00299,57,Other,Dallas,2023-02-22,Premium,False,True,Toys,0,0.0
+C00300,60,M,San Antonio,2023-12-21,Regular,False,False,Electronics,0,0.0
+C00301,65,F,Houston,2023-01-07,Budget,False,True,Sports,0,0.0
+C00302,55,Other,San Jose,2024-01-22,Premium,True,False,Food & Beverages,0,0.0
+C00303,61,M,Chicago,2023-04-01,Premium,True,False,Electronics,0,0.0
+C00304,35,Other,Phoenix,2023-08-08,Premium,True,False,Electronics,0,0.0
+C00305,47,Other,Chicago,2023-06-19,Premium,True,False,Electronics,0,0.0
+C00306,58,Other,Phoenix,2024-02-01,Regular,False,True,Sports,0,0.0
+C00307,32,M,Dallas,2023-09-27,Premium,True,False,Beauty,0,0.0
+C00308,40,M,Houston,2023-02-17,Budget,False,False,Sports,0,0.0
+C00309,31,Other,Dallas,2023-05-31,Regular,True,True,Sports,0,0.0
+C00310,33,Other,San Jose,2023-08-17,Budget,True,True,Sports,0,0.0
+C00311,68,M,San Antonio,2023-07-15,Regular,False,True,Sports,0,0.0
+C00312,69,Other,San Diego,2023-09-21,Regular,True,False,Books,0,0.0
+C00313,50,M,Los Angeles,2023-06-14,Premium,True,True,Books,0,0.0
+C00314,58,M,San Antonio,2023-12-10,Premium,True,False,Clothing,0,0.0
+C00315,61,M,New York,2024-01-18,Regular,False,True,Clothing,0,0.0
+C00316,21,M,Phoenix,2023-02-07,Budget,True,True,Toys,0,0.0
+C00317,42,F,San Antonio,2023-07-28,Regular,False,True,Beauty,0,0.0
+C00318,25,Other,New York,2023-12-11,Budget,True,True,Clothing,0,0.0
+C00319,50,M,Phoenix,2023-07-03,Budget,False,True,Toys,0,0.0
+C00320,46,F,San Antonio,2024-01-27,Budget,True,False,Home & Garden,0,0.0
+C00321,32,M,San Antonio,2023-10-01,Budget,False,True,Toys,0,0.0
+C00322,74,Other,Philadelphia,2023-12-13,Premium,True,True,Electronics,0,0.0
+C00323,54,Other,San Antonio,2023-01-03,Budget,True,False,Books,0,0.0
+C00324,65,Other,Philadelphia,2024-01-19,Premium,False,True,Home & Garden,0,0.0
+C00325,32,Other,Phoenix,2023-04-05,Premium,True,True,Electronics,0,0.0
+C00326,53,F,Dallas,2024-01-20,Premium,False,True,Toys,0,0.0
+C00327,30,Other,San Jose,2023-02-20,Regular,False,False,Home & Garden,0,0.0
+C00328,59,M,Los Angeles,2023-12-10,Regular,True,True,Sports,0,0.0
+C00329,46,F,San Jose,2023-09-06,Budget,False,True,Sports,0,0.0
+C00330,45,M,New York,2023-06-11,Regular,True,True,Beauty,0,0.0
+C00331,71,F,Chicago,2023-05-22,Budget,False,False,Food & Beverages,0,0.0
+C00332,40,F,San Diego,2023-08-17,Budget,True,True,Clothing,0,0.0
+C00333,72,M,Dallas,2023-05-24,Premium,False,True,Clothing,0,0.0
+C00334,72,Other,New York,2023-01-10,Budget,False,True,Electronics,0,0.0
+C00335,34,Other,Dallas,2023-10-10,Regular,True,False,Beauty,0,0.0
+C00336,75,Other,Phoenix,2023-04-25,Premium,False,True,Beauty,0,0.0
+C00337,50,M,Houston,2023-07-06,Budget,True,True,Food & Beverages,0,0.0
+C00338,29,Other,San Jose,2023-03-23,Budget,True,False,Sports,0,0.0
+C00339,32,F,Houston,2023-01-21,Premium,False,False,Books,0,0.0
+C00340,60,M,Dallas,2023-01-22,Regular,False,False,Food & Beverages,0,0.0
+C00341,20,Other,Philadelphia,2023-01-24,Premium,False,False,Home & Garden,0,0.0
+C00342,59,F,Philadelphia,2023-07-12,Budget,True,False,Beauty,0,0.0
+C00343,51,F,Philadelphia,2023-04-25,Regular,False,False,Electronics,0,0.0
+C00344,74,M,San Diego,2023-09-14,Premium,True,True,Toys,0,0.0
+C00345,27,M,Chicago,2023-04-19,Regular,True,True,Beauty,0,0.0
+C00346,64,M,San Diego,2023-06-19,Budget,False,False,Books,0,0.0
+C00347,28,Other,San Antonio,2023-10-30,Premium,True,True,Home & Garden,0,0.0
+C00348,55,M,Chicago,2023-10-21,Budget,True,True,Electronics,0,0.0
+C00349,34,M,Dallas,2023-03-27,Regular,True,False,Clothing,0,0.0
+C00350,46,Other,San Diego,2023-04-21,Regular,True,True,Beauty,0,0.0
+C00351,27,Other,Chicago,2023-11-04,Budget,False,True,Sports,0,0.0
+C00352,56,Other,Los Angeles,2023-08-21,Premium,False,False,Home & Garden,0,0.0
+C00353,19,M,Dallas,2023-02-25,Budget,False,True,Clothing,0,0.0
+C00354,48,Other,San Jose,2023-04-01,Premium,True,True,Food & Beverages,0,0.0
+C00355,26,Other,Dallas,2023-12-04,Premium,False,False,Sports,0,0.0
+C00356,62,Other,San Antonio,2023-01-23,Premium,False,False,Sports,0,0.0
+C00357,69,Other,San Jose,2023-10-29,Premium,False,True,Toys,0,0.0
+C00358,67,M,Los Angeles,2023-09-02,Regular,False,False,Books,0,0.0
+C00359,63,Other,New York,2023-01-03,Budget,True,True,Beauty,0,0.0
+C00360,31,Other,Philadelphia,2023-12-02,Regular,False,True,Home & Garden,0,0.0
+C00361,59,Other,Phoenix,2023-08-07,Regular,False,False,Toys,0,0.0
+C00362,43,M,San Antonio,2023-12-15,Budget,False,True,Sports,0,0.0
+C00363,53,F,Phoenix,2023-10-14,Regular,False,False,Home & Garden,0,0.0
+C00364,25,Other,Houston,2023-12-04,Regular,True,True,Books,0,0.0
+C00365,43,F,Dallas,2023-09-18,Budget,True,True,Beauty,0,0.0
+C00366,18,M,Chicago,2023-11-22,Regular,False,True,Clothing,0,0.0
+C00367,32,F,Los Angeles,2023-05-15,Budget,True,False,Beauty,0,0.0
+C00368,59,Other,Phoenix,2023-11-11,Budget,True,True,Food & Beverages,0,0.0
+C00369,18,M,Dallas,2023-08-13,Regular,True,True,Books,0,0.0
+C00370,28,Other,New York,2023-11-11,Regular,True,True,Home & Garden,0,0.0
+C00371,35,F,Philadelphia,2023-02-14,Budget,False,False,Books,0,0.0
+C00372,18,Other,Los Angeles,2023-09-23,Premium,False,False,Sports,0,0.0
+C00373,32,Other,Houston,2023-05-22,Regular,False,True,Toys,0,0.0
+C00374,44,Other,Los Angeles,2023-03-31,Budget,True,False,Sports,0,0.0
+C00375,69,Other,Phoenix,2023-03-01,Budget,False,False,Beauty,0,0.0
+C00376,48,M,Philadelphia,2023-10-16,Regular,False,True,Food & Beverages,0,0.0
+C00377,34,M,San Antonio,2023-03-01,Budget,True,True,Sports,0,0.0
+C00378,40,Other,Dallas,2023-07-31,Premium,False,True,Toys,0,0.0
+C00379,43,Other,Philadelphia,2023-02-17,Premium,True,False,Sports,0,0.0
+C00380,31,Other,Phoenix,2023-07-01,Premium,True,False,Books,0,0.0
+C00381,65,M,Phoenix,2023-05-01,Premium,True,True,Books,0,0.0
+C00382,40,M,Los Angeles,2023-11-13,Premium,True,False,Electronics,0,0.0
+C00383,72,Other,New York,2024-01-27,Regular,False,False,Food & Beverages,0,0.0
+C00384,73,F,San Diego,2023-10-22,Premium,False,False,Books,0,0.0
+C00385,54,M,New York,2024-01-20,Budget,False,False,Electronics,0,0.0
+C00386,40,F,Chicago,2023-09-15,Regular,True,False,Sports,0,0.0
+C00387,18,M,Houston,2023-12-19,Regular,True,False,Sports,0,0.0
+C00388,73,F,Chicago,2023-11-10,Budget,False,True,Toys,0,0.0
+C00389,57,F,Philadelphia,2023-08-30,Premium,False,False,Books,0,0.0
+C00390,62,F,Philadelphia,2023-08-03,Regular,False,False,Home & Garden,0,0.0
+C00391,26,Other,Houston,2023-10-20,Premium,False,True,Beauty,0,0.0
+C00392,30,M,Chicago,2023-07-15,Regular,True,True,Beauty,0,0.0
+C00393,26,Other,Dallas,2023-09-13,Budget,False,False,Toys,0,0.0
+C00394,53,Other,New York,2023-05-09,Regular,True,True,Electronics,0,0.0
+C00395,70,F,San Diego,2023-04-21,Budget,True,False,Sports,0,0.0
+C00396,41,F,Dallas,2023-05-14,Budget,False,False,Electronics,0,0.0
+C00397,25,F,San Jose,2023-07-30,Premium,True,False,Sports,0,0.0
+C00398,61,Other,San Diego,2023-06-16,Budget,False,True,Beauty,0,0.0
+C00399,36,F,Chicago,2023-11-11,Premium,False,False,Beauty,0,0.0
+C00400,23,M,Philadelphia,2023-02-06,Premium,False,False,Toys,0,0.0
+C00401,35,Other,San Antonio,2023-12-30,Regular,False,False,Food & Beverages,0,0.0
+C00402,28,M,New York,2023-07-31,Premium,True,False,Clothing,0,0.0
+C00403,28,F,Los Angeles,2023-04-18,Premium,True,False,Electronics,0,0.0
+C00404,67,F,Dallas,2023-01-14,Premium,True,False,Home & Garden,0,0.0
+C00405,59,F,Phoenix,2023-02-13,Premium,True,False,Food & Beverages,0,0.0
+C00406,26,M,Dallas,2023-11-17,Premium,True,True,Sports,0,0.0
+C00407,73,F,San Diego,2023-06-16,Budget,False,False,Home & Garden,0,0.0
+C00408,52,M,San Jose,2023-12-24,Budget,False,False,Toys,0,0.0
+C00409,48,Other,Houston,2023-06-27,Premium,False,False,Sports,0,0.0
+C00410,34,M,Phoenix,2023-07-31,Premium,True,True,Sports,0,0.0
+C00411,48,Other,New York,2023-05-27,Budget,False,False,Toys,0,0.0
+C00412,67,F,Phoenix,2023-01-05,Budget,True,True,Sports,0,0.0
+C00413,44,Other,San Antonio,2023-04-07,Regular,True,True,Beauty,0,0.0
+C00414,32,F,Los Angeles,2023-07-13,Regular,True,False,Toys,0,0.0
+C00415,65,Other,Phoenix,2023-11-29,Regular,True,True,Home & Garden,0,0.0
+C00416,36,M,San Diego,2023-03-11,Budget,False,False,Food & Beverages,0,0.0
+C00417,38,M,Chicago,2023-04-07,Premium,True,True,Clothing,0,0.0
+C00418,35,M,San Diego,2023-05-25,Budget,True,True,Clothing,0,0.0
+C00419,18,F,Houston,2023-03-19,Regular,False,False,Food & Beverages,0,0.0
+C00420,47,Other,New York,2023-07-10,Regular,True,True,Electronics,0,0.0
+C00421,67,F,Los Angeles,2023-05-17,Budget,False,True,Books,0,0.0
+C00422,70,F,New York,2023-05-09,Premium,True,False,Food & Beverages,0,0.0
+C00423,65,M,Houston,2023-05-07,Regular,True,True,Food & Beverages,0,0.0
+C00424,61,F,Philadelphia,2023-07-19,Premium,True,True,Toys,0,0.0
+C00425,58,F,Houston,2023-09-04,Regular,True,True,Clothing,0,0.0
+C00426,58,F,Philadelphia,2023-05-01,Premium,True,False,Clothing,0,0.0
+C00427,68,M,New York,2023-07-22,Premium,False,True,Sports,0,0.0
+C00428,23,M,Chicago,2024-01-30,Regular,True,False,Electronics,0,0.0
+C00429,40,Other,Chicago,2023-01-31,Budget,True,True,Food & Beverages,0,0.0
+C00430,38,Other,Philadelphia,2023-04-30,Regular,True,True,Beauty,0,0.0
+C00431,64,M,Phoenix,2023-07-03,Premium,False,False,Toys,0,0.0
+C00432,62,F,Houston,2023-10-05,Budget,True,False,Sports,0,0.0
+C00433,47,F,San Jose,2024-01-10,Budget,True,True,Home & Garden,0,0.0
+C00434,36,F,Dallas,2023-08-19,Regular,False,True,Beauty,0,0.0
+C00435,29,M,San Jose,2024-01-11,Regular,True,False,Clothing,0,0.0
+C00436,52,F,Houston,2023-12-04,Budget,False,True,Toys,0,0.0
+C00437,44,Other,Philadelphia,2023-06-15,Premium,True,True,Electronics,0,0.0
+C00438,29,M,Houston,2023-03-08,Premium,False,True,Clothing,0,0.0
+C00439,54,Other,San Antonio,2023-01-17,Budget,False,False,Electronics,0,0.0
+C00440,32,Other,Los Angeles,2023-07-07,Premium,True,False,Clothing,0,0.0
+C00441,69,Other,New York,2023-08-28,Regular,False,False,Electronics,0,0.0
+C00442,35,Other,New York,2023-11-12,Budget,True,False,Clothing,0,0.0
+C00443,51,M,Los Angeles,2023-04-21,Budget,True,False,Books,0,0.0
+C00444,51,Other,Houston,2023-04-09,Budget,True,False,Clothing,0,0.0
+C00445,58,Other,Philadelphia,2024-01-28,Budget,False,False,Clothing,0,0.0
+C00446,68,M,Dallas,2023-03-27,Regular,False,True,Food & Beverages,0,0.0
+C00447,75,F,Dallas,2023-06-30,Regular,False,False,Beauty,0,0.0
+C00448,38,Other,Houston,2024-01-07,Budget,True,False,Toys,0,0.0
+C00449,46,F,San Antonio,2023-07-04,Premium,True,False,Electronics,0,0.0
+C00450,26,F,New York,2023-09-23,Regular,True,True,Sports,0,0.0
+C00451,67,Other,Phoenix,2023-01-12,Budget,True,True,Electronics,0,0.0
+C00452,40,M,Chicago,2023-08-24,Regular,False,True,Books,0,0.0
+C00453,69,F,Los Angeles,2023-05-12,Budget,False,True,Clothing,0,0.0
+C00454,38,F,Chicago,2024-01-06,Regular,True,False,Electronics,0,0.0
+C00455,69,Other,San Antonio,2024-01-10,Premium,True,False,Sports,0,0.0
+C00456,44,M,Houston,2023-08-11,Budget,True,False,Electronics,0,0.0
+C00457,51,M,Philadelphia,2023-06-06,Budget,True,False,Books,0,0.0
+C00458,21,Other,San Antonio,2023-03-20,Regular,True,True,Beauty,0,0.0
+C00459,68,F,Chicago,2023-05-29,Premium,False,True,Food & Beverages,0,0.0
+C00460,65,M,Dallas,2023-10-20,Regular,False,True,Beauty,0,0.0
+C00461,45,Other,Chicago,2023-09-14,Premium,False,True,Food & Beverages,0,0.0
+C00462,59,Other,Houston,2023-07-22,Budget,True,True,Clothing,0,0.0
+C00463,67,F,Philadelphia,2023-05-17,Budget,True,True,Beauty,0,0.0
+C00464,41,F,Houston,2023-08-05,Regular,False,True,Toys,0,0.0
+C00465,40,Other,San Diego,2023-03-28,Budget,True,False,Electronics,0,0.0
+C00466,30,Other,Philadelphia,2023-04-30,Premium,True,True,Electronics,0,0.0
+C00467,57,M,Phoenix,2023-05-05,Premium,False,True,Toys,0,0.0
+C00468,48,M,Philadelphia,2023-08-19,Premium,True,True,Toys,0,0.0
+C00469,48,Other,Chicago,2023-10-08,Budget,True,False,Electronics,0,0.0
+C00470,28,M,Phoenix,2023-05-11,Premium,False,True,Food & Beverages,0,0.0
+C00471,18,M,San Antonio,2023-12-02,Budget,False,False,Clothing,0,0.0
+C00472,36,Other,San Antonio,2023-01-10,Premium,False,True,Sports,0,0.0
+C00473,73,Other,Dallas,2023-09-06,Premium,True,True,Food & Beverages,0,0.0
+C00474,63,M,New York,2023-10-15,Premium,False,False,Food & Beverages,0,0.0
+C00475,65,M,New York,2023-07-21,Regular,False,False,Toys,0,0.0
+C00476,50,F,New York,2023-05-01,Budget,False,False,Electronics,0,0.0
+C00477,35,M,Chicago,2023-10-12,Regular,False,True,Clothing,0,0.0
+C00478,42,Other,San Jose,2024-01-09,Budget,True,False,Books,0,0.0
+C00479,27,F,Phoenix,2023-10-21,Budget,False,False,Home & Garden,0,0.0
+C00480,59,M,San Jose,2023-04-16,Budget,True,True,Toys,0,0.0
+C00481,63,Other,Chicago,2023-12-19,Regular,True,True,Sports,0,0.0
+C00482,53,Other,Los Angeles,2023-02-04,Premium,False,True,Electronics,0,0.0
+C00483,38,F,San Antonio,2024-01-27,Regular,False,False,Home & Garden,0,0.0
+C00484,30,M,Chicago,2024-02-03,Premium,True,False,Books,0,0.0
+C00485,32,M,New York,2023-11-02,Regular,True,False,Home & Garden,0,0.0
+C00486,72,Other,San Diego,2023-09-15,Budget,False,True,Beauty,0,0.0
+C00487,48,M,Chicago,2023-09-09,Premium,True,True,Beauty,0,0.0
+C00488,18,F,San Antonio,2024-01-27,Premium,True,True,Clothing,0,0.0
+C00489,46,Other,San Diego,2023-04-01,Budget,False,False,Books,0,0.0
+C00490,43,M,San Jose,2023-08-07,Budget,False,False,Beauty,0,0.0
+C00491,65,Other,San Jose,2023-11-10,Budget,True,True,Food & Beverages,0,0.0
+C00492,70,M,Houston,2023-08-22,Budget,False,True,Beauty,0,0.0
+C00493,66,Other,New York,2023-09-22,Premium,False,False,Beauty,0,0.0
+C00494,67,F,San Diego,2023-06-05,Premium,False,False,Electronics,0,0.0
+C00495,51,M,San Diego,2023-12-20,Budget,False,True,Clothing,0,0.0
+C00496,67,Other,Dallas,2023-04-03,Premium,False,False,Sports,0,0.0
+C00497,19,M,San Diego,2023-08-19,Budget,True,False,Clothing,0,0.0
+C00498,38,Other,Chicago,2023-05-09,Budget,True,True,Clothing,0,0.0
+C00499,46,Other,Philadelphia,2023-12-28,Premium,False,True,Beauty,0,0.0
+C00500,42,M,Chicago,2023-10-09,Regular,True,True,Home & Garden,0,0.0
+C00501,67,Other,New York,2023-04-02,Regular,False,False,Food & Beverages,0,0.0
+C00502,58,M,Los Angeles,2023-05-28,Premium,True,True,Toys,0,0.0
+C00503,47,F,San Diego,2023-01-07,Budget,True,False,Books,0,0.0
+C00504,55,Other,San Diego,2023-04-22,Regular,False,False,Clothing,0,0.0
+C00505,56,M,Houston,2023-11-04,Budget,False,True,Electronics,0,0.0
+C00506,27,M,Philadelphia,2023-04-05,Premium,True,True,Toys,0,0.0
+C00507,23,M,Los Angeles,2023-06-19,Regular,True,True,Toys,0,0.0
+C00508,60,Other,San Jose,2023-11-09,Budget,True,False,Sports,0,0.0
+C00509,23,F,Philadelphia,2023-01-19,Regular,False,True,Beauty,0,0.0
+C00510,22,F,San Diego,2023-10-09,Premium,True,False,Sports,0,0.0
+C00511,44,Other,Houston,2023-09-27,Budget,True,True,Clothing,0,0.0
+C00512,64,Other,Dallas,2023-10-20,Premium,False,False,Beauty,0,0.0
+C00513,72,F,Phoenix,2023-11-08,Budget,False,True,Food & Beverages,0,0.0
+C00514,64,Other,San Diego,2023-09-24,Regular,True,True,Toys,0,0.0
+C00515,18,M,New York,2023-04-10,Regular,True,True,Beauty,0,0.0
+C00516,20,F,Philadelphia,2023-07-31,Budget,True,True,Books,0,0.0
+C00517,36,F,Los Angeles,2023-12-20,Regular,False,False,Electronics,0,0.0
+C00518,61,F,Philadelphia,2023-02-28,Regular,True,True,Books,0,0.0
+C00519,71,F,San Diego,2023-06-19,Regular,True,True,Food & Beverages,0,0.0
+C00520,58,F,Dallas,2023-03-21,Regular,False,False,Electronics,0,0.0
+C00521,37,Other,Philadelphia,2023-09-24,Budget,True,True,Sports,0,0.0
+C00522,22,M,Phoenix,2023-07-01,Premium,False,False,Home & Garden,0,0.0
+C00523,56,F,Chicago,2023-10-20,Budget,True,False,Sports,0,0.0
+C00524,20,F,San Antonio,2023-12-30,Premium,False,True,Sports,0,0.0
+C00525,71,F,Houston,2023-08-20,Budget,False,True,Clothing,0,0.0
+C00526,68,M,Houston,2023-07-11,Premium,False,True,Food & Beverages,0,0.0
+C00527,27,M,Philadelphia,2023-09-14,Regular,False,False,Home & Garden,0,0.0
+C00528,73,M,Dallas,2024-01-29,Budget,True,True,Electronics,0,0.0
+C00529,42,Other,Dallas,2023-08-24,Premium,True,False,Electronics,0,0.0
+C00530,72,Other,Los Angeles,2023-12-18,Regular,False,True,Clothing,0,0.0
+C00531,67,Other,Phoenix,2023-09-24,Premium,False,True,Sports,0,0.0
+C00532,30,F,Phoenix,2023-04-13,Budget,False,False,Clothing,0,0.0
+C00533,27,M,Phoenix,2023-05-20,Premium,True,True,Books,0,0.0
+C00534,40,Other,Philadelphia,2023-10-05,Regular,True,False,Books,0,0.0
+C00535,22,F,San Jose,2023-03-29,Regular,False,True,Home & Garden,0,0.0
+C00536,48,Other,New York,2023-01-15,Premium,False,True,Clothing,0,0.0
+C00537,43,M,San Jose,2023-08-07,Budget,False,False,Toys,0,0.0
+C00538,70,M,Dallas,2023-06-20,Premium,False,True,Clothing,0,0.0
+C00539,47,M,San Diego,2023-12-24,Regular,False,False,Books,0,0.0
+C00540,27,Other,Phoenix,2023-04-25,Regular,False,True,Sports,0,0.0
+C00541,47,F,New York,2023-06-16,Premium,False,True,Sports,0,0.0
+C00542,47,M,Phoenix,2023-09-03,Regular,True,True,Beauty,0,0.0
+C00543,68,M,Philadelphia,2024-01-01,Budget,True,False,Food & Beverages,0,0.0
+C00544,55,F,Houston,2023-07-25,Budget,True,True,Food & Beverages,0,0.0
+C00545,22,F,Houston,2023-07-16,Budget,False,False,Sports,0,0.0
+C00546,62,M,Chicago,2023-10-06,Budget,True,False,Clothing,0,0.0
+C00547,56,F,Philadelphia,2023-10-31,Budget,True,False,Home & Garden,0,0.0
+C00548,43,M,San Jose,2023-06-07,Premium,False,False,Food & Beverages,0,0.0
+C00549,60,M,Los Angeles,2023-11-27,Premium,True,True,Home & Garden,0,0.0
+C00550,27,F,Dallas,2023-12-05,Regular,False,False,Books,0,0.0
+C00551,61,F,Phoenix,2023-04-16,Budget,False,False,Sports,0,0.0
+C00552,55,M,San Jose,2023-02-15,Budget,False,True,Toys,0,0.0
+C00553,41,Other,New York,2023-02-01,Premium,False,True,Toys,0,0.0
+C00554,33,F,San Jose,2023-01-16,Regular,False,False,Beauty,0,0.0
+C00555,45,Other,Houston,2023-07-15,Budget,True,False,Home & Garden,0,0.0
+C00556,53,F,Philadelphia,2023-04-07,Regular,True,False,Home & Garden,0,0.0
+C00557,18,M,New York,2023-03-10,Premium,False,False,Home & Garden,0,0.0
+C00558,26,Other,San Antonio,2023-02-13,Regular,False,True,Food & Beverages,0,0.0
+C00559,45,Other,San Diego,2023-09-18,Regular,False,True,Home & Garden,0,0.0
+C00560,56,M,San Jose,2023-08-06,Regular,True,False,Beauty,0,0.0
+C00561,54,F,New York,2023-10-07,Premium,False,False,Clothing,0,0.0
+C00562,48,Other,Los Angeles,2023-10-25,Premium,False,False,Clothing,0,0.0
+C00563,74,Other,Los Angeles,2023-09-25,Premium,False,True,Toys,0,0.0
+C00564,21,F,Dallas,2023-11-10,Premium,False,False,Food & Beverages,0,0.0
+C00565,64,F,San Antonio,2023-10-21,Regular,False,False,Home & Garden,0,0.0
+C00566,62,Other,Phoenix,2023-01-19,Budget,False,True,Food & Beverages,0,0.0
+C00567,28,Other,New York,2023-10-24,Budget,False,True,Toys,0,0.0
+C00568,23,M,Dallas,2023-09-06,Premium,False,False,Home & Garden,0,0.0
+C00569,35,F,Phoenix,2023-11-12,Premium,True,True,Home & Garden,0,0.0
+C00570,46,F,Chicago,2023-12-04,Regular,True,False,Home & Garden,0,0.0
+C00571,73,M,Philadelphia,2023-09-28,Premium,True,True,Food & Beverages,0,0.0
+C00572,44,F,Houston,2024-01-21,Budget,False,True,Books,0,0.0
+C00573,64,F,New York,2023-10-23,Budget,False,True,Electronics,0,0.0
+C00574,47,F,San Diego,2023-03-27,Regular,False,True,Beauty,0,0.0
+C00575,63,F,San Diego,2023-12-16,Regular,True,False,Electronics,0,0.0
+C00576,69,F,San Antonio,2023-05-28,Budget,False,True,Clothing,0,0.0
+C00577,58,F,San Antonio,2023-09-30,Budget,False,False,Toys,0,0.0
+C00578,69,M,Phoenix,2023-05-17,Budget,False,False,Books,0,0.0
+C00579,61,Other,Houston,2024-01-11,Budget,False,True,Sports,0,0.0
+C00580,18,Other,New York,2023-10-08,Premium,True,False,Clothing,0,0.0
+C00581,24,Other,San Diego,2023-09-26,Regular,True,False,Toys,0,0.0
+C00582,20,M,San Jose,2023-04-09,Premium,True,True,Clothing,0,0.0
+C00583,25,M,San Jose,2023-12-29,Premium,False,True,Clothing,0,0.0
+C00584,29,F,Phoenix,2023-12-23,Regular,True,False,Toys,0,0.0
+C00585,45,Other,Philadelphia,2024-01-29,Regular,True,True,Toys,0,0.0
+C00586,21,F,San Antonio,2024-02-02,Regular,True,False,Toys,0,0.0
+C00587,46,M,San Diego,2023-04-02,Premium,False,True,Food & Beverages,0,0.0
+C00588,27,Other,San Antonio,2023-02-25,Premium,True,False,Toys,0,0.0
+C00589,20,M,Los Angeles,2023-02-22,Budget,False,False,Electronics,0,0.0
+C00590,27,Other,New York,2023-09-12,Premium,False,False,Home & Garden,0,0.0
+C00591,39,F,San Jose,2023-12-25,Premium,False,False,Beauty,0,0.0
+C00592,72,Other,Los Angeles,2023-07-26,Budget,True,True,Beauty,0,0.0
+C00593,70,F,Los Angeles,2023-12-19,Budget,False,False,Toys,0,0.0
+C00594,21,Other,Los Angeles,2023-07-25,Regular,False,True,Food & Beverages,0,0.0
+C00595,67,F,Houston,2024-01-25,Premium,True,False,Books,0,0.0
+C00596,62,F,Los Angeles,2023-06-03,Budget,False,False,Clothing,0,0.0
+C00597,46,Other,Houston,2023-11-20,Premium,True,True,Electronics,0,0.0
+C00598,55,M,San Diego,2024-01-04,Regular,True,False,Food & Beverages,0,0.0
+C00599,71,F,New York,2023-10-01,Premium,False,True,Sports,0,0.0
+C00600,20,F,Los Angeles,2024-01-05,Premium,False,True,Books,0,0.0
+C00601,20,Other,Chicago,2023-02-06,Regular,True,False,Electronics,0,0.0
+C00602,62,Other,Chicago,2023-05-05,Premium,True,True,Toys,0,0.0
+C00603,47,Other,Chicago,2023-02-19,Budget,True,True,Clothing,0,0.0
+C00604,56,Other,Houston,2023-09-12,Premium,True,False,Sports,0,0.0
+C00605,61,F,Philadelphia,2024-01-13,Premium,True,False,Books,0,0.0
+C00606,20,Other,Chicago,2024-01-27,Regular,True,True,Toys,0,0.0
+C00607,66,F,Chicago,2023-03-14,Budget,False,True,Food & Beverages,0,0.0
+C00608,55,M,Chicago,2023-05-05,Premium,False,True,Electronics,0,0.0
+C00609,23,M,New York,2023-09-07,Premium,True,False,Beauty,0,0.0
+C00610,69,F,Chicago,2023-12-22,Premium,True,False,Food & Beverages,0,0.0
+C00611,33,M,San Jose,2023-07-30,Budget,True,True,Food & Beverages,0,0.0
+C00612,23,Other,Phoenix,2023-11-10,Regular,False,True,Books,0,0.0
+C00613,25,Other,Los Angeles,2023-04-09,Budget,False,True,Food & Beverages,0,0.0
+C00614,58,Other,Houston,2024-01-30,Regular,True,True,Clothing,0,0.0
+C00615,61,F,San Diego,2023-03-18,Premium,True,True,Electronics,0,0.0
+C00616,41,F,Houston,2023-11-27,Regular,False,False,Food & Beverages,0,0.0
+C00617,24,Other,New York,2023-01-23,Budget,True,True,Electronics,0,0.0
+C00618,50,M,Los Angeles,2023-09-06,Premium,False,False,Beauty,0,0.0
+C00619,65,Other,Philadelphia,2023-04-12,Premium,True,False,Books,0,0.0
+C00620,33,Other,San Antonio,2023-02-20,Premium,False,True,Clothing,0,0.0
+C00621,55,F,New York,2023-08-30,Regular,True,True,Food & Beverages,0,0.0
+C00622,42,F,Chicago,2023-04-02,Regular,True,False,Toys,0,0.0
+C00623,39,M,New York,2023-04-14,Budget,True,False,Home & Garden,0,0.0
+C00624,72,F,San Diego,2023-02-26,Regular,True,False,Books,0,0.0
+C00625,56,M,San Jose,2023-06-01,Premium,True,True,Beauty,0,0.0
+C00626,49,M,San Jose,2023-09-25,Regular,False,False,Electronics,0,0.0
+C00627,45,Other,Houston,2024-01-09,Premium,False,False,Books,0,0.0
+C00628,27,Other,New York,2023-10-30,Regular,True,True,Food & Beverages,0,0.0
+C00629,67,Other,New York,2024-01-11,Regular,False,False,Clothing,0,0.0
+C00630,49,M,Los Angeles,2023-08-20,Budget,True,False,Books,0,0.0
+C00631,40,F,Houston,2023-03-09,Budget,True,True,Food & Beverages,0,0.0
+C00632,37,M,San Diego,2023-12-09,Budget,True,False,Food & Beverages,0,0.0
+C00633,26,Other,San Antonio,2024-01-31,Premium,False,False,Electronics,0,0.0
+C00634,22,F,Philadelphia,2023-11-18,Budget,True,False,Beauty,0,0.0
+C00635,35,Other,San Jose,2024-01-21,Budget,True,True,Sports,0,0.0
+C00636,21,Other,Philadelphia,2024-01-12,Premium,True,False,Sports,0,0.0
+C00637,57,M,Philadelphia,2023-08-27,Regular,True,True,Books,0,0.0
+C00638,39,M,Dallas,2023-03-12,Premium,False,True,Books,0,0.0
+C00639,40,F,Dallas,2023-06-14,Budget,False,False,Electronics,0,0.0
+C00640,41,F,San Diego,2023-02-02,Regular,True,False,Toys,0,0.0
+C00641,57,F,Los Angeles,2023-08-20,Premium,False,True,Clothing,0,0.0
+C00642,75,M,Phoenix,2023-07-20,Premium,True,True,Toys,0,0.0
+C00643,62,M,San Diego,2023-02-27,Premium,True,True,Toys,0,0.0
+C00644,61,Other,Chicago,2023-08-02,Regular,False,False,Food & Beverages,0,0.0
+C00645,59,M,Phoenix,2024-01-13,Premium,True,True,Books,0,0.0
+C00646,59,F,San Antonio,2023-09-24,Budget,False,False,Food & Beverages,0,0.0
+C00647,60,Other,Dallas,2023-10-31,Budget,False,False,Toys,0,0.0
+C00648,26,F,Chicago,2023-10-18,Regular,True,False,Sports,0,0.0
+C00649,67,M,Chicago,2023-05-28,Regular,False,False,Home & Garden,0,0.0
+C00650,28,Other,Dallas,2023-11-13,Regular,True,True,Home & Garden,0,0.0
+C00651,33,M,New York,2023-03-24,Regular,True,False,Toys,0,0.0
+C00652,29,M,Dallas,2023-07-09,Budget,True,False,Sports,0,0.0
+C00653,41,F,Dallas,2023-03-17,Premium,False,True,Electronics,0,0.0
+C00654,49,M,San Diego,2023-07-27,Regular,True,True,Sports,0,0.0
+C00655,63,F,San Diego,2023-11-28,Regular,True,False,Sports,0,0.0
+C00656,25,Other,San Diego,2023-12-19,Premium,True,True,Toys,0,0.0
+C00657,43,Other,Houston,2023-01-13,Regular,False,True,Sports,0,0.0
+C00658,56,Other,Houston,2023-01-29,Budget,True,False,Books,0,0.0
+C00659,23,Other,San Diego,2023-01-12,Budget,True,False,Books,0,0.0
+C00660,38,Other,San Jose,2023-09-09,Budget,True,False,Beauty,0,0.0
+C00661,63,F,Philadelphia,2023-03-17,Regular,False,True,Toys,0,0.0
+C00662,40,F,San Diego,2023-06-26,Budget,True,True,Food & Beverages,0,0.0
+C00663,44,F,Phoenix,2024-01-15,Premium,False,False,Home & Garden,0,0.0
+C00664,56,M,Chicago,2023-10-28,Premium,False,False,Sports,0,0.0
+C00665,55,F,Los Angeles,2023-02-03,Premium,False,False,Beauty,0,0.0
+C00666,53,F,San Jose,2023-03-31,Premium,True,True,Beauty,0,0.0
+C00667,53,F,New York,2023-05-29,Regular,False,False,Food & Beverages,0,0.0
+C00668,19,M,Chicago,2023-04-25,Regular,False,False,Clothing,0,0.0
+C00669,60,F,San Antonio,2023-12-01,Premium,False,True,Electronics,0,0.0
+C00670,66,F,San Diego,2023-03-03,Premium,False,False,Beauty,0,0.0
+C00671,58,Other,San Diego,2023-05-13,Budget,True,False,Electronics,0,0.0
+C00672,28,Other,New York,2023-05-13,Premium,False,False,Home & Garden,0,0.0
+C00673,28,M,Phoenix,2023-07-02,Regular,False,False,Electronics,0,0.0
+C00674,36,Other,Los Angeles,2023-05-29,Budget,True,True,Clothing,0,0.0
+C00675,66,M,Dallas,2023-11-03,Regular,False,False,Toys,0,0.0
+C00676,62,Other,Philadelphia,2023-12-17,Premium,False,True,Electronics,0,0.0
+C00677,51,F,Philadelphia,2023-03-12,Regular,False,False,Home & Garden,0,0.0
+C00678,31,M,Dallas,2023-02-22,Premium,True,True,Beauty,0,0.0
+C00679,22,M,Chicago,2023-08-24,Premium,False,False,Toys,0,0.0
+C00680,41,M,San Diego,2023-12-20,Budget,False,True,Toys,0,0.0
+C00681,65,M,Houston,2023-01-15,Premium,True,True,Toys,0,0.0
+C00682,31,M,Los Angeles,2023-03-06,Regular,True,True,Electronics,0,0.0
+C00683,48,F,New York,2024-02-01,Premium,True,True,Electronics,0,0.0
+C00684,25,F,New York,2023-08-29,Premium,False,True,Clothing,0,0.0
+C00685,25,Other,Houston,2024-02-05,Budget,True,True,Sports,0,0.0
+C00686,23,M,Phoenix,2023-01-15,Budget,False,False,Home & Garden,0,0.0
+C00687,67,Other,San Jose,2023-09-14,Premium,True,True,Electronics,0,0.0
+C00688,31,Other,Houston,2023-09-28,Regular,True,True,Clothing,0,0.0
+C00689,50,Other,San Diego,2023-04-20,Regular,True,False,Clothing,0,0.0
+C00690,71,F,San Antonio,2023-04-03,Regular,True,True,Beauty,0,0.0
+C00691,66,F,Los Angeles,2023-02-27,Regular,True,True,Food & Beverages,0,0.0
+C00692,41,Other,Phoenix,2024-01-26,Budget,True,True,Sports,0,0.0
+C00693,25,F,Phoenix,2023-09-10,Regular,False,False,Books,0,0.0
+C00694,44,F,San Antonio,2023-10-11,Premium,True,False,Sports,0,0.0
+C00695,18,Other,San Diego,2023-04-02,Budget,True,False,Food & Beverages,0,0.0
+C00696,60,Other,Los Angeles,2023-09-25,Premium,True,False,Beauty,0,0.0
+C00697,55,M,Chicago,2023-12-22,Premium,False,True,Sports,0,0.0
+C00698,56,F,Los Angeles,2023-04-13,Premium,False,False,Toys,0,0.0
+C00699,63,Other,San Jose,2024-01-27,Regular,False,False,Food & Beverages,0,0.0
+C00700,56,F,San Diego,2023-12-08,Budget,False,True,Food & Beverages,0,0.0
+C00701,25,F,San Diego,2023-02-25,Regular,True,True,Electronics,0,0.0
+C00702,65,M,Los Angeles,2023-02-20,Regular,True,True,Beauty,0,0.0
+C00703,61,F,Chicago,2023-11-06,Regular,True,True,Food & Beverages,0,0.0
+C00704,30,F,San Diego,2023-08-27,Regular,False,False,Electronics,0,0.0
+C00705,20,F,Los Angeles,2024-01-27,Regular,False,False,Beauty,0,0.0
+C00706,47,M,New York,2023-08-15,Premium,False,True,Food & Beverages,0,0.0
+C00707,26,F,San Antonio,2023-08-09,Regular,True,False,Food & Beverages,0,0.0
+C00708,53,M,Dallas,2023-09-01,Premium,False,False,Food & Beverages,0,0.0
+C00709,42,Other,Philadelphia,2023-10-30,Regular,False,True,Electronics,0,0.0
+C00710,20,M,Philadelphia,2023-10-30,Regular,True,False,Beauty,0,0.0
+C00711,45,F,Philadelphia,2023-02-19,Regular,False,True,Books,0,0.0
+C00712,33,Other,Phoenix,2023-05-07,Budget,True,True,Toys,0,0.0
+C00713,39,M,New York,2023-02-28,Budget,False,True,Food & Beverages,0,0.0
+C00714,73,F,San Jose,2023-12-03,Budget,False,False,Electronics,0,0.0
+C00715,48,Other,New York,2023-12-23,Regular,False,False,Sports,0,0.0
+C00716,24,F,Los Angeles,2023-10-21,Budget,True,False,Food & Beverages,0,0.0
+C00717,69,Other,Philadelphia,2023-09-15,Premium,False,False,Beauty,0,0.0
+C00718,49,Other,Los Angeles,2023-04-14,Budget,True,False,Toys,0,0.0
+C00719,37,Other,San Antonio,2023-01-25,Premium,True,True,Sports,0,0.0
+C00720,22,Other,Dallas,2023-05-20,Regular,False,True,Sports,0,0.0
+C00721,59,F,Dallas,2023-02-09,Regular,False,False,Books,0,0.0
+C00722,43,F,San Jose,2023-08-01,Budget,False,True,Electronics,0,0.0
+C00723,63,Other,Chicago,2023-11-18,Budget,False,True,Food & Beverages,0,0.0
+C00724,58,Other,San Jose,2023-05-18,Regular,True,True,Sports,0,0.0
+C00725,27,M,Chicago,2023-08-25,Budget,False,False,Beauty,0,0.0
+C00726,73,M,Houston,2023-06-13,Regular,False,False,Home & Garden,0,0.0
+C00727,61,Other,Houston,2023-05-12,Regular,True,True,Home & Garden,0,0.0
+C00728,19,M,Phoenix,2023-04-09,Regular,False,False,Beauty,0,0.0
+C00729,75,M,Houston,2023-11-28,Premium,False,True,Electronics,0,0.0
+C00730,68,F,Dallas,2023-05-13,Premium,True,False,Electronics,0,0.0
+C00731,73,M,Philadelphia,2023-01-29,Budget,False,True,Beauty,0,0.0
+C00732,60,Other,Los Angeles,2023-07-06,Regular,True,True,Clothing,0,0.0
+C00733,65,Other,Los Angeles,2023-10-20,Budget,False,False,Clothing,0,0.0
+C00734,56,M,Philadelphia,2023-05-02,Regular,False,True,Beauty,0,0.0
+C00735,27,M,Chicago,2023-04-22,Premium,False,False,Beauty,0,0.0
+C00736,73,Other,New York,2023-05-11,Regular,False,True,Sports,0,0.0
+C00737,45,F,Houston,2023-10-07,Regular,True,False,Food & Beverages,0,0.0
+C00738,41,F,New York,2024-01-02,Budget,True,True,Books,0,0.0
+C00739,53,F,Phoenix,2023-05-10,Budget,False,True,Books,0,0.0
+C00740,42,M,San Antonio,2023-08-15,Regular,False,True,Books,0,0.0
+C00741,31,M,San Diego,2023-06-02,Budget,False,False,Electronics,0,0.0
+C00742,73,M,San Diego,2023-05-21,Regular,False,False,Beauty,0,0.0
+C00743,70,M,Phoenix,2023-02-21,Budget,True,False,Beauty,0,0.0
+C00744,64,Other,Philadelphia,2023-11-05,Regular,True,True,Home & Garden,0,0.0
+C00745,46,Other,Chicago,2023-11-19,Premium,False,True,Toys,0,0.0
+C00746,54,M,Los Angeles,2023-06-10,Premium,True,True,Beauty,0,0.0
+C00747,46,F,Chicago,2023-06-13,Regular,True,False,Toys,0,0.0
+C00748,23,F,Philadelphia,2023-04-12,Premium,False,False,Books,0,0.0
+C00749,19,Other,San Jose,2023-01-11,Budget,True,True,Food & Beverages,0,0.0
+C00750,34,Other,Chicago,2023-04-12,Premium,False,False,Toys,0,0.0
+C00751,23,F,Chicago,2023-03-18,Budget,True,True,Beauty,0,0.0
+C00752,47,Other,San Diego,2024-01-31,Premium,True,True,Books,0,0.0
+C00753,35,F,San Diego,2024-02-05,Regular,True,False,Books,0,0.0
+C00754,31,F,Houston,2023-11-04,Regular,True,False,Home & Garden,0,0.0
+C00755,36,F,Houston,2023-01-15,Budget,False,True,Sports,0,0.0
+C00756,61,Other,San Diego,2023-10-26,Premium,True,False,Home & Garden,0,0.0
+C00757,62,F,Houston,2023-06-15,Budget,False,False,Toys,0,0.0
+C00758,24,Other,New York,2023-02-07,Premium,False,True,Food & Beverages,0,0.0
+C00759,56,Other,San Jose,2023-07-01,Budget,True,True,Toys,0,0.0
+C00760,57,F,Phoenix,2023-09-16,Regular,False,True,Electronics,0,0.0
+C00761,29,F,Chicago,2023-10-25,Budget,False,False,Food & Beverages,0,0.0
+C00762,23,F,Dallas,2023-03-09,Regular,True,False,Clothing,0,0.0
+C00763,20,M,San Diego,2023-06-10,Regular,False,False,Toys,0,0.0
+C00764,57,F,Dallas,2023-05-15,Regular,False,True,Sports,0,0.0
+C00765,49,M,Dallas,2024-01-13,Budget,False,True,Books,0,0.0
+C00766,21,M,Chicago,2023-03-18,Premium,False,False,Home & Garden,0,0.0
+C00767,47,F,Los Angeles,2023-12-28,Regular,True,False,Sports,0,0.0
+C00768,53,F,San Diego,2023-12-30,Regular,True,True,Clothing,0,0.0
+C00769,23,M,Phoenix,2023-06-28,Premium,True,False,Books,0,0.0
+C00770,18,Other,San Jose,2023-10-26,Premium,False,True,Books,0,0.0
+C00771,49,Other,Los Angeles,2024-01-29,Regular,True,False,Clothing,0,0.0
+C00772,41,Other,Los Angeles,2023-07-21,Regular,True,True,Clothing,0,0.0
+C00773,71,Other,San Diego,2023-08-24,Regular,False,True,Sports,0,0.0
+C00774,59,Other,San Diego,2023-01-23,Regular,True,True,Electronics,0,0.0
+C00775,36,F,New York,2023-11-26,Budget,True,False,Clothing,0,0.0
+C00776,34,M,Houston,2023-07-24,Regular,True,True,Books,0,0.0
+C00777,42,F,Phoenix,2023-03-25,Budget,True,True,Toys,0,0.0
+C00778,69,F,Phoenix,2023-09-09,Budget,True,False,Clothing,0,0.0
+C00779,50,M,San Diego,2023-07-08,Regular,False,False,Toys,0,0.0
+C00780,56,F,Los Angeles,2023-10-16,Regular,False,True,Beauty,0,0.0
+C00781,45,M,New York,2023-11-19,Budget,False,False,Books,0,0.0
+C00782,61,Other,Chicago,2023-11-28,Regular,True,False,Food & Beverages,0,0.0
+C00783,23,F,Phoenix,2023-08-12,Premium,True,False,Books,0,0.0
+C00784,45,F,San Jose,2023-09-25,Premium,True,True,Clothing,0,0.0
+C00785,45,F,Los Angeles,2023-09-19,Regular,False,False,Toys,0,0.0
+C00786,23,Other,New York,2023-10-27,Premium,False,True,Home & Garden,0,0.0
+C00787,20,M,San Antonio,2023-07-21,Budget,False,False,Food & Beverages,0,0.0
+C00788,60,F,San Jose,2024-01-23,Regular,False,True,Books,0,0.0
+C00789,23,Other,San Jose,2023-04-05,Regular,True,False,Electronics,0,0.0
+C00790,43,M,New York,2023-01-03,Premium,False,False,Beauty,0,0.0
+C00791,65,Other,San Diego,2023-12-03,Regular,False,False,Toys,0,0.0
+C00792,26,M,New York,2023-02-14,Premium,True,True,Books,0,0.0
+C00793,31,F,Chicago,2023-01-14,Budget,True,False,Books,0,0.0
+C00794,37,F,Chicago,2023-02-14,Regular,False,True,Clothing,0,0.0
+C00795,75,M,San Diego,2023-03-27,Regular,False,True,Food & Beverages,0,0.0
+C00796,33,M,Phoenix,2023-10-27,Budget,False,True,Sports,0,0.0
+C00797,24,Other,San Antonio,2023-01-05,Regular,False,False,Electronics,0,0.0
+C00798,43,F,Dallas,2023-09-07,Budget,False,True,Electronics,0,0.0
+C00799,19,F,San Jose,2023-09-28,Regular,True,False,Beauty,0,0.0
+C00800,25,F,San Jose,2023-08-31,Budget,False,False,Beauty,0,0.0
+C00801,28,F,Houston,2023-01-11,Regular,False,False,Books,0,0.0
+C00802,32,Other,Philadelphia,2023-09-17,Budget,False,True,Toys,0,0.0
+C00803,63,F,San Antonio,2024-01-06,Budget,False,False,Home & Garden,0,0.0
+C00804,31,F,Los Angeles,2023-11-15,Budget,False,True,Home & Garden,0,0.0
+C00805,28,Other,San Diego,2023-04-13,Premium,False,False,Toys,0,0.0
+C00806,31,Other,New York,2023-05-01,Premium,False,False,Sports,0,0.0
+C00807,28,M,Dallas,2023-12-13,Premium,True,False,Beauty,0,0.0
+C00808,57,M,Los Angeles,2023-02-28,Budget,True,False,Toys,0,0.0
+C00809,68,F,New York,2023-06-24,Budget,False,True,Clothing,0,0.0
+C00810,21,F,San Diego,2023-12-28,Premium,True,True,Electronics,0,0.0
+C00811,24,M,Los Angeles,2023-09-17,Premium,False,True,Toys,0,0.0
+C00812,46,Other,San Diego,2023-12-29,Budget,True,True,Sports,0,0.0
+C00813,70,M,Los Angeles,2023-06-21,Premium,False,False,Electronics,0,0.0
+C00814,71,F,Philadelphia,2023-05-06,Regular,True,True,Toys,0,0.0
+C00815,63,F,Philadelphia,2023-07-10,Budget,True,True,Beauty,0,0.0
+C00816,26,F,San Antonio,2023-04-27,Regular,False,False,Electronics,0,0.0
+C00817,27,M,Dallas,2023-08-15,Premium,True,False,Sports,0,0.0
+C00818,67,M,San Antonio,2023-07-25,Premium,False,True,Home & Garden,0,0.0
+C00819,21,Other,Dallas,2023-10-22,Regular,False,False,Toys,0,0.0
+C00820,65,F,Philadelphia,2024-01-05,Premium,False,True,Beauty,0,0.0
+C00821,59,M,Dallas,2023-08-17,Budget,False,False,Beauty,0,0.0
+C00822,30,F,Los Angeles,2024-02-02,Premium,False,False,Home & Garden,0,0.0
+C00823,52,F,Houston,2023-09-24,Premium,False,False,Home & Garden,0,0.0
+C00824,19,Other,San Jose,2023-01-12,Regular,True,False,Beauty,0,0.0
+C00825,25,Other,New York,2023-09-16,Regular,False,False,Clothing,0,0.0
+C00826,66,Other,Los Angeles,2023-01-25,Regular,False,True,Food & Beverages,0,0.0
+C00827,33,Other,San Jose,2023-06-23,Budget,True,False,Toys,0,0.0
+C00828,60,Other,San Jose,2023-05-26,Budget,True,False,Books,0,0.0
+C00829,38,Other,San Jose,2023-02-23,Premium,False,False,Clothing,0,0.0
+C00830,63,F,San Antonio,2023-03-17,Premium,True,True,Beauty,0,0.0
+C00831,48,M,San Diego,2023-03-08,Premium,False,False,Beauty,0,0.0
+C00832,55,F,San Antonio,2023-05-16,Regular,False,False,Home & Garden,0,0.0
+C00833,50,M,San Diego,2023-03-15,Budget,False,True,Clothing,0,0.0
+C00834,31,F,San Diego,2023-12-22,Premium,True,False,Clothing,0,0.0
+C00835,72,F,Los Angeles,2023-11-05,Premium,False,False,Electronics,0,0.0
+C00836,27,M,Philadelphia,2023-09-25,Regular,False,False,Toys,0,0.0
+C00837,19,M,Chicago,2023-09-06,Budget,False,True,Toys,0,0.0
+C00838,31,M,San Diego,2023-05-26,Premium,True,False,Clothing,0,0.0
+C00839,44,F,San Jose,2023-01-23,Regular,False,False,Beauty,0,0.0
+C00840,71,Other,San Jose,2023-09-01,Premium,True,False,Food & Beverages,0,0.0
+C00841,46,M,Philadelphia,2023-12-08,Premium,False,False,Books,0,0.0
+C00842,39,Other,New York,2023-07-22,Budget,False,False,Clothing,0,0.0
+C00843,63,M,San Jose,2023-03-26,Budget,False,True,Clothing,0,0.0
+C00844,57,Other,San Jose,2023-04-09,Premium,True,False,Electronics,0,0.0
+C00845,60,Other,Chicago,2023-03-03,Premium,False,True,Books,0,0.0
+C00846,71,Other,San Diego,2023-12-28,Premium,False,False,Electronics,0,0.0
+C00847,73,M,Philadelphia,2023-09-09,Regular,True,False,Electronics,0,0.0
+C00848,38,F,Phoenix,2023-09-28,Premium,True,True,Home & Garden,0,0.0
+C00849,27,M,Phoenix,2023-05-27,Premium,True,False,Beauty,0,0.0
+C00850,28,M,San Jose,2023-12-14,Regular,True,True,Electronics,0,0.0
+C00851,42,M,Philadelphia,2023-06-02,Premium,False,False,Toys,0,0.0
+C00852,70,M,New York,2023-07-12,Premium,True,True,Food & Beverages,0,0.0
+C00853,66,Other,San Antonio,2023-09-18,Premium,False,True,Sports,0,0.0
+C00854,53,F,Los Angeles,2023-08-26,Regular,True,False,Books,0,0.0
+C00855,35,Other,San Jose,2023-01-10,Budget,True,True,Home & Garden,0,0.0
+C00856,54,F,San Diego,2023-06-05,Premium,True,True,Sports,0,0.0
+C00857,28,M,Dallas,2023-10-04,Regular,False,True,Electronics,0,0.0
+C00858,71,Other,Phoenix,2023-08-26,Budget,True,True,Electronics,0,0.0
+C00859,35,Other,Phoenix,2023-09-04,Budget,False,False,Books,0,0.0
+C00860,71,Other,Phoenix,2023-10-27,Premium,True,True,Toys,0,0.0
+C00861,43,Other,Los Angeles,2023-02-15,Premium,False,False,Books,0,0.0
+C00862,50,F,Philadelphia,2023-11-09,Budget,False,False,Toys,0,0.0
+C00863,60,F,Philadelphia,2023-05-06,Premium,False,False,Electronics,0,0.0
+C00864,26,Other,New York,2023-12-21,Budget,False,True,Electronics,0,0.0
+C00865,29,F,Dallas,2023-12-11,Budget,False,False,Clothing,0,0.0
+C00866,59,M,Dallas,2023-11-29,Premium,False,True,Sports,0,0.0
+C00867,70,Other,Philadelphia,2023-07-12,Regular,True,True,Clothing,0,0.0
+C00868,41,M,San Diego,2023-08-25,Premium,True,True,Toys,0,0.0
+C00869,63,F,Houston,2023-12-15,Premium,False,True,Books,0,0.0
+C00870,41,M,Phoenix,2023-09-10,Regular,True,True,Books,0,0.0
+C00871,43,M,Phoenix,2023-11-23,Budget,False,True,Books,0,0.0
+C00872,65,Other,San Jose,2023-12-04,Budget,True,True,Home & Garden,0,0.0
+C00873,22,M,Phoenix,2024-01-17,Budget,True,False,Books,0,0.0
+C00874,19,Other,Dallas,2023-12-14,Budget,False,False,Electronics,0,0.0
+C00875,59,Other,New York,2023-08-07,Regular,False,False,Toys,0,0.0
+C00876,61,Other,San Diego,2023-03-04,Regular,False,True,Books,0,0.0
+C00877,35,F,Dallas,2023-01-25,Regular,False,True,Beauty,0,0.0
+C00878,39,M,San Jose,2023-04-10,Premium,True,False,Clothing,0,0.0
+C00879,30,M,Philadelphia,2023-05-08,Regular,True,True,Electronics,0,0.0
+C00880,45,M,San Jose,2023-09-03,Budget,False,False,Books,0,0.0
+C00881,48,M,Philadelphia,2023-02-25,Premium,False,True,Clothing,0,0.0
+C00882,56,Other,San Diego,2024-02-02,Premium,False,True,Clothing,0,0.0
+C00883,20,F,Philadelphia,2023-02-01,Budget,True,True,Electronics,0,0.0
+C00884,21,F,San Jose,2023-08-15,Budget,False,True,Clothing,0,0.0
+C00885,21,Other,New York,2023-12-13,Regular,False,False,Clothing,0,0.0
+C00886,66,F,Houston,2023-11-13,Budget,True,False,Beauty,0,0.0
+C00887,68,F,San Jose,2023-08-26,Budget,True,False,Electronics,0,0.0
+C00888,51,F,San Jose,2023-08-21,Premium,True,True,Electronics,0,0.0
+C00889,63,M,San Jose,2023-11-01,Premium,True,False,Sports,0,0.0
+C00890,48,Other,San Jose,2023-08-04,Regular,True,True,Home & Garden,0,0.0
+C00891,21,M,Phoenix,2023-01-23,Budget,False,False,Toys,0,0.0
+C00892,74,Other,Chicago,2023-10-26,Premium,False,False,Sports,0,0.0
+C00893,41,M,Dallas,2023-05-30,Budget,True,True,Books,0,0.0
+C00894,70,Other,New York,2023-09-17,Regular,False,True,Books,0,0.0
+C00895,30,M,Philadelphia,2023-11-24,Premium,False,False,Sports,0,0.0
+C00896,54,F,San Jose,2023-10-24,Regular,False,False,Home & Garden,0,0.0
+C00897,47,M,San Diego,2023-02-23,Premium,True,True,Books,0,0.0
+C00898,57,M,Houston,2023-08-27,Regular,False,False,Books,0,0.0
+C00899,29,M,Philadelphia,2023-07-24,Premium,True,False,Electronics,0,0.0
+C00900,25,M,Phoenix,2023-10-12,Regular,True,False,Electronics,0,0.0
+C00901,30,M,Phoenix,2023-01-16,Premium,True,False,Home & Garden,0,0.0
+C00902,72,Other,Houston,2023-06-23,Premium,True,True,Home & Garden,0,0.0
+C00903,24,M,Chicago,2023-05-15,Regular,True,False,Books,0,0.0
+C00904,47,M,Philadelphia,2023-06-06,Regular,True,False,Clothing,0,0.0
+C00905,27,M,Houston,2023-03-02,Premium,False,False,Sports,0,0.0
+C00906,45,Other,Houston,2023-11-03,Premium,True,False,Home & Garden,0,0.0
+C00907,33,M,Phoenix,2023-06-17,Premium,False,True,Clothing,0,0.0
+C00908,68,Other,San Jose,2023-08-29,Premium,True,False,Sports,0,0.0
+C00909,51,F,Chicago,2023-09-13,Regular,False,False,Food & Beverages,0,0.0
+C00910,35,Other,San Antonio,2023-08-31,Budget,True,True,Books,0,0.0
+C00911,46,M,San Antonio,2023-04-14,Premium,False,False,Beauty,0,0.0
+C00912,28,F,Phoenix,2023-10-20,Budget,True,True,Clothing,0,0.0
+C00913,46,Other,Philadelphia,2023-06-01,Premium,True,False,Sports,0,0.0
+C00914,46,F,San Antonio,2023-08-07,Regular,False,False,Sports,0,0.0
+C00915,42,M,Chicago,2023-05-20,Regular,True,False,Clothing,0,0.0
+C00916,75,M,Phoenix,2023-07-03,Budget,True,False,Books,0,0.0
+C00917,25,M,Philadelphia,2023-02-20,Premium,True,False,Books,0,0.0
+C00918,39,F,Phoenix,2023-12-12,Budget,False,True,Home & Garden,0,0.0
+C00919,63,Other,Dallas,2024-01-21,Regular,True,False,Toys,0,0.0
+C00920,68,F,San Antonio,2023-06-27,Budget,True,False,Home & Garden,0,0.0
+C00921,32,M,Houston,2023-07-23,Regular,True,False,Food & Beverages,0,0.0
+C00922,68,M,Philadelphia,2023-06-24,Premium,False,False,Books,0,0.0
+C00923,46,Other,New York,2023-08-13,Regular,True,True,Toys,0,0.0
+C00924,18,F,Philadelphia,2024-01-13,Regular,True,False,Beauty,0,0.0
+C00925,66,F,Dallas,2023-12-18,Regular,False,True,Electronics,0,0.0
+C00926,27,F,San Jose,2023-03-13,Budget,False,False,Books,0,0.0
+C00927,22,Other,San Antonio,2023-07-20,Premium,False,True,Sports,0,0.0
+C00928,46,Other,Phoenix,2023-10-19,Premium,True,True,Home & Garden,0,0.0
+C00929,70,Other,San Jose,2023-01-17,Regular,True,True,Books,0,0.0
+C00930,42,F,Houston,2023-02-05,Premium,False,True,Food & Beverages,0,0.0
+C00931,41,Other,New York,2023-01-30,Premium,False,False,Beauty,0,0.0
+C00932,25,M,Dallas,2023-03-22,Regular,False,True,Beauty,0,0.0
+C00933,26,M,Phoenix,2023-04-16,Regular,False,True,Toys,0,0.0
+C00934,30,Other,San Diego,2023-10-28,Regular,True,True,Home & Garden,0,0.0
+C00935,22,F,San Jose,2023-08-17,Premium,False,False,Food & Beverages,0,0.0
+C00936,54,M,Los Angeles,2023-08-25,Regular,False,False,Toys,0,0.0
+C00937,57,M,San Antonio,2023-07-20,Premium,True,False,Food & Beverages,0,0.0
+C00938,60,M,San Jose,2023-07-16,Premium,False,True,Books,0,0.0
+C00939,35,Other,Dallas,2023-03-22,Regular,True,True,Food & Beverages,0,0.0
+C00940,66,Other,Los Angeles,2023-07-30,Regular,True,True,Sports,0,0.0
+C00941,46,M,Phoenix,2023-07-29,Premium,True,False,Electronics,0,0.0
+C00942,58,Other,San Diego,2023-02-07,Regular,False,False,Books,0,0.0
+C00943,20,M,Phoenix,2023-07-23,Premium,True,False,Food & Beverages,0,0.0
+C00944,47,M,Los Angeles,2023-09-06,Budget,True,False,Home & Garden,0,0.0
+C00945,70,F,Chicago,2023-08-30,Premium,True,True,Home & Garden,0,0.0
+C00946,25,Other,San Antonio,2023-05-31,Premium,True,True,Toys,0,0.0
+C00947,46,F,Chicago,2023-03-20,Premium,True,True,Food & Beverages,0,0.0
+C00948,21,Other,Dallas,2023-12-23,Budget,True,False,Toys,0,0.0
+C00949,21,Other,New York,2023-08-16,Premium,False,True,Books,0,0.0
+C00950,33,M,Los Angeles,2023-07-11,Premium,False,True,Electronics,0,0.0
+C00951,70,M,Los Angeles,2023-06-22,Premium,True,True,Home & Garden,0,0.0
+C00952,44,Other,Los Angeles,2023-01-23,Regular,False,True,Books,0,0.0
+C00953,43,F,Los Angeles,2023-10-05,Premium,True,True,Sports,0,0.0
+C00954,29,M,San Antonio,2023-06-15,Budget,False,True,Beauty,0,0.0
+C00955,47,M,Los Angeles,2023-04-19,Budget,False,False,Electronics,0,0.0
+C00956,74,M,San Antonio,2023-02-04,Regular,False,True,Home & Garden,0,0.0
+C00957,24,Other,Philadelphia,2023-05-09,Budget,False,True,Sports,0,0.0
+C00958,58,Other,Philadelphia,2023-03-31,Budget,False,True,Sports,0,0.0
+C00959,56,Other,San Diego,2023-01-10,Regular,True,True,Books,0,0.0
+C00960,57,M,Phoenix,2023-01-11,Premium,False,True,Clothing,0,0.0
+C00961,26,F,San Diego,2023-01-31,Regular,True,True,Beauty,0,0.0
+C00962,59,M,Houston,2023-04-15,Budget,False,False,Home & Garden,0,0.0
+C00963,38,Other,New York,2023-05-23,Budget,False,False,Electronics,0,0.0
+C00964,72,Other,Philadelphia,2023-04-28,Regular,True,True,Electronics,0,0.0
+C00965,33,Other,Houston,2023-12-07,Budget,False,False,Home & Garden,0,0.0
+C00966,58,M,Los Angeles,2023-08-15,Regular,True,True,Electronics,0,0.0
+C00967,27,M,Chicago,2023-11-21,Premium,True,True,Books,0,0.0
+C00968,23,F,San Diego,2023-09-17,Regular,True,True,Books,0,0.0
+C00969,29,Other,Houston,2023-08-06,Regular,False,False,Books,0,0.0
+C00970,73,F,Los Angeles,2023-05-20,Regular,False,False,Home & Garden,0,0.0
+C00971,46,F,Dallas,2023-08-30,Budget,False,True,Food & Beverages,0,0.0
+C00972,66,F,San Antonio,2023-01-11,Premium,False,True,Home & Garden,0,0.0
+C00973,42,F,Phoenix,2023-05-12,Regular,False,False,Food & Beverages,0,0.0
+C00974,39,M,San Diego,2023-02-06,Premium,True,True,Electronics,0,0.0
+C00975,73,Other,Philadelphia,2023-01-07,Regular,False,False,Beauty,0,0.0
+C00976,41,F,San Diego,2024-01-16,Regular,True,False,Electronics,0,0.0
+C00977,42,Other,Chicago,2023-03-05,Premium,False,False,Sports,0,0.0
+C00978,63,F,Philadelphia,2023-09-18,Budget,True,False,Beauty,0,0.0
+C00979,33,M,San Diego,2024-01-12,Premium,False,True,Home & Garden,0,0.0
+C00980,56,F,Chicago,2023-05-14,Regular,True,True,Electronics,0,0.0
+C00981,67,M,San Antonio,2023-03-01,Regular,True,True,Beauty,0,0.0
+C00982,71,F,Phoenix,2023-03-26,Budget,False,False,Toys,0,0.0
+C00983,44,Other,Los Angeles,2024-01-11,Premium,False,True,Toys,0,0.0
+C00984,31,Other,San Antonio,2024-01-19,Budget,False,True,Home & Garden,0,0.0
+C00985,18,M,Los Angeles,2023-09-09,Budget,False,False,Toys,0,0.0
+C00986,45,M,Chicago,2024-01-11,Regular,True,True,Books,0,0.0
+C00987,29,Other,Los Angeles,2023-09-07,Regular,True,True,Books,0,0.0
+C00988,65,M,Houston,2023-01-31,Regular,False,False,Clothing,0,0.0
+C00989,28,M,Phoenix,2023-11-22,Premium,False,True,Toys,0,0.0
+C00990,39,M,San Jose,2023-02-02,Premium,False,False,Clothing,0,0.0
+C00991,21,F,New York,2023-01-05,Budget,True,True,Books,0,0.0
+C00992,68,M,San Antonio,2023-09-25,Budget,False,False,Food & Beverages,0,0.0
+C00993,39,Other,San Antonio,2024-01-23,Regular,False,False,Sports,0,0.0
+C00994,41,Other,San Antonio,2023-05-03,Regular,True,False,Sports,0,0.0
+C00995,18,F,San Antonio,2023-02-21,Budget,True,True,Clothing,0,0.0
+C00996,35,Other,Houston,2023-09-29,Regular,False,False,Beauty,0,0.0
+C00997,30,M,Philadelphia,2023-12-05,Premium,False,True,Sports,0,0.0
+C00998,46,M,San Jose,2023-12-14,Regular,False,True,Sports,0,0.0
+C00999,48,Other,Los Angeles,2023-08-08,Budget,False,False,Books,0,0.0
+C01000,27,Other,San Jose,2023-12-31,Budget,True,True,Food & Beverages,0,0.0

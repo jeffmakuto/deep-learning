@@ -1,0 +1,201 @@
+product_id,product_name,category,brand,base_price,cost,stock_quantity,rating,num_reviews,weight_kg,is_featured,discount_eligible
+P0001,Clothing BrandA Item 1,Clothing,BrandA,373.36,176.77,71,4.3,692,7.43,True,False
+P0002,Electronics BrandA Item 2,Electronics,BrandA,55.91,26.27,308,2.6,203,7.19,False,True
+P0003,Food & Beverages BrandE Item 3,Food & Beverages,BrandE,146.31,96.68,388,4.5,714,4.28,False,True
+P0004,Books BrandC Item 4,Books,BrandC,60.08,30.88,183,4.6,618,2.72,True,False
+P0005,Clothing BrandD Item 5,Clothing,BrandD,48.61,23.72,321,4.0,882,3.68,True,True
+P0006,Electronics Generic Item 6,Electronics,Generic,121.67,59.23,40,4.6,887,1.1,False,False
+P0007,Sports BrandB Item 7,Sports,BrandB,191.39,88.59,136,4.3,699,6.52,True,True
+P0008,Home & Garden BrandD Item 8,Home & Garden,BrandD,195.93,136.54,327,4.2,224,6.88,True,True
+P0009,Electronics BrandC Item 9,Electronics,BrandC,206.57,86.73,467,4.9,897,7.21,True,False
+P0010,Beauty Generic Item 10,Beauty,Generic,234.84,112.6,126,4.4,551,2.7,False,False
+P0011,Sports BrandB Item 11,Sports,BrandB,498.69,220.17,252,2.7,48,8.62,True,True
+P0012,Beauty BrandE Item 12,Beauty,BrandE,41.13,21.16,239,3.8,994,5.58,True,True
+P0013,Toys Generic Item 13,Toys,Generic,176.69,86.23,80,3.6,976,7.25,False,True
+P0014,Clothing Generic Item 14,Clothing,Generic,156.24,92.44,311,3.0,382,7.65,True,False
+P0015,Food & Beverages BrandA Item 15,Food & Beverages,BrandA,64.82,32.99,425,4.5,245,0.67,True,True
+P0016,Food & Beverages BrandA Item 16,Food & Beverages,BrandA,489.21,273.87,64,2.8,486,9.47,True,False
+P0017,Beauty BrandB Item 17,Beauty,BrandB,465.17,291.47,353,3.0,319,4.05,False,False
+P0018,Food & Beverages BrandA Item 18,Food & Beverages,BrandA,131.47,55.11,10,4.0,235,5.93,True,True
+P0019,Electronics BrandB Item 19,Electronics,BrandB,43.03,17.62,169,2.7,243,2.86,False,True
+P0020,Home & Garden Generic Item 20,Home & Garden,Generic,468.4,267.6,242,3.1,484,8.09,True,True
+P0021,Clothing Generic Item 21,Clothing,Generic,221.22,116.6,239,4.7,55,6.77,True,True
+P0022,Beauty Generic Item 22,Beauty,Generic,176.26,116.07,127,3.0,549,4.54,False,True
+P0023,Toys BrandD Item 23,Toys,BrandD,132.41,89.64,226,4.5,876,5.55,True,True
+P0024,Clothing BrandB Item 24,Clothing,BrandB,91.49,49.93,109,4.7,924,0.68,False,True
+P0025,Beauty BrandC Item 25,Beauty,BrandC,463.99,294.88,146,3.6,980,7.33,False,True
+P0026,Books BrandC Item 26,Books,BrandC,116.67,48.71,376,3.9,765,3.2,True,False
+P0027,Home & Garden BrandA Item 27,Home & Garden,BrandA,480.78,203.87,95,2.7,69,6.78,True,False
+P0028,Clothing BrandE Item 28,Clothing,BrandE,130.65,75.56,317,2.7,673,5.88,False,False
+P0029,Books Generic Item 29,Books,Generic,360.93,170.22,202,2.8,660,3.07,False,True
+P0030,Electronics BrandD Item 30,Electronics,BrandD,314.37,178.84,51,2.7,218,5.11,True,False
+P0031,Clothing BrandB Item 31,Clothing,BrandB,191.07,85.47,426,3.9,309,6.16,True,False
+P0032,Clothing BrandB Item 32,Clothing,BrandB,139.59,93.09,380,3.9,278,2.89,True,False
+P0033,Books Generic Item 33,Books,Generic,320.78,153.72,250,3.1,929,8.48,True,False
+P0034,Toys BrandA Item 34,Toys,BrandA,11.74,7.41,326,4.9,165,7.44,False,True
+P0035,Clothing BrandA Item 35,Clothing,BrandA,473.07,287.3,76,3.9,854,3.76,True,False
+P0036,Home & Garden BrandA Item 36,Home & Garden,BrandA,161.05,107.85,407,4.9,40,9.0,True,True
+P0037,Clothing BrandC Item 37,Clothing,BrandC,392.26,260.95,208,4.9,767,1.63,True,True
+P0038,Home & Garden BrandD Item 38,Home & Garden,BrandD,22.15,13.75,170,4.5,421,8.04,True,False
+P0039,Home & Garden Generic Item 39,Home & Garden,Generic,62.97,41.66,439,3.7,204,8.18,False,False
+P0040,Toys BrandB Item 40,Toys,BrandB,119.23,71.3,204,3.3,885,0.79,False,False
+P0041,Beauty Generic Item 41,Beauty,Generic,490.76,275.25,480,2.6,898,9.71,True,False
+P0042,Electronics BrandA Item 42,Electronics,BrandA,302.32,152.28,402,3.3,620,9.84,True,False
+P0043,Books BrandC Item 43,Books,BrandC,31.75,16.85,266,4.8,551,6.9,True,False
+P0044,Beauty BrandA Item 44,Beauty,BrandA,474.95,321.18,319,3.3,868,1.33,False,False
+P0045,Beauty BrandC Item 45,Beauty,BrandC,207.18,101.25,65,3.0,680,9.41,True,False
+P0046,Beauty BrandE Item 46,Beauty,BrandE,418.53,205.57,107,3.6,593,6.11,False,False
+P0047,Food & Beverages BrandD Item 47,Food & Beverages,BrandD,341.06,188.73,406,4.8,815,7.39,True,False
+P0048,Sports BrandA Item 48,Sports,BrandA,411.03,257.03,344,3.3,825,2.07,True,True
+P0049,Books BrandD Item 49,Books,BrandD,309.52,195.17,233,3.5,644,5.8,False,False
+P0050,Beauty BrandB Item 50,Beauty,BrandB,82.31,49.9,457,4.4,788,8.87,False,True
+P0051,Home & Garden Generic Item 51,Home & Garden,Generic,263.8,109.49,127,4.8,124,4.62,False,False
+P0052,Food & Beverages BrandE Item 52,Food & Beverages,BrandE,409.35,273.28,218,4.6,561,4.51,True,False
+P0053,Food & Beverages BrandC Item 53,Food & Beverages,BrandC,378.37,246.68,141,4.4,533,4.9,True,False
+P0054,Food & Beverages BrandA Item 54,Food & Beverages,BrandA,359.64,169.16,171,3.3,553,0.9,True,True
+P0055,Beauty Generic Item 55,Beauty,Generic,84.87,39.4,212,3.5,555,4.71,True,True
+P0056,Beauty BrandD Item 56,Beauty,BrandD,453.37,260.79,356,2.5,901,7.68,False,False
+P0057,Electronics BrandC Item 57,Electronics,BrandC,156.32,80.82,456,4.9,429,5.43,True,False
+P0058,Books BrandC Item 58,Books,BrandC,223.56,91.37,172,4.2,817,4.1,True,False
+P0059,Home & Garden BrandE Item 59,Home & Garden,BrandE,271.72,182.62,303,3.9,27,0.93,False,True
+P0060,Food & Beverages BrandB Item 60,Food & Beverages,BrandB,34.64,17.8,108,3.6,345,7.64,False,False
+P0061,Beauty BrandC Item 61,Beauty,BrandC,419.11,226.78,383,3.8,974,3.56,True,True
+P0062,Electronics BrandB Item 62,Electronics,BrandB,107.69,43.73,78,3.1,484,6.73,True,False
+P0063,Toys BrandC Item 63,Toys,BrandC,92.22,53.69,382,4.3,796,8.21,False,True
+P0064,Electronics BrandC Item 64,Electronics,BrandC,292.14,196.44,192,3.5,732,2.06,True,True
+P0065,Toys Generic Item 65,Toys,Generic,304.2,132.73,289,4.5,355,5.37,False,True
+P0066,Sports BrandA Item 66,Sports,BrandA,426.29,275.68,54,3.6,370,6.39,False,True
+P0067,Beauty BrandB Item 67,Beauty,BrandB,369.56,254.86,138,4.0,941,5.43,False,False
+P0068,Beauty Generic Item 68,Beauty,Generic,300.31,149.16,125,4.6,88,2.86,False,True
+P0069,Food & Beverages BrandE Item 69,Food & Beverages,BrandE,309.06,158.76,14,3.7,332,1.9,True,False
+P0070,Toys BrandC Item 70,Toys,BrandC,147.03,85.11,450,3.2,10,5.21,True,True
+P0071,Books Generic Item 71,Books,Generic,209.15,118.49,123,4.2,661,7.15,False,True
+P0072,Clothing BrandC Item 72,Clothing,BrandC,118.58,72.04,156,4.2,377,4.79,False,False
+P0073,Sports BrandC Item 73,Sports,BrandC,354.4,170.56,128,3.1,738,2.01,True,True
+P0074,Books BrandB Item 74,Books,BrandB,371.92,179.62,301,4.9,537,6.01,True,True
+P0075,Toys BrandB Item 75,Toys,BrandB,186.83,91.67,362,3.8,280,0.55,True,False
+P0076,Home & Garden Generic Item 76,Home & Garden,Generic,435.55,238.36,446,2.5,291,4.75,False,False
+P0077,Home & Garden BrandA Item 77,Home & Garden,BrandA,133.71,88.05,58,4.6,410,4.97,True,True
+P0078,Home & Garden BrandE Item 78,Home & Garden,BrandE,475.07,202.17,127,2.8,782,4.22,True,False
+P0079,Food & Beverages BrandD Item 79,Food & Beverages,BrandD,155.7,89.77,219,3.3,635,0.7,True,True
+P0080,Books BrandC Item 80,Books,BrandC,333.61,149.16,88,3.9,160,0.13,False,False
+P0081,Toys BrandA Item 81,Toys,BrandA,123.42,75.54,359,4.6,72,6.91,False,True
+P0082,Beauty BrandA Item 82,Beauty,BrandA,276.84,164.52,465,3.2,145,0.81,True,False
+P0083,Toys BrandD Item 83,Toys,BrandD,70.93,43.03,358,3.5,278,5.05,False,False
+P0084,Clothing BrandE Item 84,Clothing,BrandE,29.53,15.64,165,4.0,26,1.0,True,False
+P0085,Electronics BrandB Item 85,Electronics,BrandB,240.55,143.24,469,3.2,599,4.42,False,True
+P0086,Food & Beverages BrandC Item 86,Food & Beverages,BrandC,210.09,104.27,53,4.6,337,4.18,False,False
+P0087,Beauty BrandE Item 87,Beauty,BrandE,27.98,11.93,129,3.3,993,7.75,True,False
+P0088,Beauty BrandA Item 88,Beauty,BrandA,101.92,51.83,387,3.7,452,7.62,True,False
+P0089,Home & Garden BrandC Item 89,Home & Garden,BrandC,224.68,136.94,62,2.6,645,6.13,True,True
+P0090,Toys BrandE Item 90,Toys,BrandE,16.7,8.72,115,5.0,934,1.22,True,True
+P0091,Food & Beverages Generic Item 91,Food & Beverages,Generic,153.01,93.58,212,4.6,483,2.51,True,False
+P0092,Books BrandE Item 92,Books,BrandE,259.04,171.95,442,2.7,791,7.92,False,False
+P0093,Toys BrandA Item 93,Toys,BrandA,148.59,72.74,300,3.9,675,4.95,True,False
+P0094,Food & Beverages BrandC Item 94,Food & Beverages,BrandC,172.9,108.73,193,3.6,329,8.71,True,False
+P0095,Books BrandD Item 95,Books,BrandD,31.39,19.57,361,4.8,390,3.92,True,False
+P0096,Electronics BrandB Item 96,Electronics,BrandB,256.12,147.8,445,2.8,865,4.46,False,True
+P0097,Home & Garden BrandD Item 97,Home & Garden,BrandD,436.76,301.8,38,3.7,992,2.72,False,True
+P0098,Sports Generic Item 98,Sports,Generic,431.08,221.58,162,4.1,908,7.62,True,True
+P0099,Books Generic Item 99,Books,Generic,345.36,167.92,116,4.4,444,9.79,True,False
+P0100,Home & Garden Generic Item 100,Home & Garden,Generic,156.74,64.06,166,4.5,300,3.65,False,True
+P0101,Books BrandE Item 101,Books,BrandE,211.91,128.11,92,2.9,80,6.13,False,True
+P0102,Food & Beverages BrandE Item 102,Food & Beverages,BrandE,80.13,43.14,130,3.6,682,0.19,False,False
+P0103,Home & Garden BrandA Item 103,Home & Garden,BrandA,226.45,114.06,300,3.2,985,4.3,False,False
+P0104,Toys BrandB Item 104,Toys,BrandB,499.69,327.8,54,3.1,585,3.65,False,False
+P0105,Electronics Generic Item 105,Electronics,Generic,203.94,82.07,442,4.2,762,9.74,False,False
+P0106,Books BrandE Item 106,Books,BrandE,402.95,187.65,97,4.1,694,7.58,True,True
+P0107,Electronics BrandC Item 107,Electronics,BrandC,396.42,162.54,186,4.3,92,9.11,False,False
+P0108,Home & Garden BrandB Item 108,Home & Garden,BrandB,74.76,42.0,497,3.4,513,9.14,True,False
+P0109,Food & Beverages BrandC Item 109,Food & Beverages,BrandC,375.81,188.51,58,3.7,77,1.49,True,False
+P0110,Sports BrandA Item 110,Sports,BrandA,397.43,160.63,274,2.8,377,6.76,False,False
+P0111,Sports BrandA Item 111,Sports,BrandA,340.67,184.45,317,4.7,574,3.35,True,True
+P0112,Food & Beverages Generic Item 112,Food & Beverages,Generic,158.07,82.59,71,2.6,38,3.11,False,True
+P0113,Clothing BrandB Item 113,Clothing,BrandB,444.76,196.01,232,3.4,972,7.46,False,True
+P0114,Beauty Generic Item 114,Beauty,Generic,58.52,32.0,208,4.8,286,0.42,False,True
+P0115,Food & Beverages BrandD Item 115,Food & Beverages,BrandD,475.77,312.41,50,5.0,376,5.49,False,True
+P0116,Beauty BrandC Item 116,Beauty,BrandC,103.01,44.98,434,4.6,93,6.66,True,True
+P0117,Sports BrandB Item 117,Sports,BrandB,494.52,314.56,105,2.7,783,5.59,True,True
+P0118,Sports BrandB Item 118,Sports,BrandB,396.44,229.46,141,4.6,148,9.88,False,True
+P0119,Clothing Generic Item 119,Clothing,Generic,434.56,191.01,183,4.5,243,5.93,True,True
+P0120,Toys BrandA Item 120,Toys,BrandA,72.11,37.95,58,4.4,487,4.54,False,True
+P0121,Food & Beverages BrandE Item 121,Food & Beverages,BrandE,118.56,69.3,372,4.5,887,6.62,False,False
+P0122,Electronics BrandA Item 122,Electronics,BrandA,499.31,326.64,218,4.2,502,7.15,False,True
+P0123,Clothing BrandC Item 123,Clothing,BrandC,308.07,129.3,140,4.1,599,5.53,False,False
+P0124,Toys BrandD Item 124,Toys,BrandD,257.72,136.35,406,4.3,873,6.58,True,False
+P0125,Food & Beverages BrandB Item 125,Food & Beverages,BrandB,212.77,137.92,204,3.5,97,3.19,False,False
+P0126,Sports BrandB Item 126,Sports,BrandB,346.54,187.92,46,4.6,95,4.38,False,True
+P0127,Electronics BrandE Item 127,Electronics,BrandE,478.75,272.17,343,2.8,362,8.75,False,True
+P0128,Toys BrandE Item 128,Toys,BrandE,163.1,70.31,259,3.0,672,4.87,True,False
+P0129,Sports BrandA Item 129,Sports,BrandA,383.68,219.55,413,3.6,574,9.75,True,False
+P0130,Electronics BrandB Item 130,Electronics,BrandB,143.9,90.47,471,3.3,6,1.9,True,False
+P0131,Clothing BrandB Item 131,Clothing,BrandB,373.07,257.99,46,4.4,220,3.82,False,False
+P0132,Home & Garden BrandC Item 132,Home & Garden,BrandC,162.7,80.91,482,3.9,86,8.85,True,True
+P0133,Electronics Generic Item 133,Electronics,Generic,49.97,26.63,217,3.7,452,4.2,True,True
+P0134,Sports BrandD Item 134,Sports,BrandD,64.34,38.83,303,3.7,683,3.15,True,False
+P0135,Electronics BrandA Item 135,Electronics,BrandA,110.17,75.31,392,2.8,261,2.97,True,True
+P0136,Food & Beverages Generic Item 136,Food & Beverages,Generic,221.02,96.97,272,4.3,512,5.63,False,True
+P0137,Beauty Generic Item 137,Beauty,Generic,30.73,12.46,471,2.7,320,5.8,False,False
+P0138,Toys BrandA Item 138,Toys,BrandA,208.47,143.82,87,4.5,632,4.65,False,True
+P0139,Beauty BrandA Item 139,Beauty,BrandA,129.23,74.52,268,2.7,891,3.17,False,True
+P0140,Sports BrandB Item 140,Sports,BrandB,47.43,27.98,271,3.8,927,7.78,False,True
+P0141,Books BrandA Item 141,Books,BrandA,81.76,37.54,308,2.9,777,6.59,True,False
+P0142,Food & Beverages BrandE Item 142,Food & Beverages,BrandE,382.34,204.43,473,4.7,658,6.39,False,False
+P0143,Home & Garden BrandD Item 143,Home & Garden,BrandD,43.46,23.15,155,4.5,605,0.66,True,False
+P0144,Food & Beverages BrandD Item 144,Food & Beverages,BrandD,28.43,14.52,146,2.7,884,9.78,True,False
+P0145,Food & Beverages BrandE Item 145,Food & Beverages,BrandE,281.62,179.55,458,2.6,930,8.12,True,False
+P0146,Food & Beverages BrandE Item 146,Food & Beverages,BrandE,83.92,35.13,52,4.5,857,3.5,True,True
+P0147,Electronics BrandB Item 147,Electronics,BrandB,356.73,248.75,268,3.8,162,3.7,False,False
+P0148,Beauty BrandC Item 148,Beauty,BrandC,342.66,142.45,323,4.1,67,3.36,False,False
+P0149,Toys Generic Item 149,Toys,Generic,427.27,294.53,308,4.7,341,0.91,True,False
+P0150,Toys Generic Item 150,Toys,Generic,352.26,182.33,304,4.3,86,3.16,False,False
+P0151,Home & Garden Generic Item 151,Home & Garden,Generic,354.39,242.45,350,4.8,95,6.5,False,False
+P0152,Electronics BrandC Item 152,Electronics,BrandC,161.34,110.57,174,4.9,497,2.0,True,True
+P0153,Clothing BrandC Item 153,Clothing,BrandC,423.77,182.37,394,3.8,756,8.85,True,False
+P0154,Home & Garden BrandE Item 154,Home & Garden,BrandE,194.59,87.31,425,4.2,639,8.11,True,False
+P0155,Electronics BrandD Item 155,Electronics,BrandD,188.51,116.1,496,3.6,291,7.55,False,True
+P0156,Books BrandC Item 156,Books,BrandC,483.14,306.94,462,4.6,376,6.82,False,False
+P0157,Toys BrandD Item 157,Toys,BrandD,256.42,134.77,82,4.5,820,6.09,False,True
+P0158,Food & Beverages BrandC Item 158,Food & Beverages,BrandC,281.72,121.36,433,3.8,127,2.92,True,False
+P0159,Food & Beverages BrandE Item 159,Food & Beverages,BrandE,82.2,43.67,484,4.8,836,4.57,False,True
+P0160,Beauty BrandA Item 160,Beauty,BrandA,204.26,104.62,197,5.0,383,2.32,False,True
+P0161,Sports BrandB Item 161,Sports,BrandB,77.42,37.63,424,3.7,851,1.47,False,False
+P0162,Electronics BrandA Item 162,Electronics,BrandA,19.31,8.97,76,3.9,744,6.13,False,True
+P0163,Toys BrandB Item 163,Toys,BrandB,157.56,65.28,214,4.1,637,4.63,True,False
+P0164,Electronics Generic Item 164,Electronics,Generic,262.53,124.07,73,3.2,1,6.19,True,False
+P0165,Home & Garden Generic Item 165,Home & Garden,Generic,337.43,187.96,184,2.7,538,5.49,True,False
+P0166,Food & Beverages BrandA Item 166,Food & Beverages,BrandA,321.48,223.21,129,4.4,365,7.91,False,True
+P0167,Clothing BrandE Item 167,Clothing,BrandE,370.24,185.03,22,3.4,346,8.15,True,False
+P0168,Food & Beverages Generic Item 168,Food & Beverages,Generic,99.32,43.75,366,4.4,468,0.47,True,True
+P0169,Books BrandA Item 169,Books,BrandA,164.64,81.17,203,5.0,556,4.79,True,True
+P0170,Toys BrandC Item 170,Toys,BrandC,432.45,179.18,335,3.3,127,8.01,False,False
+P0171,Food & Beverages BrandD Item 171,Food & Beverages,BrandD,176.13,80.32,354,3.7,946,7.99,False,True
+P0172,Beauty BrandA Item 172,Beauty,BrandA,221.0,154.38,92,3.9,328,1.12,False,False
+P0173,Toys BrandD Item 173,Toys,BrandD,305.28,161.14,353,3.6,457,0.52,False,False
+P0174,Toys Generic Item 174,Toys,Generic,490.21,335.49,38,4.2,415,3.7,True,True
+P0175,Home & Garden BrandE Item 175,Home & Garden,BrandE,342.26,181.89,64,2.7,797,6.49,False,False
+P0176,Electronics BrandE Item 176,Electronics,BrandE,85.18,45.57,189,3.4,781,0.86,True,False
+P0177,Beauty BrandC Item 177,Beauty,BrandC,328.28,155.89,58,2.6,190,5.04,False,True
+P0178,Toys BrandC Item 178,Toys,BrandC,354.98,164.84,313,3.2,938,9.99,True,True
+P0179,Home & Garden BrandA Item 179,Home & Garden,BrandA,231.5,155.01,227,5.0,829,6.85,False,False
+P0180,Clothing BrandE Item 180,Clothing,BrandE,275.66,183.98,435,2.9,726,9.28,True,False
+P0181,Books BrandA Item 181,Books,BrandA,492.71,314.16,121,4.5,26,3.67,False,False
+P0182,Home & Garden BrandE Item 182,Home & Garden,BrandE,443.28,186.06,203,5.0,736,4.84,False,False
+P0183,Clothing BrandB Item 183,Clothing,BrandB,486.47,288.33,230,3.7,529,3.51,True,True
+P0184,Beauty BrandE Item 184,Beauty,BrandE,456.25,190.08,63,3.8,311,1.73,False,True
+P0185,Sports BrandE Item 185,Sports,BrandE,448.51,293.23,128,3.0,979,5.55,True,False
+P0186,Clothing BrandE Item 186,Clothing,BrandE,324.08,187.17,297,2.9,674,6.28,False,True
+P0187,Electronics BrandA Item 187,Electronics,BrandA,32.28,19.12,295,3.2,215,7.69,False,True
+P0188,Food & Beverages Generic Item 188,Food & Beverages,Generic,277.33,164.34,154,3.7,824,8.09,False,False
+P0189,Food & Beverages BrandA Item 189,Food & Beverages,BrandA,347.42,155.44,212,3.7,208,3.47,True,False
+P0190,Sports Generic Item 190,Sports,Generic,494.13,248.85,204,2.8,379,5.2,True,False
+P0191,Books BrandD Item 191,Books,BrandD,70.04,37.46,72,2.7,297,9.46,False,True
+P0192,Home & Garden BrandC Item 192,Home & Garden,BrandC,467.54,288.16,97,4.4,510,9.96,False,False
+P0193,Toys BrandD Item 193,Toys,BrandD,21.36,14.6,258,3.6,246,2.23,False,True
+P0194,Electronics BrandC Item 194,Electronics,BrandC,252.5,167.84,334,4.2,292,5.41,True,False
+P0195,Home & Garden BrandC Item 195,Home & Garden,BrandC,366.48,230.57,187,2.6,52,5.75,True,False
+P0196,Toys BrandA Item 196,Toys,BrandA,199.31,106.65,281,3.2,638,6.84,True,True
+P0197,Clothing BrandD Item 197,Clothing,BrandD,192.87,134.24,285,4.8,773,1.53,False,True
+P0198,Electronics BrandA Item 198,Electronics,BrandA,77.15,38.57,242,3.8,152,6.1,True,False
+P0199,Sports BrandB Item 199,Sports,BrandB,202.55,118.48,431,3.2,344,5.12,False,False
+P0200,Food & Beverages BrandA Item 200,Food & Beverages,BrandA,190.5,114.71,213,4.0,815,9.0,True,False
