@@ -169,7 +169,7 @@ Implemented comprehensive SPARQL query engine with 6 demonstration queries and 4
 - All department references are valid (6/6)
 - All student-course relationships preserved (15/15)
 
-**Overall Result**: **SEMANTIC CONSISTENCY VALID ✓ (100%)**
+**Overall Result**: **SEMANTIC CONSISTENCY VALID (100%)**
 
 **Evidence Files**:
 - `queries/sparql_queries.py` - Complete query engine
