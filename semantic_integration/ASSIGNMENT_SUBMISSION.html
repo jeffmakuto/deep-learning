@@ -1,0 +1,424 @@
+<h1 id="semantic-data-integration-assignment">Semantic Data Integration
+Assignment</h1>
+<p><strong>Assignment</strong>: Semantic Integration Solution for
+Heterogeneous Data Sources</p>
+<h2 id="assignment-requirements-checklist">Assignment Requirements
+Checklist</h2>
+<h3
+id="requirement-1-identify-three-heterogeneous-data-sources">Requirement
+1: Identify Three Heterogeneous Data Sources</h3>
+<p><strong>Status</strong>: COMPLETE</p>
+<p>Created three distinct heterogeneous data sources:</p>
+<ol type="1">
+<li><strong>SQLite Relational Database</strong>
+(<code>data_sources/students.db</code>)
+<ul>
+<li>2 tables: Students (10 records), Enrollments (15 records)</li>
+<li>Normalized relational schema with foreign keys</li>
+<li>Page Reference: PROJECT_REPORT.md Section 2.1</li>
+</ul></li>
+<li><strong>XML Semi-Structured File</strong>
+(<code>data_sources/courses.xml</code>)
+<ul>
+<li>10 courses with nested instructor elements</li>
+<li>Hierarchical structure with attributes</li>
+<li>Page Reference: PROJECT_REPORT.md Section 2.2</li>
+</ul></li>
+<li><strong>CSV Tabular File</strong>
+(<code>data_sources/departments.csv</code>)
+<ul>
+<li>6 department records</li>
+<li>Flat comma-separated format</li>
+<li>Page Reference: PROJECT_REPORT.md Section 2.3</li>
+</ul></li>
+</ol>
+<p><strong>Evidence Files</strong>: -
+<code>generate_data_sources.py</code> - Data generation script -
+<code>data_sources/schemas.json</code> - Schema documentation</p>
+<hr />
+<h3 id="requirement-2-design-a-domain-ontology">Requirement 2: Design a
+Domain Ontology</h3>
+<p><strong>Status</strong>: COMPLETE</p>
+<p>Created comprehensive OWL ontology for University Academic
+System:</p>
+<p><strong>Ontology Specifications</strong>: -
+<strong>Namespace</strong>: <code>http://university.edu/ontology#</code>
+- <strong>Classes</strong>: 6 (Person, Student, Instructor, Course,
+Department, Enrollment) - <strong>Object Properties</strong>: 7
+(enrolledIn, teaches, offeredBy, hasEnrollment, enrollmentFor, majorIn,
+headedBy) - <strong>Datatype Properties</strong>: 20+ (firstName,
+lastName, email, studentID, courseCode, etc.) - <strong>Total Ontology
+Triples</strong>: 135</p>
+<p><strong>Evidence Files</strong>: -
+<code>ontology/university_ontology.owl</code> - Complete OWL ontology -
+Page Reference: PROJECT_REPORT.md Section 3</p>
+<p><strong>Key Design Features</strong>: - Class hierarchy (Person →
+Student/Instructor) - Domain/Range constraints on properties - XSD
+datatype specifications - Semantic relationships modeling real-world
+connections</p>
+<hr />
+<h3 id="requirement-3-create-semantic-mappings">Requirement 3: Create
+Semantic Mappings</h3>
+<p><strong>Status</strong>: COMPLETE</p>
+<p>Developed four comprehensive mappings transforming heterogeneous
+sources to RDF:</p>
+<ol type="1">
+<li><strong>SQLite Students → uni:Student</strong>
+<ul>
+<li>Maps 10 students with 8 properties each</li>
+<li>Creates majorIn relationships to departments</li>
+<li>90 total triples</li>
+</ul></li>
+<li><strong>SQLite Enrollments → uni:Enrollment</strong>
+<ul>
+<li>Maps 15 enrollments with relationship chains</li>
+<li>Creates Student → Enrollment → Course links</li>
+<li>90 total triples</li>
+</ul></li>
+<li><strong>XML Courses/Instructors → uni:Course and
+uni:Instructor</strong>
+<ul>
+<li>Maps 10 courses and 8 instructors</li>
+<li>Handles nested XML structure and deduplication</li>
+<li>84 total triples</li>
+</ul></li>
+<li><strong>CSV Departments → uni:Department</strong>
+<ul>
+<li>Maps 6 departments with fuzzy matching for heads</li>
+<li>Links department heads to existing instructors</li>
+<li>36 total triples</li>
+</ul></li>
+</ol>
+<p><strong>Total RDF Instance Data</strong>: 452 triples</p>
+<p><strong>Evidence Files</strong>: -
+<code>integration/semantic_integration.py</code> - Complete mapping
+implementation - <code>mappings/mapping_documentation.json</code> -
+Detailed mapping specifications - Page Reference: PROJECT_REPORT.md
+Section 4</p>
+<hr />
+<h3 id="requirement-4-develop-integration-pipelineframework">Requirement
+4: Develop Integration Pipeline/Framework</h3>
+<p><strong>Status</strong>: COMPLETE</p>
+<p>Built Python-based semantic integration framework:</p>
+<p><strong>Framework Components</strong>: 1. Namespace Manager (UNI,
+DATA, OWL, RDFS, XSD) 2. Ontology Loader (loads base 135 triples) 3.
+Data Mappers (4 specialized mappers per source) 4. Relationship Resolver
+(cross-source entity references) 5. RDF Serializer (4 output formats) 6.
+Documentation Generator (mapping metadata)</p>
+<p><strong>Technologies Used</strong>: - Python 3.11 - rdflib 7.0+
+(RDF/SPARQL processing) - pandas 2.3.3 (CSV processing) - sqlite3
+(database access) - xml.etree.ElementTree (XML parsing)</p>
+<p><strong>Performance Metrics</strong>: - Integration Time: &lt;1
+second - Total Graph Size: 587 triples (452 instance + 135 ontology) -
+Success Rate: 100%</p>
+<p><strong>Evidence Files</strong>: -
+<code>integration/semantic_integration.py</code> - Main integration
+script - <code>output/integrated_data.ttl</code> - Turtle format output
+- <code>output/integrated_data.rdf</code> - RDF/XML format output -
+<code>output/integrated_data.n3</code> - Notation3 format output -
+<code>output/integrated_data.nt</code> - N-Triples format output - Page
+Reference: PROJECT_REPORT.md Section 5</p>
+<hr />
+<h3 id="requirement-5-use-sparql-to-query-and-validate">Requirement 5:
+Use SPARQL to Query and Validate</h3>
+<p><strong>Status</strong>: COMPLETE</p>
+<p>Implemented comprehensive SPARQL query engine with 6 demonstration
+queries and 4 validation tests:</p>
+<h4 id="demonstration-queries">Demonstration Queries:</h4>
+<ol type="1">
+<li><strong>Query 1: Students with Majors and GPAs</strong>
+<ul>
+<li>Cross-source join (SQLite + CSV)</li>
+<li>Ordered by GPA descending</li>
+<li>Result: 10 students</li>
+</ul></li>
+<li><strong>Query 2: Courses by Instructor</strong>
+<ul>
+<li>One-to-many relationships</li>
+<li>Result: 10 course assignments, 8 instructors</li>
+</ul></li>
+<li><strong>Query 3: Student Enrollments with Grades</strong>
+<ul>
+<li>Three-source join (SQLite Students + Enrollments + XML Courses)</li>
+<li>Complex relationship traversal</li>
+<li>Result: 15 enrollments</li>
+</ul></li>
+<li><strong>Query 4: Department Statistics</strong>
+<ul>
+<li>Aggregation with COUNT and GROUP BY</li>
+<li>Result: 6 departments with course counts</li>
+</ul></li>
+<li><strong>Query 5: Computer Science Students</strong>
+<ul>
+<li>Filtered query by major</li>
+<li>Result: CS student enrollments</li>
+</ul></li>
+<li><strong>Query 6: 4-Credit Courses</strong>
+<ul>
+<li>Literal value filtering</li>
+<li>Multi-source integration</li>
+<li>Result: 4 high-credit courses</li>
+</ul></li>
+</ol>
+<h4 id="validation-tests">Validation Tests:</h4>
+<ol type="1">
+<li><strong>Property Completeness</strong>: 100% (10/10 students have
+all required properties)</li>
+<li><strong>Referential Integrity</strong>: 100% (15/15 enrollments link
+to valid students/courses)</li>
+<li><strong>Instructor Assignment</strong>: 100% (10/10 courses have
+instructors)</li>
+<li><strong>Datatype Consistency</strong>: 100% (10/10 students have
+valid GPAs 0.0-4.0)</li>
+</ol>
+<p><strong>Cross-Source Validation</strong>: - All course codes in
+enrollments exist in course catalog (10/10) - All department references
+are valid (6/6) - All student-course relationships preserved (15/15)</p>
+<p><strong>Overall Result</strong>: <strong>SEMANTIC CONSISTENCY VALID ✓
+(100%)</strong></p>
+<p><strong>Evidence Files</strong>: -
+<code>queries/sparql_queries.py</code> - Complete query engine -
+<code>queries/query_results.json</code> - All query results -
+<code>queries/query_1_results.json</code> through
+<code>query_6_results.json</code> - Individual results - Page Reference:
+PROJECT_REPORT.md Section 6</p>
+<hr />
+<h2 id="summary-of-deliverables">Summary of Deliverables</h2>
+<h3 id="source-code-files">Source Code Files</h3>
+<table>
+<colgroup>
+<col style="width: 20%" />
+<col style="width: 30%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr>
+<th>File</th>
+<th>Purpose</th>
+<th>Lines of Code</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>generate_data_sources.py</code></td>
+<td>Generate heterogeneous data sources</td>
+<td>120</td>
+</tr>
+<tr>
+<td><code>integration/semantic_integration.py</code></td>
+<td>Semantic integration framework</td>
+<td>177</td>
+</tr>
+<tr>
+<td><code>queries/sparql_queries.py</code></td>
+<td>SPARQL query &amp; validation engine</td>
+<td>515</td>
+</tr>
+<tr>
+<td><strong>Total</strong></td>
+<td></td>
+<td><strong>812 lines</strong></td>
+</tr>
+</tbody>
+</table>
+<h3 id="data-files">Data Files</h3>
+<table>
+<thead>
+<tr>
+<th>File</th>
+<th>Description</th>
+<th>Size</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>data_sources/students.db</code></td>
+<td>SQLite database</td>
+<td>24 KB</td>
+</tr>
+<tr>
+<td><code>data_sources/courses.xml</code></td>
+<td>XML course catalog</td>
+<td>2.1 KB</td>
+</tr>
+<tr>
+<td><code>data_sources/departments.csv</code></td>
+<td>CSV departments</td>
+<td>512 bytes</td>
+</tr>
+<tr>
+<td><code>ontology/university_ontology.owl</code></td>
+<td>OWL ontology</td>
+<td>9.4 KB</td>
+</tr>
+<tr>
+<td><code>output/integrated_data.ttl</code></td>
+<td>RDF Turtle format</td>
+<td>5.7 KB</td>
+</tr>
+<tr>
+<td><code>output/integrated_data.rdf</code></td>
+<td>RDF/XML format</td>
+<td>23 KB</td>
+</tr>
+<tr>
+<td><code>output/integrated_data.n3</code></td>
+<td>RDF N3 format</td>
+<td>5.8 KB</td>
+</tr>
+<tr>
+<td><code>output/integrated_data.nt</code></td>
+<td>RDF N-Triples format</td>
+<td>9 KB</td>
+</tr>
+</tbody>
+</table>
+<h3 id="documentation-files">Documentation Files</h3>
+<table>
+<thead>
+<tr>
+<th>File</th>
+<th>Description</th>
+<th>Pages</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>README.md</code></td>
+<td>Project overview &amp; quick start</td>
+<td>8 pages</td>
+</tr>
+<tr>
+<td><code>PROJECT_REPORT.md</code></td>
+<td>Comprehensive technical report</td>
+<td>35 pages</td>
+</tr>
+<tr>
+<td><code>ASSIGNMENT_SUBMISSION.md</code></td>
+<td>This document</td>
+<td>7 pages</td>
+</tr>
+<tr>
+<td><strong>Total Documentation</strong></td>
+<td></td>
+<td><strong>50 pages</strong></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="key-results-and-achievements">Key Results and Achievements</h2>
+<h3 id="quantitative-results">Quantitative Results</h3>
+<ul>
+<li><strong>3</strong> heterogeneous data sources unified</li>
+<li><strong>49</strong> total entities integrated (10 students, 8
+instructors, 10 courses, 6 departments, 15 enrollments)</li>
+<li><strong>587</strong> total RDF triples (452 instance + 135
+ontology)</li>
+<li><strong>6</strong> SPARQL demonstration queries</li>
+<li><strong>4</strong> validation tests with 100% success</li>
+<li><strong>4</strong> RDF serialization formats</li>
+<li><strong>100%</strong> semantic consistency validation</li>
+</ul>
+<h3 id="quality-metrics">Quality Metrics</h3>
+<ul>
+<li><strong>Data Completeness</strong>: 100% (no data loss)</li>
+<li><strong>Relationship Accuracy</strong>: 100% (all foreign keys
+preserved)</li>
+<li><strong>Semantic Consistency</strong>: 100% (all constraints
+satisfied)</li>
+<li><strong>Query Correctness</strong>: 100% (all queries return
+expected results)</li>
+<li><strong>Integration Performance</strong>: &lt;1 second total
+execution time</li>
+</ul>
+<h3 id="technical-achievements">Technical Achievements</h3>
+<ol type="1">
+<li>Successfully unified relational, semi-structured, and tabular
+data</li>
+<li>Designed comprehensive domain ontology with proper OWL
+semantics</li>
+<li>Implemented robust cross-source entity resolution</li>
+<li>Achieved seamless SPARQL querying across all sources</li>
+<li>Validated semantic consistency through automated tests</li>
+</ol>
+<hr />
+<h2 id="how-to-verify-this-work">How to Verify This Work</h2>
+<h3 id="step-1-install-dependencies">Step 1: Install Dependencies</h3>
+<div class="sourceCode" id="cb1"><pre
+class="sourceCode bash"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="bu">cd</span> semantic_integration</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="ex">pip</span> install <span class="at">-r</span> requirements.txt</span></code></pre></div>
+<h3 id="step-2-generate-data-sources">Step 2: Generate Data Sources</h3>
+<div class="sourceCode" id="cb2"><pre
+class="sourceCode bash"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="ex">python</span> generate_data_sources.py</span></code></pre></div>
+<p><strong>Expected Output</strong>: Creates students.db, courses.xml,
+departments.csv</p>
+<h3 id="step-3-run-semantic-integration">Step 3: Run Semantic
+Integration</h3>
+<div class="sourceCode" id="cb3"><pre
+class="sourceCode bash"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="ex">python</span> integration/semantic_integration.py</span></code></pre></div>
+<p><strong>Expected Output</strong>: 452 RDF triples, 4 serialization
+formats</p>
+<h3 id="step-4-execute-sparql-queries">Step 4: Execute SPARQL
+Queries</h3>
+<div class="sourceCode" id="cb4"><pre
+class="sourceCode bash"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="ex">python</span> queries/sparql_queries.py</span></code></pre></div>
+<p><strong>Expected Output</strong>: 6 queries executed, 100% validation
+success</p>
+<hr />
+<h2 id="project-structure-for-review">Project Structure for Review</h2>
+<pre><code>semantic_integration/
+├── README.md                          # Project overview
+├── PROJECT_REPORT.md                  # 35-page comprehensive report
+├── ASSIGNMENT_SUBMISSION.md           # This submission document
+├── requirements.txt                   # Python dependencies
+├── generate_data_sources.py           # Data source generator
+│
+├── data_sources/                      # Heterogeneous data sources
+│   ├── students.db                    # SQLite database
+│   ├── courses.xml                    # XML file
+│   ├── departments.csv                # CSV file
+│   └── schemas.json                   # Schema documentation
+│
+├── ontology/                          # Domain ontology
+│   └── university_ontology.owl        # OWL ontology (135 triples)
+│
+├── mappings/                          # Mapping specifications
+│   └── mapping_documentation.json     # Complete mapping docs
+│
+├── integration/                       # Integration framework
+│   └── semantic_integration.py        # Main integration script
+│
+├── queries/                           # SPARQL queries
+│   ├── sparql_queries.py              # Query engine
+│   ├── query_results.json             # All results
+│   └── query_*_results.json           # Individual query results
+│
+└── output/                            # RDF exports
+    ├── integrated_data.ttl            # Turtle format
+    ├── integrated_data.rdf            # RDF/XML format
+    ├── integrated_data.n3             # N3 format
+    └── integrated_data.nt             # N-Triples format</code></pre>
+<hr />
+<h2 id="documentation">Documentation</h2>
+<p><strong>Primary Document</strong>: <code>PROJECT_REPORT.md</code></p>
+<p>This 35-page comprehensive report includes: - Executive Summary -
+Complete technical documentation of all 5 requirements - Detailed
+analysis of heterogeneous data sources - Ontology design rationale -
+Semantic mapping specifications - Integration framework architecture -
+SPARQL query examples and results - Validation methodology and results -
+Challenges and solutions - Lessons learned - Applications and use cases
+- Conclusions</p>
+<hr />
+<h2 id="conclusion">Conclusion</h2>
+<p>This assignment successfully demonstrates a complete semantic data
+integration solution that: - Unifies 3 heterogeneous data sources into a
+single queryable knowledge base - Uses W3C standard technologies (RDF,
+OWL, SPARQL) - Achieves 100% semantic consistency - Enables seamless
+cross-source querying - Provides comprehensive documentation</p>
+<p>All assignment requirements have been met and validated with
+quantitative evidence.</p>
+<hr />
+<h2 id="github-repository">Github Repository</h2>
+<p>The complete project is available at <a
+href="https://github.com/jeffmakuto/deep-learning/tree/master/semantic_integration">semantic_integration</a>
+directory with all source code, data files, and documentation.</p>
