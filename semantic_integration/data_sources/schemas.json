@@ -1,0 +1,78 @@
+{
+  "relational_database": {
+    "type": "SQLite",
+    "file": "students.db",
+    "tables": {
+      "Students": {
+        "columns": [
+          "student_id",
+          "first_name",
+          "last_name",
+          "email",
+          "date_of_birth",
+          "enrollment_year",
+          "major",
+          "gpa"
+        ],
+        "primary_key": "student_id",
+        "description": "Student personal and academic information"
+      },
+      "Enrollments": {
+        "columns": [
+          "enrollment_id",
+          "student_id",
+          "course_code",
+          "semester",
+          "grade",
+          "credits"
+        ],
+        "primary_key": "enrollment_id",
+        "foreign_keys": {
+          "student_id": "Students.student_id"
+        },
+        "description": "Course enrollment records"
+      }
+    }
+  },
+  "xml_file": {
+    "type": "XML",
+    "file": "courses.xml",
+    "structure": {
+      "root": "UniversityCourses",
+      "elements": {
+        "Course": {
+          "attributes": [
+            "courseCode"
+          ],
+          "children": [
+            "CourseName",
+            "Department",
+            "Credits",
+            "Instructor"
+          ],
+          "Instructor": {
+            "attributes": [
+              "instructorID"
+            ],
+            "text": "Instructor name"
+          }
+        }
+      }
+    },
+    "description": "Course catalog with instructor information"
+  },
+  "csv_file": {
+    "type": "CSV",
+    "file": "departments.csv",
+    "columns": {
+      "department_id": "string - Primary key",
+      "department_name": "string - Department name",
+      "building": "string - Building location",
+      "head_of_department": "string - Department head name",
+      "faculty_count": "integer - Number of faculty",
+      "established_year": "integer - Year established",
+      "budget": "integer - Annual budget in USD"
+    },
+    "description": "Department information and resources"
+  }
+}

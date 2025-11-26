@@ -1,0 +1,452 @@
+<http://university.edu/ontology#semester> <http://www.w3.org/2000/01/rdf-schema#domain> <http://university.edu/ontology#Enrollment> .
+<http://university.edu/data#student_1003> <http://university.edu/ontology#firstName> "Michael"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://university.edu/data#student_1005> <http://university.edu/ontology#lastName> "Jones"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://university.edu/ontology> <http://www.w3.org/2000/01/rdf-schema#label> "University Academic Ontology" .
+<http://university.edu/ontology#grade> <http://www.w3.org/2000/01/rdf-schema#domain> <http://university.edu/ontology#Enrollment> .
+<http://university.edu/ontology#departmentID> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://university.edu/ontology#building> <http://www.w3.org/2000/01/rdf-schema#label> "building" .
+<http://university.edu/data#course_MATH301> <http://university.edu/ontology#courseCode> "MATH301"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://university.edu/data#student_1005> <http://university.edu/ontology#enrolledIn> <http://university.edu/data#course_MATH150> .
+<http://university.edu/data#enrollment_15> <http://university.edu/ontology#semester> "Fall 2020"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://university.edu/data#dept_Physics> <http://university.edu/ontology#establishedYear> "1975"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+<http://university.edu/data#course_ENG201> <http://university.edu/ontology#credits> "4"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://university.edu/ontology#hasEnrollment> <http://www.w3.org/2000/01/rdf-schema#range> <http://university.edu/ontology#Enrollment> .
+<http://university.edu/ontology#enrollmentFor> <http://www.w3.org/2000/01/rdf-schema#label> "enrollment for" .
+<http://university.edu/data#student_1002> <http://university.edu/ontology#studentID> "1002"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://university.edu/data#course_ENG301> <http://university.edu/ontology#courseCode> "ENG301"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://university.edu/ontology#offeredBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://university.edu/data#course_CS101> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://university.edu/ontology#Course> .
+<http://university.edu/data#instructor_I001> <http://university.edu/ontology#teaches> <http://university.edu/data#course_CS101> .
+<http://university.edu/data#instructor_I008> <http://university.edu/ontology#teaches> <http://university.edu/data#course_ENG201> .
+<http://university.edu/data#enrollment_12> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://university.edu/ontology#Enrollment> .
+<http://university.edu/data#dept_Mathematics> <http://university.edu/ontology#building> "Science Hall"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://university.edu/ontology#grade> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://university.edu/data#student_1001> <http://university.edu/ontology#hasEnrollment> <http://university.edu/data#enrollment_3> .
+<http://university.edu/ontology#courseName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://university.edu/data#student_1004> <http://university.edu/ontology#hasEnrollment> <http://university.edu/data#enrollment_11> .
+<http://university.edu/data#enrollment_2> <http://university.edu/ontology#grade> "A-"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://university.edu/ontology#establishedYear> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#gYear> .
+<http://university.edu/ontology#email> <http://www.w3.org/2000/01/rdf-schema#label> "email" .
+<http://university.edu/data#student_1005> <http://university.edu/ontology#hasEnrollment> <http://university.edu/data#enrollment_13> .
+<http://university.edu/data#instructor_I003> <http://university.edu/ontology#teaches> <http://university.edu/data#course_MATH301> .
+<http://university.edu/ontology#enrollmentFor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://university.edu/data#course_CS201> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://university.edu/ontology#Course> .
+<http://university.edu/data#student_1003> <http://university.edu/ontology#enrolledIn> <http://university.edu/data#course_MATH150> .
+<http://university.edu/data#student_1006> <http://university.edu/ontology#gpa> "3.4"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://university.edu/data#student_1001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://university.edu/ontology#Student> .
+<http://university.edu/data#student_1002> <http://university.edu/ontology#enrolledIn> <http://university.edu/data#course_CS101> .
+<http://university.edu/data#course_MATH301> <http://university.edu/ontology#offeredBy> <http://university.edu/data#dept_Mathematics> .
+<http://university.edu/data#course_PHYS301> <http://university.edu/ontology#courseName> "Quantum Mechanics"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://university.edu/data#instructor_I005> <http://university.edu/ontology#firstName> "Isaac"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://university.edu/ontology#enrolledIn> <http://www.w3.org/2000/01/rdf-schema#domain> <http://university.edu/ontology#Student> .
+<http://university.edu/ontology#dateOfBirth> <http://www.w3.org/2000/01/rdf-schema#label> "date of birth" .
+<http://university.edu/data#student_1002> <http://university.edu/ontology#hasEnrollment> <http://university.edu/data#enrollment_5> .
+<http://university.edu/ontology#establishedYear> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://university.edu/data#student_1003> <http://university.edu/ontology#dateOfBirth> "2002-11-30"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://university.edu/data#dept_Biology> <http://university.edu/ontology#departmentName> "Biology"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://university.edu/data#student_1004> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://university.edu/ontology#Student> .
+<http://university.edu/data#student_1005> <http://university.edu/ontology#enrolledIn> <http://university.edu/data#course_ENG201> .
+<http://university.edu/data#student_1002> <http://university.edu/ontology#firstName> "Emily"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://university.edu/ontology#Person> <http://www.w3.org/2000/01/rdf-schema#label> "Person" .
+<http://university.edu/ontology#credits> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://university.edu/ontology#departmentID> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://university.edu/ontology> <http://www.w3.org/2000/01/rdf-schema#comment> "Domain ontology for university academic system integration" .
+<http://university.edu/data#enrollment_12> <http://university.edu/ontology#grade> "B+"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://university.edu/data#student_1007> <http://university.edu/ontology#gpa> "3.9"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://university.edu/data#instructor_I003> <http://university.edu/ontology#lastName> "Noether"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://university.edu/ontology#studentID> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://university.edu/data#student_1008> <http://university.edu/ontology#email> "maria.davis@university.edu"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://university.edu/ontology#Person> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://university.edu/ontology#grade> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://university.edu/ontology#departmentName> <http://www.w3.org/2000/01/rdf-schema#domain> <http://university.edu/ontology#Department> .
+<http://university.edu/data#student_1008> <http://university.edu/ontology#gpa> "3.7"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://university.edu/data#student_1010> <http://university.edu/ontology#firstName> "Jennifer"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://university.edu/data#enrollment_2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://university.edu/ontology#Enrollment> .
+<http://university.edu/data#student_1002> <http://university.edu/ontology#enrolledIn> <http://university.edu/data#course_MATH201> .
+<http://university.edu/data#student_1007> <http://university.edu/ontology#email> "james.m@university.edu"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://university.edu/data#course_MATH301> <http://university.edu/ontology#credits> "3"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://university.edu/data#student_1001> <http://university.edu/ontology#dateOfBirth> "2002-05-15"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://university.edu/data#dept_Physics> <http://university.edu/ontology#budget> "1500000"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://university.edu/ontology> <http://www.w3.org/2002/07/owl#versionInfo> "1.0" .
+<http://university.edu/data#student_1002> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://university.edu/ontology#Student> .
+<http://university.edu/data#student_1003> <http://university.edu/ontology#hasEnrollment> <http://university.edu/data#enrollment_9> .
+<http://university.edu/data#course_ENG201> <http://university.edu/ontology#courseCode> "ENG201"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://university.edu/data#course_ENG301> <http://university.edu/ontology#credits> "3"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://university.edu/data#enrollment_3> <http://university.edu/ontology#grade> "B+"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://university.edu/ontology#Student> <http://www.w3.org/2000/01/rdf-schema#label> "Student" .
+<http://university.edu/ontology#headedBy> <http://www.w3.org/2000/01/rdf-schema#comment> "Links a department to its head" .
+<http://university.edu/data#dept_Computer_Science> <http://university.edu/ontology#departmentID> "D001"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://university.edu/data#dept_Computer_Science> <http://university.edu/ontology#establishedYear> "1985"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+<http://university.edu/data#instructor_I006> <http://university.edu/ontology#instructorID> "I006"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://university.edu/data#course_PHYS301> <http://university.edu/ontology#offeredBy> <http://university.edu/data#dept_Physics> .
+<http://university.edu/data#enrollment_11> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://university.edu/ontology#Enrollment> .
+<http://university.edu/data#enrollment_12> <http://university.edu/ontology#semester> "Fall 2022"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://university.edu/data#student_1003> <http://university.edu/ontology#email> "m.williams@university.edu"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://university.edu/ontology#enrolledIn> <http://www.w3.org/2000/01/rdf-schema#label> "enrolled in" .
+<http://university.edu/data#enrollment_1> <http://university.edu/ontology#semester> "Fall 2021"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://university.edu/data#dept_Engineering> <http://university.edu/ontology#departmentID> "D004"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://university.edu/data#dept_Physics> <http://university.edu/ontology#building> "Physics Building"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://university.edu/data#course_CS101> <http://university.edu/ontology#courseCode> "CS101"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://university.edu/data#course_MATH201> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://university.edu/ontology#Course> .
+<http://university.edu/ontology#studentID> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://university.edu/data#enrollment_5> <http://university.edu/ontology#semester> "Spring 2021"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://university.edu/ontology#facultyCount> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
+<http://university.edu/data#student_1007> <http://university.edu/ontology#enrollmentYear> "2022"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+<http://university.edu/data#student_1001> <http://university.edu/ontology#email> "john.smith@university.edu"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://university.edu/data#student_1001> <http://university.edu/ontology#enrollmentYear> "2021"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+<http://university.edu/data#student_1009> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://university.edu/ontology#Student> .
+<http://university.edu/data#student_1010> <http://university.edu/ontology#dateOfBirth> "2003-04-20"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://university.edu/data#instructor_I001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://university.edu/ontology#Instructor> .
+<http://university.edu/ontology#enrolledIn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://university.edu/data#course_ENG301> <http://university.edu/ontology#courseName> "Control Systems"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://university.edu/ontology#departmentName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://university.edu/data#student_1009> <http://university.edu/ontology#lastName> "Rodriguez"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://university.edu/data#student_1003> <http://university.edu/ontology#hasEnrollment> <http://university.edu/data#enrollment_8> .
+<http://university.edu/data#dept_Biology> <http://university.edu/ontology#establishedYear> "1972"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+<http://university.edu/data#course_ENG101> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://university.edu/ontology#Course> .
+<http://university.edu/ontology#Instructor> <http://www.w3.org/2000/01/rdf-schema#label> "Instructor" .
+<http://university.edu/data#student_1010> <http://university.edu/ontology#studentID> "1010"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://university.edu/data#student_1008> <http://university.edu/ontology#dateOfBirth> "2002-09-12"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://university.edu/ontology#Department> <http://www.w3.org/2000/01/rdf-schema#label> "Department" .
+<http://university.edu/data#instructor_I001> <http://university.edu/ontology#instructorID> "I001"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://university.edu/data#dept_Mathematics> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://university.edu/ontology#Department> .
+<http://university.edu/ontology#grade> <http://www.w3.org/2000/01/rdf-schema#label> "grade" .
+<http://university.edu/data#dept_Physics> <http://university.edu/ontology#facultyCount> "10"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://university.edu/data#instructor_I007> <http://university.edu/ontology#lastName> "Tesla"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://university.edu/data#student_1001> <http://university.edu/ontology#enrolledIn> <http://university.edu/data#course_CS201> .
+<http://university.edu/data#enrollment_14> <http://university.edu/ontology#grade> "A-"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://university.edu/data#instructor_I005> <http://university.edu/ontology#lastName> "Newton"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://university.edu/data#dept_Mathematics> <http://university.edu/ontology#establishedYear> "1970"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+<http://university.edu/data#student_1010> <http://university.edu/ontology#gpa> "3.8"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://university.edu/ontology#budget> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
+<http://university.edu/data#student_1005> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://university.edu/ontology#Student> .
+<http://university.edu/data#student_1008> <http://university.edu/ontology#studentID> "1008"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://university.edu/ontology#courseCode> <http://www.w3.org/2000/01/rdf-schema#label> "course code" .
+<http://university.edu/data#course_ENG101> <http://university.edu/ontology#offeredBy> <http://university.edu/data#dept_Engineering> .
+<http://university.edu/ontology#Instructor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://university.edu/data#dept_Mathematics> <http://university.edu/ontology#departmentID> "D002"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://university.edu/data#enrollment_11> <http://university.edu/ontology#enrollmentFor> <http://university.edu/data#course_CS201> .
+<http://university.edu/data#enrollment_15> <http://university.edu/ontology#grade> "B"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://university.edu/data#student_1008> <http://university.edu/ontology#lastName> "Davis"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://university.edu/ontology#headedBy> <http://www.w3.org/2000/01/rdf-schema#range> <http://university.edu/ontology#Instructor> .
+<http://university.edu/ontology#headedBy> <http://www.w3.org/2000/01/rdf-schema#domain> <http://university.edu/ontology#Department> .
+<http://university.edu/data#course_ENG101> <http://university.edu/ontology#courseCode> "ENG101"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://university.edu/data#student_1009> <http://university.edu/ontology#enrollmentYear> "2020"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+<http://university.edu/data#student_1007> <http://university.edu/ontology#lastName> "Miller"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://university.edu/ontology#offeredBy> <http://www.w3.org/2000/01/rdf-schema#comment> "Links a course to the department offering it" .
+<http://university.edu/ontology#firstName> <http://www.w3.org/2000/01/rdf-schema#label> "first name" .
+<http://university.edu/data#student_1005> <http://university.edu/ontology#email> "david.jones@university.edu"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://university.edu/data#dept_Computer_Science> <http://university.edu/ontology#budget> "2500000"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://university.edu/data#student_1004> <http://university.edu/ontology#enrollmentYear> "2022"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+<http://university.edu/ontology#majorIn> <http://www.w3.org/2000/01/rdf-schema#comment> "Links a student to their major department" .
+<http://university.edu/data#instructor_I008> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://university.edu/ontology#Instructor> .
+<http://university.edu/ontology#studentID> <http://www.w3.org/2000/01/rdf-schema#domain> <http://university.edu/ontology#Student> .
+<http://university.edu/data#student_1003> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://university.edu/ontology#Student> .
+<http://university.edu/data#dept_Biology> <http://university.edu/ontology#facultyCount> "14"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://university.edu/data#instructor_I002> <http://university.edu/ontology#instructorID> "I002"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://university.edu/data#course_PHYS201> <http://university.edu/ontology#courseCode> "PHYS201"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://university.edu/ontology#gpa> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://university.edu/ontology#hasEnrollment> <http://www.w3.org/2000/01/rdf-schema#domain> <http://university.edu/ontology#Student> .
+<http://university.edu/data#student_1010> <http://university.edu/ontology#lastName> "Martinez"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://university.edu/data#enrollment_11> <http://university.edu/ontology#grade> "A"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://university.edu/data#enrollment_11> <http://university.edu/ontology#semester> "Spring 2023"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://university.edu/data#course_MATH150> <http://university.edu/ontology#offeredBy> <http://university.edu/data#dept_Mathematics> .
+<http://university.edu/data#course_PHYS301> <http://university.edu/ontology#credits> "3"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://university.edu/data#student_1005> <http://university.edu/ontology#hasEnrollment> <http://university.edu/data#enrollment_15> .
+<http://university.edu/data#dept_Chemistry> <http://university.edu/ontology#facultyCount> "11"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://university.edu/ontology#offeredBy> <http://www.w3.org/2000/01/rdf-schema#domain> <http://university.edu/ontology#Course> .
+<http://university.edu/data#course_MATH201> <http://university.edu/ontology#courseName> "Linear Algebra"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://university.edu/data#student_1005> <http://university.edu/ontology#enrollmentYear> "2020"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+<http://university.edu/data#student_1003> <http://university.edu/ontology#lastName> "Williams"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://university.edu/data#student_1002> <http://university.edu/ontology#hasEnrollment> <http://university.edu/data#enrollment_4> .
+<http://university.edu/data#student_1004> <http://university.edu/ontology#hasEnrollment> <http://university.edu/data#enrollment_12> .
+<http://university.edu/ontology#semester> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://university.edu/ontology#departmentName> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://university.edu/data#dept_Computer_Science> <http://university.edu/ontology#departmentName> "Computer Science"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://university.edu/ontology#majorIn> <http://www.w3.org/2000/01/rdf-schema#label> "major in" .
+<http://university.edu/data#student_1004> <http://university.edu/ontology#firstName> "Sarah"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://university.edu/ontology#enrollmentYear> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#gYear> .
+<http://university.edu/data#instructor_I003> <http://university.edu/ontology#teaches> <http://university.edu/data#course_MATH150> .
+<http://university.edu/data#enrollment_5> <http://university.edu/ontology#grade> "A"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://university.edu/data#student_1005> <http://university.edu/ontology#enrolledIn> <http://university.edu/data#course_ENG301> .
+<http://university.edu/data#student_1006> <http://university.edu/ontology#firstName> "Lisa"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://university.edu/data#student_1004> <http://university.edu/ontology#enrolledIn> <http://university.edu/data#course_CS201> .
+<http://university.edu/ontology#courseCode> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://university.edu/ontology#teaches> <http://www.w3.org/2000/01/rdf-schema#label> "teaches" .
+<http://university.edu/data#course_MATH150> <http://university.edu/ontology#credits> "4"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://university.edu/data#enrollment_7> <http://university.edu/ontology#semester> "Fall 2021"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://university.edu/data#student_1006> <http://university.edu/ontology#dateOfBirth> "2002-07-18"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://university.edu/data#dept_Chemistry> <http://university.edu/ontology#headedBy> <http://university.edu/data#instructor_I006> .
+<http://university.edu/ontology#firstName> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://university.edu/data#student_1002> <http://university.edu/ontology#enrollmentYear> "2020"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+<http://university.edu/data#dept_Mathematics> <http://university.edu/ontology#headedBy> <http://university.edu/data#instructor_I003> .
+<http://university.edu/data#student_1001> <http://university.edu/ontology#hasEnrollment> <http://university.edu/data#enrollment_2> .
+<http://university.edu/data#course_MATH301> <http://university.edu/ontology#courseName> "Abstract Algebra"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://university.edu/data#dept_Biology> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://university.edu/ontology#Department> .
+<http://university.edu/data#instructor_I005> <http://university.edu/ontology#instructorID> "I005"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://university.edu/ontology#enrollmentYear> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://university.edu/data#student_1003> <http://university.edu/ontology#majorIn> <http://university.edu/data#dept_Physics> .
+<http://university.edu/data#instructor_I008> <http://university.edu/ontology#firstName> "James"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://university.edu/ontology#headedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://university.edu/data#enrollment_15> <http://university.edu/ontology#enrollmentFor> <http://university.edu/data#course_MATH150> .
+<http://university.edu/data#student_1007> <http://university.edu/ontology#majorIn> <http://university.edu/data#dept_Mathematics> .
+<http://university.edu/data#student_1009> <http://university.edu/ontology#email> "robert.r@university.edu"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://university.edu/ontology#credits> <http://www.w3.org/2000/01/rdf-schema#domain> <http://university.edu/ontology#Course> .
+<http://university.edu/data#student_1006> <http://university.edu/ontology#majorIn> <http://university.edu/data#dept_Biology> .
+<http://university.edu/ontology#building> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://university.edu/data#dept_Chemistry> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://university.edu/ontology#Department> .
+<http://university.edu/data#course_ENG201> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://university.edu/ontology#Course> .
+<http://university.edu/data#student_1005> <http://university.edu/ontology#studentID> "1005"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://university.edu/data#dept_Physics> <http://university.edu/ontology#departmentName> "Physics"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://university.edu/data#dept_Biology> <http://university.edu/ontology#building> "Life Sciences"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://university.edu/data#dept_Engineering> <http://university.edu/ontology#headedBy> <http://university.edu/data#instructor_I007> .
+<http://university.edu/data#student_1009> <http://university.edu/ontology#studentID> "1009"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://university.edu/ontology#firstName> <http://www.w3.org/2000/01/rdf-schema#domain> <http://university.edu/ontology#Person> .
+<http://university.edu/data#course_PHYS201> <http://university.edu/ontology#credits> "4"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://university.edu/data#instructor_I004> <http://university.edu/ontology#firstName> "Carl"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://university.edu/ontology#courseCode> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://university.edu/data#dept_Mathematics> <http://university.edu/ontology#departmentName> "Mathematics"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://university.edu/data#instructor_I007> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://university.edu/ontology#Instructor> .
+<http://university.edu/data#student_1010> <http://university.edu/ontology#majorIn> <http://university.edu/data#dept_Engineering> .
+<http://university.edu/data#student_1001> <http://university.edu/ontology#firstName> "John"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://university.edu/data#course_ENG201> <http://university.edu/ontology#offeredBy> <http://university.edu/data#dept_Engineering> .
+<http://university.edu/data#student_1004> <http://university.edu/ontology#enrolledIn> <http://university.edu/data#course_ENG101> .
+<http://university.edu/ontology#firstName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://university.edu/data#enrollment_2> <http://university.edu/ontology#enrollmentFor> <http://university.edu/data#course_CS201> .
+<http://university.edu/ontology#Department> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://university.edu/data#student_1003> <http://university.edu/ontology#enrolledIn> <http://university.edu/data#course_PHYS201> .
+<http://university.edu/data#course_ENG201> <http://university.edu/ontology#courseName> "Thermodynamics"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://university.edu/data#student_1008> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://university.edu/ontology#Student> .
+<http://university.edu/data#enrollment_10> <http://university.edu/ontology#enrollmentFor> <http://university.edu/data#course_CS101> .
+<http://university.edu/data#instructor_I008> <http://university.edu/ontology#instructorID> "I008"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://university.edu/ontology#teaches> <http://www.w3.org/2000/01/rdf-schema#range> <http://university.edu/ontology#Course> .
+<http://university.edu/data#course_MATH150> <http://university.edu/ontology#courseCode> "MATH150"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://university.edu/ontology> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<http://university.edu/data#course_CS101> <http://university.edu/ontology#offeredBy> <http://university.edu/data#dept_Computer_Science> .
+<http://university.edu/data#instructor_I001> <http://university.edu/ontology#lastName> "Turing"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://university.edu/data#student_1002> <http://university.edu/ontology#dateOfBirth> "2001-08-22"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://university.edu/data#course_ENG101> <http://university.edu/ontology#courseName> "Engineering Fundamentals"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://university.edu/data#student_1008> <http://university.edu/ontology#majorIn> <http://university.edu/data#dept_Chemistry> .
+<http://university.edu/ontology#enrollmentYear> <http://www.w3.org/2000/01/rdf-schema#domain> <http://university.edu/ontology#Student> .
+<http://university.edu/data#enrollment_13> <http://university.edu/ontology#enrollmentFor> <http://university.edu/data#course_ENG201> .
+<http://university.edu/data#enrollment_13> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://university.edu/ontology#Enrollment> .
+<http://university.edu/data#instructor_I006> <http://university.edu/ontology#lastName> "Curie"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://university.edu/data#student_1006> <http://university.edu/ontology#email> "lisa.garcia@university.edu"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://university.edu/data#dept_Biology> <http://university.edu/ontology#departmentID> "D005"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://university.edu/ontology#headedBy> <http://www.w3.org/2000/01/rdf-schema#label> "headed by" .
+<http://university.edu/data#student_1004> <http://university.edu/ontology#dateOfBirth> "2003-03-10"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://university.edu/data#enrollment_7> <http://university.edu/ontology#enrollmentFor> <http://university.edu/data#course_PHYS201> .
+<http://university.edu/ontology#credits> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
+<http://university.edu/data#enrollment_9> <http://university.edu/ontology#grade> "B"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://university.edu/data#instructor_I004> <http://university.edu/ontology#instructorID> "I004"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://university.edu/data#dept_Mathematics> <http://university.edu/ontology#budget> "1800000"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://university.edu/ontology#hasEnrollment> <http://www.w3.org/2000/01/rdf-schema#comment> "Links a student to their enrollment record" .
+<http://university.edu/data#enrollment_5> <http://university.edu/ontology#enrollmentFor> <http://university.edu/data#course_MATH301> .
+<http://university.edu/data#enrollment_7> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://university.edu/ontology#Enrollment> .
+<http://university.edu/data#course_MATH301> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://university.edu/ontology#Course> .
+<http://university.edu/data#course_PHYS201> <http://university.edu/ontology#offeredBy> <http://university.edu/data#dept_Physics> .
+<http://university.edu/data#instructor_I004> <http://university.edu/ontology#teaches> <http://university.edu/data#course_MATH201> .
+<http://university.edu/data#enrollment_10> <http://university.edu/ontology#semester> "Fall 2022"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://university.edu/data#student_1003> <http://university.edu/ontology#enrolledIn> <http://university.edu/data#course_PHYS301> .
+<http://university.edu/data#student_1009> <http://university.edu/ontology#firstName> "Robert"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://university.edu/data#dept_Biology> <http://university.edu/ontology#budget> "1600000"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://university.edu/ontology#offeredBy> <http://www.w3.org/2000/01/rdf-schema#range> <http://university.edu/ontology#Department> .
+<http://university.edu/data#dept_Chemistry> <http://university.edu/ontology#departmentID> "D006"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://university.edu/data#instructor_I002> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://university.edu/ontology#Instructor> .
+<http://university.edu/data#course_ENG301> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://university.edu/ontology#Course> .
+<http://university.edu/data#student_1002> <http://university.edu/ontology#enrolledIn> <http://university.edu/data#course_MATH301> .
+<http://university.edu/data#enrollment_8> <http://university.edu/ontology#grade> "A-"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://university.edu/ontology#enrollmentYear> <http://www.w3.org/2000/01/rdf-schema#label> "enrollment year" .
+<http://university.edu/ontology#instructorID> <http://www.w3.org/2000/01/rdf-schema#label> "instructor ID" .
+<http://university.edu/data#student_1001> <http://university.edu/ontology#majorIn> <http://university.edu/data#dept_Computer_Science> .
+<http://university.edu/data#instructor_I007> <http://university.edu/ontology#teaches> <http://university.edu/data#course_ENG301> .
+<http://university.edu/ontology#lastName> <http://www.w3.org/2000/01/rdf-schema#domain> <http://university.edu/ontology#Person> .
+<http://university.edu/data#dept_Engineering> <http://university.edu/ontology#facultyCount> "18"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://university.edu/data#student_1005> <http://university.edu/ontology#firstName> "David"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://university.edu/ontology#hasEnrollment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://university.edu/data#student_1008> <http://university.edu/ontology#firstName> "Maria"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://university.edu/ontology#Person> <http://www.w3.org/2000/01/rdf-schema#comment> "A human being in the university context" .
+<http://university.edu/data#enrollment_4> <http://university.edu/ontology#enrollmentFor> <http://university.edu/data#course_MATH201> .
+<http://university.edu/ontology#semester> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://university.edu/data#student_1002> <http://university.edu/ontology#majorIn> <http://university.edu/data#dept_Mathematics> .
+<http://university.edu/data#enrollment_14> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://university.edu/ontology#Enrollment> .
+<http://university.edu/data#enrollment_13> <http://university.edu/ontology#grade> "B+"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://university.edu/data#course_CS201> <http://university.edu/ontology#courseCode> "CS201"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://university.edu/data#student_1001> <http://university.edu/ontology#gpa> "3.7"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://university.edu/ontology#enrolledIn> <http://www.w3.org/2000/01/rdf-schema#comment> "Links a student to a course they are enrolled in" .
+<http://university.edu/data#student_1004> <http://university.edu/ontology#email> "sarah.brown@university.edu"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://university.edu/data#instructor_I003> <http://university.edu/ontology#instructorID> "I003"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://university.edu/data#enrollment_12> <http://university.edu/ontology#enrollmentFor> <http://university.edu/data#course_ENG101> .
+<http://university.edu/data#dept_Computer_Science> <http://university.edu/ontology#facultyCount> "15"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://university.edu/ontology#budget> <http://www.w3.org/2000/01/rdf-schema#domain> <http://university.edu/ontology#Department> .
+<http://university.edu/data#course_PHYS301> <http://university.edu/ontology#courseCode> "PHYS301"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://university.edu/data#enrollment_6> <http://university.edu/ontology#grade> "A-"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://university.edu/data#student_1007> <http://university.edu/ontology#dateOfBirth> "2003-01-25"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://university.edu/data#course_CS101> <http://university.edu/ontology#credits> "3"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://university.edu/data#course_ENG301> <http://university.edu/ontology#offeredBy> <http://university.edu/data#dept_Engineering> .
+<http://university.edu/ontology#majorIn> <http://www.w3.org/2000/01/rdf-schema#domain> <http://university.edu/ontology#Student> .
+<http://university.edu/data#enrollment_7> <http://university.edu/ontology#grade> "B+"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://university.edu/data#instructor_I006> <http://university.edu/ontology#firstName> "Marie"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://university.edu/data#instructor_I001> <http://university.edu/ontology#firstName> "Alan"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://university.edu/ontology#departmentID> <http://www.w3.org/2000/01/rdf-schema#domain> <http://university.edu/ontology#Department> .
+<http://university.edu/ontology#Instructor> <http://www.w3.org/2000/01/rdf-schema#comment> "A faculty member who teaches courses" .
+<http://university.edu/data#student_1006> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://university.edu/ontology#Student> .
+<http://university.edu/ontology#Student> <http://www.w3.org/2000/01/rdf-schema#comment> "A person enrolled in university courses" .
+<http://university.edu/data#student_1006> <http://university.edu/ontology#studentID> "1006"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://university.edu/data#student_1006> <http://university.edu/ontology#enrollmentYear> "2021"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+<http://university.edu/data#enrollment_8> <http://university.edu/ontology#semester> "Spring 2022"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://university.edu/data#dept_Physics> <http://university.edu/ontology#departmentID> "D003"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://university.edu/ontology#gpa> <http://www.w3.org/2000/01/rdf-schema#label> "GPA" .
+<http://university.edu/data#student_1002> <http://university.edu/ontology#email> "emily.j@university.edu"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://university.edu/data#enrollment_3> <http://university.edu/ontology#enrollmentFor> <http://university.edu/data#course_MATH150> .
+<http://university.edu/data#course_CS201> <http://university.edu/ontology#credits> "3"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://university.edu/data#student_1002> <http://university.edu/ontology#gpa> "3.9"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://university.edu/ontology#Enrollment> <http://www.w3.org/2000/01/rdf-schema#label> "Enrollment" .
+<http://university.edu/ontology#lastName> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://university.edu/data#instructor_I008> <http://university.edu/ontology#lastName> "Watt"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://university.edu/ontology#credits> <http://www.w3.org/2000/01/rdf-schema#label> "credits" .
+<http://university.edu/ontology#email> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://university.edu/data#enrollment_6> <http://university.edu/ontology#enrollmentFor> <http://university.edu/data#course_CS101> .
+<http://university.edu/data#enrollment_9> <http://university.edu/ontology#enrollmentFor> <http://university.edu/data#course_MATH150> .
+<http://university.edu/data#enrollment_13> <http://university.edu/ontology#semester> "Fall 2020"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://university.edu/ontology#building> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://university.edu/data#dept_Chemistry> <http://university.edu/ontology#departmentName> "Chemistry"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://university.edu/data#student_1010> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://university.edu/ontology#Student> .
+<http://university.edu/data#student_1004> <http://university.edu/ontology#gpa> "3.8"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://university.edu/ontology#building> <http://www.w3.org/2000/01/rdf-schema#domain> <http://university.edu/ontology#Department> .
+<http://university.edu/ontology#Student> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://university.edu/ontology#Person> .
+<http://university.edu/data#student_1001> <http://university.edu/ontology#studentID> "1001"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://university.edu/data#course_MATH150> <http://university.edu/ontology#courseName> "Calculus I"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://university.edu/ontology#teaches> <http://www.w3.org/2000/01/rdf-schema#comment> "Links an instructor to a course they teach" .
+<http://university.edu/data#student_1010> <http://university.edu/ontology#email> "jennifer.m@university.edu"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://university.edu/data#instructor_I004> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://university.edu/ontology#Instructor> .
+<http://university.edu/ontology#semester> <http://www.w3.org/2000/01/rdf-schema#label> "semester" .
+<http://university.edu/ontology#enrollmentFor> <http://www.w3.org/2000/01/rdf-schema#comment> "Links an enrollment to its course" .
+<http://university.edu/data#instructor_I006> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://university.edu/ontology#Instructor> .
+<http://university.edu/ontology#instructorID> <http://www.w3.org/2000/01/rdf-schema#domain> <http://university.edu/ontology#Instructor> .
+<http://university.edu/data#student_1001> <http://university.edu/ontology#enrolledIn> <http://university.edu/data#course_MATH150> .
+<http://university.edu/ontology#facultyCount> <http://www.w3.org/2000/01/rdf-schema#label> "faculty count" .
+<http://university.edu/data#student_1004> <http://university.edu/ontology#majorIn> <http://university.edu/data#dept_Computer_Science> .
+<http://university.edu/data#student_1003> <http://university.edu/ontology#hasEnrollment> <http://university.edu/data#enrollment_7> .
+<http://university.edu/data#course_MATH201> <http://university.edu/ontology#offeredBy> <http://university.edu/data#dept_Mathematics> .
+<http://university.edu/data#dept_Chemistry> <http://university.edu/ontology#building> "Chemistry Lab"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://university.edu/data#dept_Engineering> <http://university.edu/ontology#departmentName> "Engineering"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://university.edu/ontology#dateOfBirth> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#date> .
+<http://university.edu/data#instructor_I005> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://university.edu/ontology#Instructor> .
+<http://university.edu/data#enrollment_6> <http://university.edu/ontology#semester> "Fall 2020"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://university.edu/ontology#email> <http://www.w3.org/2000/01/rdf-schema#domain> <http://university.edu/ontology#Person> .
+<http://university.edu/ontology#establishedYear> <http://www.w3.org/2000/01/rdf-schema#label> "established year" .
+<http://university.edu/data#instructor_I003> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://university.edu/ontology#Instructor> .
+<http://university.edu/data#instructor_I003> <http://university.edu/ontology#firstName> "Emmy"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://university.edu/ontology#courseName> <http://www.w3.org/2000/01/rdf-schema#domain> <http://university.edu/ontology#Course> .
+<http://university.edu/data#student_1001> <http://university.edu/ontology#lastName> "Smith"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://university.edu/data#student_1004> <http://university.edu/ontology#lastName> "Brown"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://university.edu/data#student_1008> <http://university.edu/ontology#enrollmentYear> "2021"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+<http://university.edu/data#course_PHYS301> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://university.edu/ontology#Course> .
+<http://university.edu/ontology#lastName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://university.edu/data#dept_Engineering> <http://university.edu/ontology#budget> "3000000"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://university.edu/data#instructor_I002> <http://university.edu/ontology#teaches> <http://university.edu/data#course_CS201> .
+<http://university.edu/data#student_1009> <http://university.edu/ontology#gpa> "3.5"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://university.edu/ontology#budget> <http://www.w3.org/2000/01/rdf-schema#label> "budget" .
+<http://university.edu/ontology#instructorID> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://university.edu/ontology#Enrollment> <http://www.w3.org/2000/01/rdf-schema#comment> "A student's enrollment in a specific course" .
+<http://university.edu/ontology#majorIn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://university.edu/data#student_1004> <http://university.edu/ontology#hasEnrollment> <http://university.edu/data#enrollment_10> .
+<http://university.edu/data#course_MATH201> <http://university.edu/ontology#credits> "4"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://university.edu/data#dept_Computer_Science> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://university.edu/ontology#Department> .
+<http://university.edu/data#course_CS201> <http://university.edu/ontology#offeredBy> <http://university.edu/data#dept_Computer_Science> .
+<http://university.edu/ontology#facultyCount> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://university.edu/ontology#teaches> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://university.edu/ontology#Student> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://university.edu/data#enrollment_10> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://university.edu/ontology#Enrollment> .
+<http://university.edu/data#student_1005> <http://university.edu/ontology#gpa> "3.6"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://university.edu/ontology#facultyCount> <http://www.w3.org/2000/01/rdf-schema#domain> <http://university.edu/ontology#Department> .
+<http://university.edu/ontology#enrollmentFor> <http://www.w3.org/2000/01/rdf-schema#range> <http://university.edu/ontology#Course> .
+<http://university.edu/data#instructor_I004> <http://university.edu/ontology#lastName> "Gauss"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://university.edu/data#instructor_I005> <http://university.edu/ontology#teaches> <http://university.edu/data#course_PHYS201> .
+<http://university.edu/ontology#Department> <http://www.w3.org/2000/01/rdf-schema#comment> "An academic department within the university" .
+<http://university.edu/ontology#courseCode> <http://www.w3.org/2000/01/rdf-schema#domain> <http://university.edu/ontology#Course> .
+<http://university.edu/data#student_1007> <http://university.edu/ontology#firstName> "James"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://university.edu/data#enrollment_6> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://university.edu/ontology#Enrollment> .
+<http://university.edu/ontology#enrollmentFor> <http://www.w3.org/2000/01/rdf-schema#domain> <http://university.edu/ontology#Enrollment> .
+<http://university.edu/data#enrollment_4> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://university.edu/ontology#Enrollment> .
+<http://university.edu/data#dept_Engineering> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://university.edu/ontology#Department> .
+<http://university.edu/data#dept_Engineering> <http://university.edu/ontology#building> "Engineering Complex"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://university.edu/data#student_1007> <http://university.edu/ontology#studentID> "1007"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://university.edu/data#course_MATH150> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://university.edu/ontology#Course> .
+<http://university.edu/ontology#budget> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://university.edu/data#course_ENG101> <http://university.edu/ontology#credits> "3"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://university.edu/ontology#Course> <http://www.w3.org/2000/01/rdf-schema#comment> "An academic course offered by the university" .
+<http://university.edu/data#enrollment_10> <http://university.edu/ontology#grade> "A"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://university.edu/data#course_CS201> <http://university.edu/ontology#courseName> "Data Structures"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://university.edu/data#instructor_I006> <http://university.edu/ontology#teaches> <http://university.edu/data#course_PHYS301> .
+<http://university.edu/data#enrollment_5> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://university.edu/ontology#Enrollment> .
+<http://university.edu/ontology#Instructor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://university.edu/ontology#Person> .
+<http://university.edu/data#instructor_I007> <http://university.edu/ontology#firstName> "Nikola"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://university.edu/data#student_1009> <http://university.edu/ontology#majorIn> <http://university.edu/data#dept_Computer_Science> .
+<http://university.edu/data#student_1004> <http://university.edu/ontology#studentID> "1004"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://university.edu/data#course_CS101> <http://university.edu/ontology#courseName> "Introduction to Programming"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://university.edu/ontology#dateOfBirth> <http://www.w3.org/2000/01/rdf-schema#domain> <http://university.edu/ontology#Student> .
+<http://university.edu/data#dept_Mathematics> <http://university.edu/ontology#facultyCount> "12"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://university.edu/data#enrollment_2> <http://university.edu/ontology#semester> "Spring 2022"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://university.edu/data#dept_Physics> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://university.edu/ontology#Department> .
+<http://university.edu/ontology#establishedYear> <http://www.w3.org/2000/01/rdf-schema#domain> <http://university.edu/ontology#Department> .
+<http://university.edu/data#student_1003> <http://university.edu/ontology#gpa> "3.5"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://university.edu/ontology#instructorID> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://university.edu/data#enrollment_15> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://university.edu/ontology#Enrollment> .
+<http://university.edu/data#enrollment_9> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://university.edu/ontology#Enrollment> .
+<http://university.edu/data#student_1001> <http://university.edu/ontology#enrolledIn> <http://university.edu/data#course_CS101> .
+<http://university.edu/ontology#studentID> <http://www.w3.org/2000/01/rdf-schema#label> "student ID" .
+<http://university.edu/data#enrollment_4> <http://university.edu/ontology#grade> "A"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://university.edu/ontology#offeredBy> <http://www.w3.org/2000/01/rdf-schema#label> "offered by" .
+<http://university.edu/data#course_PHYS201> <http://university.edu/ontology#courseName> "Classical Mechanics"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://university.edu/ontology#teaches> <http://www.w3.org/2000/01/rdf-schema#domain> <http://university.edu/ontology#Instructor> .
+<http://university.edu/data#student_1009> <http://university.edu/ontology#dateOfBirth> "2001-06-08"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://university.edu/data#instructor_I007> <http://university.edu/ontology#teaches> <http://university.edu/data#course_ENG101> .
+<http://university.edu/ontology#departmentName> <http://www.w3.org/2000/01/rdf-schema#label> "department name" .
+<http://university.edu/ontology#lastName> <http://www.w3.org/2000/01/rdf-schema#label> "last name" .
+<http://university.edu/data#student_1006> <http://university.edu/ontology#lastName> "Garcia"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://university.edu/data#enrollment_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://university.edu/ontology#Enrollment> .
+<http://university.edu/ontology#courseName> <http://www.w3.org/2000/01/rdf-schema#label> "course name" .
+<http://university.edu/ontology#dateOfBirth> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://university.edu/data#enrollment_14> <http://university.edu/ontology#enrollmentFor> <http://university.edu/data#course_ENG301> .
+<http://university.edu/data#dept_Chemistry> <http://university.edu/ontology#establishedYear> "1978"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+<http://university.edu/data#student_1003> <http://university.edu/ontology#studentID> "1003"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://university.edu/data#student_1002> <http://university.edu/ontology#hasEnrollment> <http://university.edu/data#enrollment_6> .
+<http://university.edu/ontology#Course> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://university.edu/data#student_1010> <http://university.edu/ontology#enrollmentYear> "2022"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+<http://university.edu/data#course_PHYS201> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://university.edu/ontology#Course> .
+<http://university.edu/ontology#email> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://university.edu/data#student_1002> <http://university.edu/ontology#lastName> "Johnson"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://university.edu/ontology#gpa> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#decimal> .
+<http://university.edu/data#instructor_I002> <http://university.edu/ontology#firstName> "Grace"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://university.edu/data#dept_Engineering> <http://university.edu/ontology#establishedYear> "1980"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+<http://university.edu/data#enrollment_8> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://university.edu/ontology#Enrollment> .
+<http://university.edu/data#course_MATH201> <http://university.edu/ontology#courseCode> "MATH201"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://university.edu/data#dept_Chemistry> <http://university.edu/ontology#budget> "1700000"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://university.edu/data#student_1005> <http://university.edu/ontology#dateOfBirth> "2001-12-05"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://university.edu/data#enrollment_1> <http://university.edu/ontology#grade> "A"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://university.edu/data#enrollment_3> <http://university.edu/ontology#semester> "Fall 2021"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://university.edu/data#dept_Computer_Science> <http://university.edu/ontology#building> "Tech Center"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://university.edu/ontology#courseName> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://university.edu/ontology#majorIn> <http://www.w3.org/2000/01/rdf-schema#range> <http://university.edu/ontology#Department> .
+<http://university.edu/data#instructor_I002> <http://university.edu/ontology#lastName> "Hopper"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://university.edu/data#enrollment_9> <http://university.edu/ontology#semester> "Fall 2021"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://university.edu/data#instructor_I007> <http://university.edu/ontology#instructorID> "I007"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://university.edu/ontology#enrolledIn> <http://www.w3.org/2000/01/rdf-schema#range> <http://university.edu/ontology#Course> .
+<http://university.edu/data#student_1003> <http://university.edu/ontology#enrollmentYear> "2021"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+<http://university.edu/ontology#hasEnrollment> <http://www.w3.org/2000/01/rdf-schema#label> "has enrollment" .
+<http://university.edu/data#student_1005> <http://university.edu/ontology#majorIn> <http://university.edu/data#dept_Engineering> .
+<http://university.edu/data#student_1005> <http://university.edu/ontology#hasEnrollment> <http://university.edu/data#enrollment_14> .
+<http://university.edu/ontology#gpa> <http://www.w3.org/2000/01/rdf-schema#domain> <http://university.edu/ontology#Student> .
+<http://university.edu/ontology#departmentID> <http://www.w3.org/2000/01/rdf-schema#label> "department ID" .
+<http://university.edu/data#enrollment_4> <http://university.edu/ontology#semester> "Fall 2020"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://university.edu/data#enrollment_1> <http://university.edu/ontology#enrollmentFor> <http://university.edu/data#course_CS101> .
+<http://university.edu/data#enrollment_14> <http://university.edu/ontology#semester> "Spring 2021"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://university.edu/ontology#Enrollment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://university.edu/data#enrollment_8> <http://university.edu/ontology#enrollmentFor> <http://university.edu/data#course_PHYS301> .
+<http://university.edu/ontology#Course> <http://www.w3.org/2000/01/rdf-schema#label> "Course" .
+<http://university.edu/data#enrollment_3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://university.edu/ontology#Enrollment> .
+<http://university.edu/data#student_1001> <http://university.edu/ontology#hasEnrollment> <http://university.edu/data#enrollment_1> .
+<http://university.edu/data#student_1007> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://university.edu/ontology#Student> .
+<http://university.edu/data#student_1004> <http://university.edu/ontology#enrolledIn> <http://university.edu/data#course_CS101> .

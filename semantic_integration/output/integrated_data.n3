@@ -1,0 +1,540 @@
+@prefix data: <http://university.edu/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix uni: <http://university.edu/ontology#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:instructor_I001 a uni:Instructor ;
+    uni:firstName "Alan"^^xsd:string ;
+    uni:instructorID "I001"^^xsd:string ;
+    uni:lastName "Turing"^^xsd:string ;
+    uni:teaches data:course_CS101 .
+
+data:instructor_I002 a uni:Instructor ;
+    uni:firstName "Grace"^^xsd:string ;
+    uni:instructorID "I002"^^xsd:string ;
+    uni:lastName "Hopper"^^xsd:string ;
+    uni:teaches data:course_CS201 .
+
+data:instructor_I004 a uni:Instructor ;
+    uni:firstName "Carl"^^xsd:string ;
+    uni:instructorID "I004"^^xsd:string ;
+    uni:lastName "Gauss"^^xsd:string ;
+    uni:teaches data:course_MATH201 .
+
+data:instructor_I005 a uni:Instructor ;
+    uni:firstName "Isaac"^^xsd:string ;
+    uni:instructorID "I005"^^xsd:string ;
+    uni:lastName "Newton"^^xsd:string ;
+    uni:teaches data:course_PHYS201 .
+
+data:instructor_I008 a uni:Instructor ;
+    uni:firstName "James"^^xsd:string ;
+    uni:instructorID "I008"^^xsd:string ;
+    uni:lastName "Watt"^^xsd:string ;
+    uni:teaches data:course_ENG201 .
+
+data:student_1001 a uni:Student ;
+    uni:dateOfBirth "2002-05-15"^^xsd:date ;
+    uni:email "john.smith@university.edu"^^xsd:string ;
+    uni:enrolledIn data:course_CS101,
+        data:course_CS201,
+        data:course_MATH150 ;
+    uni:enrollmentYear "2021"^^xsd:gYear ;
+    uni:firstName "John"^^xsd:string ;
+    uni:gpa 3.7 ;
+    uni:hasEnrollment data:enrollment_1,
+        data:enrollment_2,
+        data:enrollment_3 ;
+    uni:lastName "Smith"^^xsd:string ;
+    uni:majorIn data:dept_Computer_Science ;
+    uni:studentID "1001"^^xsd:string .
+
+data:student_1002 a uni:Student ;
+    uni:dateOfBirth "2001-08-22"^^xsd:date ;
+    uni:email "emily.j@university.edu"^^xsd:string ;
+    uni:enrolledIn data:course_CS101,
+        data:course_MATH201,
+        data:course_MATH301 ;
+    uni:enrollmentYear "2020"^^xsd:gYear ;
+    uni:firstName "Emily"^^xsd:string ;
+    uni:gpa 3.9 ;
+    uni:hasEnrollment data:enrollment_4,
+        data:enrollment_5,
+        data:enrollment_6 ;
+    uni:lastName "Johnson"^^xsd:string ;
+    uni:majorIn data:dept_Mathematics ;
+    uni:studentID "1002"^^xsd:string .
+
+data:student_1003 a uni:Student ;
+    uni:dateOfBirth "2002-11-30"^^xsd:date ;
+    uni:email "m.williams@university.edu"^^xsd:string ;
+    uni:enrolledIn data:course_MATH150,
+        data:course_PHYS201,
+        data:course_PHYS301 ;
+    uni:enrollmentYear "2021"^^xsd:gYear ;
+    uni:firstName "Michael"^^xsd:string ;
+    uni:gpa 3.5 ;
+    uni:hasEnrollment data:enrollment_7,
+        data:enrollment_8,
+        data:enrollment_9 ;
+    uni:lastName "Williams"^^xsd:string ;
+    uni:majorIn data:dept_Physics ;
+    uni:studentID "1003"^^xsd:string .
+
+data:student_1004 a uni:Student ;
+    uni:dateOfBirth "2003-03-10"^^xsd:date ;
+    uni:email "sarah.brown@university.edu"^^xsd:string ;
+    uni:enrolledIn data:course_CS101,
+        data:course_CS201,
+        data:course_ENG101 ;
+    uni:enrollmentYear "2022"^^xsd:gYear ;
+    uni:firstName "Sarah"^^xsd:string ;
+    uni:gpa 3.8 ;
+    uni:hasEnrollment data:enrollment_10,
+        data:enrollment_11,
+        data:enrollment_12 ;
+    uni:lastName "Brown"^^xsd:string ;
+    uni:majorIn data:dept_Computer_Science ;
+    uni:studentID "1004"^^xsd:string .
+
+data:student_1005 a uni:Student ;
+    uni:dateOfBirth "2001-12-05"^^xsd:date ;
+    uni:email "david.jones@university.edu"^^xsd:string ;
+    uni:enrolledIn data:course_ENG201,
+        data:course_ENG301,
+        data:course_MATH150 ;
+    uni:enrollmentYear "2020"^^xsd:gYear ;
+    uni:firstName "David"^^xsd:string ;
+    uni:gpa 3.6 ;
+    uni:hasEnrollment data:enrollment_13,
+        data:enrollment_14,
+        data:enrollment_15 ;
+    uni:lastName "Jones"^^xsd:string ;
+    uni:majorIn data:dept_Engineering ;
+    uni:studentID "1005"^^xsd:string .
+
+data:student_1006 a uni:Student ;
+    uni:dateOfBirth "2002-07-18"^^xsd:date ;
+    uni:email "lisa.garcia@university.edu"^^xsd:string ;
+    uni:enrollmentYear "2021"^^xsd:gYear ;
+    uni:firstName "Lisa"^^xsd:string ;
+    uni:gpa 3.4 ;
+    uni:lastName "Garcia"^^xsd:string ;
+    uni:majorIn data:dept_Biology ;
+    uni:studentID "1006"^^xsd:string .
+
+data:student_1007 a uni:Student ;
+    uni:dateOfBirth "2003-01-25"^^xsd:date ;
+    uni:email "james.m@university.edu"^^xsd:string ;
+    uni:enrollmentYear "2022"^^xsd:gYear ;
+    uni:firstName "James"^^xsd:string ;
+    uni:gpa 3.9 ;
+    uni:lastName "Miller"^^xsd:string ;
+    uni:majorIn data:dept_Mathematics ;
+    uni:studentID "1007"^^xsd:string .
+
+data:student_1008 a uni:Student ;
+    uni:dateOfBirth "2002-09-12"^^xsd:date ;
+    uni:email "maria.davis@university.edu"^^xsd:string ;
+    uni:enrollmentYear "2021"^^xsd:gYear ;
+    uni:firstName "Maria"^^xsd:string ;
+    uni:gpa 3.7 ;
+    uni:lastName "Davis"^^xsd:string ;
+    uni:majorIn data:dept_Chemistry ;
+    uni:studentID "1008"^^xsd:string .
+
+data:student_1009 a uni:Student ;
+    uni:dateOfBirth "2001-06-08"^^xsd:date ;
+    uni:email "robert.r@university.edu"^^xsd:string ;
+    uni:enrollmentYear "2020"^^xsd:gYear ;
+    uni:firstName "Robert"^^xsd:string ;
+    uni:gpa 3.5 ;
+    uni:lastName "Rodriguez"^^xsd:string ;
+    uni:majorIn data:dept_Computer_Science ;
+    uni:studentID "1009"^^xsd:string .
+
+data:student_1010 a uni:Student ;
+    uni:dateOfBirth "2003-04-20"^^xsd:date ;
+    uni:email "jennifer.m@university.edu"^^xsd:string ;
+    uni:enrollmentYear "2022"^^xsd:gYear ;
+    uni:firstName "Jennifer"^^xsd:string ;
+    uni:gpa 3.8 ;
+    uni:lastName "Martinez"^^xsd:string ;
+    uni:majorIn data:dept_Engineering ;
+    uni:studentID "1010"^^xsd:string .
+
+<http://university.edu/ontology> a owl:Ontology ;
+    rdfs:label "University Academic Ontology" ;
+    rdfs:comment "Domain ontology for university academic system integration" ;
+    owl:versionInfo "1.0" .
+
+uni:budget a owl:DatatypeProperty ;
+    rdfs:label "budget" ;
+    rdfs:domain uni:Department ;
+    rdfs:range xsd:integer .
+
+uni:building a owl:DatatypeProperty ;
+    rdfs:label "building" ;
+    rdfs:domain uni:Department ;
+    rdfs:range xsd:string .
+
+uni:courseCode a owl:DatatypeProperty ;
+    rdfs:label "course code" ;
+    rdfs:domain uni:Course ;
+    rdfs:range xsd:string .
+
+uni:courseName a owl:DatatypeProperty ;
+    rdfs:label "course name" ;
+    rdfs:domain uni:Course ;
+    rdfs:range xsd:string .
+
+uni:credits a owl:DatatypeProperty ;
+    rdfs:label "credits" ;
+    rdfs:domain uni:Course ;
+    rdfs:range xsd:integer .
+
+uni:dateOfBirth a owl:DatatypeProperty ;
+    rdfs:label "date of birth" ;
+    rdfs:domain uni:Student ;
+    rdfs:range xsd:date .
+
+uni:departmentID a owl:DatatypeProperty ;
+    rdfs:label "department ID" ;
+    rdfs:domain uni:Department ;
+    rdfs:range xsd:string .
+
+uni:departmentName a owl:DatatypeProperty ;
+    rdfs:label "department name" ;
+    rdfs:domain uni:Department ;
+    rdfs:range xsd:string .
+
+uni:email a owl:DatatypeProperty ;
+    rdfs:label "email" ;
+    rdfs:domain uni:Person ;
+    rdfs:range xsd:string .
+
+uni:enrolledIn a owl:ObjectProperty ;
+    rdfs:label "enrolled in" ;
+    rdfs:comment "Links a student to a course they are enrolled in" ;
+    rdfs:domain uni:Student ;
+    rdfs:range uni:Course .
+
+uni:enrollmentFor a owl:ObjectProperty ;
+    rdfs:label "enrollment for" ;
+    rdfs:comment "Links an enrollment to its course" ;
+    rdfs:domain uni:Enrollment ;
+    rdfs:range uni:Course .
+
+uni:enrollmentYear a owl:DatatypeProperty ;
+    rdfs:label "enrollment year" ;
+    rdfs:domain uni:Student ;
+    rdfs:range xsd:gYear .
+
+uni:establishedYear a owl:DatatypeProperty ;
+    rdfs:label "established year" ;
+    rdfs:domain uni:Department ;
+    rdfs:range xsd:gYear .
+
+uni:facultyCount a owl:DatatypeProperty ;
+    rdfs:label "faculty count" ;
+    rdfs:domain uni:Department ;
+    rdfs:range xsd:integer .
+
+uni:firstName a owl:DatatypeProperty ;
+    rdfs:label "first name" ;
+    rdfs:domain uni:Person ;
+    rdfs:range xsd:string .
+
+uni:gpa a owl:DatatypeProperty ;
+    rdfs:label "GPA" ;
+    rdfs:domain uni:Student ;
+    rdfs:range xsd:decimal .
+
+uni:grade a owl:DatatypeProperty ;
+    rdfs:label "grade" ;
+    rdfs:domain uni:Enrollment ;
+    rdfs:range xsd:string .
+
+uni:hasEnrollment a owl:ObjectProperty ;
+    rdfs:label "has enrollment" ;
+    rdfs:comment "Links a student to their enrollment record" ;
+    rdfs:domain uni:Student ;
+    rdfs:range uni:Enrollment .
+
+uni:headedBy a owl:ObjectProperty ;
+    rdfs:label "headed by" ;
+    rdfs:comment "Links a department to its head" ;
+    rdfs:domain uni:Department ;
+    rdfs:range uni:Instructor .
+
+uni:instructorID a owl:DatatypeProperty ;
+    rdfs:label "instructor ID" ;
+    rdfs:domain uni:Instructor ;
+    rdfs:range xsd:string .
+
+uni:lastName a owl:DatatypeProperty ;
+    rdfs:label "last name" ;
+    rdfs:domain uni:Person ;
+    rdfs:range xsd:string .
+
+uni:majorIn a owl:ObjectProperty ;
+    rdfs:label "major in" ;
+    rdfs:comment "Links a student to their major department" ;
+    rdfs:domain uni:Student ;
+    rdfs:range uni:Department .
+
+uni:offeredBy a owl:ObjectProperty ;
+    rdfs:label "offered by" ;
+    rdfs:comment "Links a course to the department offering it" ;
+    rdfs:domain uni:Course ;
+    rdfs:range uni:Department .
+
+uni:semester a owl:DatatypeProperty ;
+    rdfs:label "semester" ;
+    rdfs:domain uni:Enrollment ;
+    rdfs:range xsd:string .
+
+uni:studentID a owl:DatatypeProperty ;
+    rdfs:label "student ID" ;
+    rdfs:domain uni:Student ;
+    rdfs:range xsd:string .
+
+uni:teaches a owl:ObjectProperty ;
+    rdfs:label "teaches" ;
+    rdfs:comment "Links an instructor to a course they teach" ;
+    rdfs:domain uni:Instructor ;
+    rdfs:range uni:Course .
+
+data:dept_Biology a uni:Department ;
+    uni:budget 1600000 ;
+    uni:building "Life Sciences"^^xsd:string ;
+    uni:departmentID "D005"^^xsd:string ;
+    uni:departmentName "Biology"^^xsd:string ;
+    uni:establishedYear "1972"^^xsd:gYear ;
+    uni:facultyCount 14 .
+
+data:dept_Chemistry a uni:Department ;
+    uni:budget 1700000 ;
+    uni:building "Chemistry Lab"^^xsd:string ;
+    uni:departmentID "D006"^^xsd:string ;
+    uni:departmentName "Chemistry"^^xsd:string ;
+    uni:establishedYear "1978"^^xsd:gYear ;
+    uni:facultyCount 11 ;
+    uni:headedBy data:instructor_I006 .
+
+data:enrollment_1 a uni:Enrollment ;
+    uni:enrollmentFor data:course_CS101 ;
+    uni:grade "A"^^xsd:string ;
+    uni:semester "Fall 2021"^^xsd:string .
+
+data:enrollment_10 a uni:Enrollment ;
+    uni:enrollmentFor data:course_CS101 ;
+    uni:grade "A"^^xsd:string ;
+    uni:semester "Fall 2022"^^xsd:string .
+
+data:enrollment_11 a uni:Enrollment ;
+    uni:enrollmentFor data:course_CS201 ;
+    uni:grade "A"^^xsd:string ;
+    uni:semester "Spring 2023"^^xsd:string .
+
+data:enrollment_12 a uni:Enrollment ;
+    uni:enrollmentFor data:course_ENG101 ;
+    uni:grade "B+"^^xsd:string ;
+    uni:semester "Fall 2022"^^xsd:string .
+
+data:enrollment_13 a uni:Enrollment ;
+    uni:enrollmentFor data:course_ENG201 ;
+    uni:grade "B+"^^xsd:string ;
+    uni:semester "Fall 2020"^^xsd:string .
+
+data:enrollment_14 a uni:Enrollment ;
+    uni:enrollmentFor data:course_ENG301 ;
+    uni:grade "A-"^^xsd:string ;
+    uni:semester "Spring 2021"^^xsd:string .
+
+data:enrollment_15 a uni:Enrollment ;
+    uni:enrollmentFor data:course_MATH150 ;
+    uni:grade "B"^^xsd:string ;
+    uni:semester "Fall 2020"^^xsd:string .
+
+data:enrollment_2 a uni:Enrollment ;
+    uni:enrollmentFor data:course_CS201 ;
+    uni:grade "A-"^^xsd:string ;
+    uni:semester "Spring 2022"^^xsd:string .
+
+data:enrollment_3 a uni:Enrollment ;
+    uni:enrollmentFor data:course_MATH150 ;
+    uni:grade "B+"^^xsd:string ;
+    uni:semester "Fall 2021"^^xsd:string .
+
+data:enrollment_4 a uni:Enrollment ;
+    uni:enrollmentFor data:course_MATH201 ;
+    uni:grade "A"^^xsd:string ;
+    uni:semester "Fall 2020"^^xsd:string .
+
+data:enrollment_5 a uni:Enrollment ;
+    uni:enrollmentFor data:course_MATH301 ;
+    uni:grade "A"^^xsd:string ;
+    uni:semester "Spring 2021"^^xsd:string .
+
+data:enrollment_6 a uni:Enrollment ;
+    uni:enrollmentFor data:course_CS101 ;
+    uni:grade "A-"^^xsd:string ;
+    uni:semester "Fall 2020"^^xsd:string .
+
+data:enrollment_7 a uni:Enrollment ;
+    uni:enrollmentFor data:course_PHYS201 ;
+    uni:grade "B+"^^xsd:string ;
+    uni:semester "Fall 2021"^^xsd:string .
+
+data:enrollment_8 a uni:Enrollment ;
+    uni:enrollmentFor data:course_PHYS301 ;
+    uni:grade "A-"^^xsd:string ;
+    uni:semester "Spring 2022"^^xsd:string .
+
+data:enrollment_9 a uni:Enrollment ;
+    uni:enrollmentFor data:course_MATH150 ;
+    uni:grade "B"^^xsd:string ;
+    uni:semester "Fall 2021"^^xsd:string .
+
+data:instructor_I003 a uni:Instructor ;
+    uni:firstName "Emmy"^^xsd:string ;
+    uni:instructorID "I003"^^xsd:string ;
+    uni:lastName "Noether"^^xsd:string ;
+    uni:teaches data:course_MATH150,
+        data:course_MATH301 .
+
+data:instructor_I006 a uni:Instructor ;
+    uni:firstName "Marie"^^xsd:string ;
+    uni:instructorID "I006"^^xsd:string ;
+    uni:lastName "Curie"^^xsd:string ;
+    uni:teaches data:course_PHYS301 .
+
+data:instructor_I007 a uni:Instructor ;
+    uni:firstName "Nikola"^^xsd:string ;
+    uni:instructorID "I007"^^xsd:string ;
+    uni:lastName "Tesla"^^xsd:string ;
+    uni:teaches data:course_ENG101,
+        data:course_ENG301 .
+
+data:course_ENG101 a uni:Course ;
+    uni:courseCode "ENG101"^^xsd:string ;
+    uni:courseName "Engineering Fundamentals"^^xsd:string ;
+    uni:credits 3 ;
+    uni:offeredBy data:dept_Engineering .
+
+data:course_ENG201 a uni:Course ;
+    uni:courseCode "ENG201"^^xsd:string ;
+    uni:courseName "Thermodynamics"^^xsd:string ;
+    uni:credits 4 ;
+    uni:offeredBy data:dept_Engineering .
+
+data:course_ENG301 a uni:Course ;
+    uni:courseCode "ENG301"^^xsd:string ;
+    uni:courseName "Control Systems"^^xsd:string ;
+    uni:credits 3 ;
+    uni:offeredBy data:dept_Engineering .
+
+data:course_MATH201 a uni:Course ;
+    uni:courseCode "MATH201"^^xsd:string ;
+    uni:courseName "Linear Algebra"^^xsd:string ;
+    uni:credits 4 ;
+    uni:offeredBy data:dept_Mathematics .
+
+data:course_MATH301 a uni:Course ;
+    uni:courseCode "MATH301"^^xsd:string ;
+    uni:courseName "Abstract Algebra"^^xsd:string ;
+    uni:credits 3 ;
+    uni:offeredBy data:dept_Mathematics .
+
+data:course_PHYS201 a uni:Course ;
+    uni:courseCode "PHYS201"^^xsd:string ;
+    uni:courseName "Classical Mechanics"^^xsd:string ;
+    uni:credits 4 ;
+    uni:offeredBy data:dept_Physics .
+
+data:course_PHYS301 a uni:Course ;
+    uni:courseCode "PHYS301"^^xsd:string ;
+    uni:courseName "Quantum Mechanics"^^xsd:string ;
+    uni:credits 3 ;
+    uni:offeredBy data:dept_Physics .
+
+data:dept_Physics a uni:Department ;
+    uni:budget 1500000 ;
+    uni:building "Physics Building"^^xsd:string ;
+    uni:departmentID "D003"^^xsd:string ;
+    uni:departmentName "Physics"^^xsd:string ;
+    uni:establishedYear "1975"^^xsd:gYear ;
+    uni:facultyCount 10 .
+
+data:course_CS201 a uni:Course ;
+    uni:courseCode "CS201"^^xsd:string ;
+    uni:courseName "Data Structures"^^xsd:string ;
+    uni:credits 3 ;
+    uni:offeredBy data:dept_Computer_Science .
+
+data:dept_Computer_Science a uni:Department ;
+    uni:budget 2500000 ;
+    uni:building "Tech Center"^^xsd:string ;
+    uni:departmentID "D001"^^xsd:string ;
+    uni:departmentName "Computer Science"^^xsd:string ;
+    uni:establishedYear "1985"^^xsd:gYear ;
+    uni:facultyCount 15 .
+
+data:dept_Engineering a uni:Department ;
+    uni:budget 3000000 ;
+    uni:building "Engineering Complex"^^xsd:string ;
+    uni:departmentID "D004"^^xsd:string ;
+    uni:departmentName "Engineering"^^xsd:string ;
+    uni:establishedYear "1980"^^xsd:gYear ;
+    uni:facultyCount 18 ;
+    uni:headedBy data:instructor_I007 .
+
+data:dept_Mathematics a uni:Department ;
+    uni:budget 1800000 ;
+    uni:building "Science Hall"^^xsd:string ;
+    uni:departmentID "D002"^^xsd:string ;
+    uni:departmentName "Mathematics"^^xsd:string ;
+    uni:establishedYear "1970"^^xsd:gYear ;
+    uni:facultyCount 12 ;
+    uni:headedBy data:instructor_I003 .
+
+uni:Person a owl:Class ;
+    rdfs:label "Person" ;
+    rdfs:comment "A human being in the university context" .
+
+data:course_CS101 a uni:Course ;
+    uni:courseCode "CS101"^^xsd:string ;
+    uni:courseName "Introduction to Programming"^^xsd:string ;
+    uni:credits 3 ;
+    uni:offeredBy data:dept_Computer_Science .
+
+data:course_MATH150 a uni:Course ;
+    uni:courseCode "MATH150"^^xsd:string ;
+    uni:courseName "Calculus I"^^xsd:string ;
+    uni:credits 4 ;
+    uni:offeredBy data:dept_Mathematics .
+
+uni:Instructor a owl:Class ;
+    rdfs:label "Instructor" ;
+    rdfs:comment "A faculty member who teaches courses" ;
+    rdfs:subClassOf uni:Person .
+
+uni:Department a owl:Class ;
+    rdfs:label "Department" ;
+    rdfs:comment "An academic department within the university" .
+
+uni:Course a owl:Class ;
+    rdfs:label "Course" ;
+    rdfs:comment "An academic course offered by the university" .
+
+uni:Student a owl:Class ;
+    rdfs:label "Student" ;
+    rdfs:comment "A person enrolled in university courses" ;
+    rdfs:subClassOf uni:Person .
+
+uni:Enrollment a owl:Class ;
+    rdfs:label "Enrollment" ;
+    rdfs:comment "A student's enrollment in a specific course" .
+

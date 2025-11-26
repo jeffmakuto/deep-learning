@@ -1,0 +1,111 @@
+{
+  "description": "Student enrollments with grades",
+  "count": 15,
+  "results": [
+    {
+      "studentID": "1004",
+      "student": "Sarah Brown",
+      "course": "CS101: Introduction to Programming",
+      "semester": "Fall 2022",
+      "grade": "A"
+    },
+    {
+      "studentID": "1004",
+      "student": "Sarah Brown",
+      "course": "ENG101: Engineering Fundamentals",
+      "semester": "Fall 2022",
+      "grade": "B+"
+    },
+    {
+      "studentID": "1004",
+      "student": "Sarah Brown",
+      "course": "CS201: Data Structures",
+      "semester": "Spring 2023",
+      "grade": "A"
+    },
+    {
+      "studentID": "1002",
+      "student": "Emily Johnson",
+      "course": "MATH201: Linear Algebra",
+      "semester": "Fall 2020",
+      "grade": "A"
+    },
+    {
+      "studentID": "1002",
+      "student": "Emily Johnson",
+      "course": "CS101: Introduction to Programming",
+      "semester": "Fall 2020",
+      "grade": "A-"
+    },
+    {
+      "studentID": "1002",
+      "student": "Emily Johnson",
+      "course": "MATH301: Abstract Algebra",
+      "semester": "Spring 2021",
+      "grade": "A"
+    },
+    {
+      "studentID": "1005",
+      "student": "David Jones",
+      "course": "ENG201: Thermodynamics",
+      "semester": "Fall 2020",
+      "grade": "B+"
+    },
+    {
+      "studentID": "1005",
+      "student": "David Jones",
+      "course": "MATH150: Calculus I",
+      "semester": "Fall 2020",
+      "grade": "B"
+    },
+    {
+      "studentID": "1005",
+      "student": "David Jones",
+      "course": "ENG301: Control Systems",
+      "semester": "Spring 2021",
+      "grade": "A-"
+    },
+    {
+      "studentID": "1001",
+      "student": "John Smith",
+      "course": "CS101: Introduction to Programming",
+      "semester": "Fall 2021",
+      "grade": "A"
+    },
+    {
+      "studentID": "1001",
+      "student": "John Smith",
+      "course": "MATH150: Calculus I",
+      "semester": "Fall 2021",
+      "grade": "B+"
+    },
+    {
+      "studentID": "1001",
+      "student": "John Smith",
+      "course": "CS201: Data Structures",
+      "semester": "Spring 2022",
+      "grade": "A-"
+    },
+    {
+      "studentID": "1003",
+      "student": "Michael Williams",
+      "course": "PHYS201: Classical Mechanics",
+      "semester": "Fall 2021",
+      "grade": "B+"
+    },
+    {
+      "studentID": "1003",
+      "student": "Michael Williams",
+      "course": "MATH150: Calculus I",
+      "semester": "Fall 2021",
+      "grade": "B"
+    },
+    {
+      "studentID": "1003",
+      "student": "Michael Williams",
+      "course": "PHYS301: Quantum Mechanics",
+      "semester": "Spring 2022",
+      "grade": "A-"
+    }
+  ]
+}

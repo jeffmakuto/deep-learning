@@ -1,0 +1,48 @@
+{
+  "description": "Department statistics",
+  "count": 6,
+  "results": [
+    {
+      "department": "Engineering",
+      "building": "Engineering Complex",
+      "faculty_count": 18,
+      "budget": 3000000,
+      "course_count": 3
+    },
+    {
+      "department": "Computer Science",
+      "building": "Tech Center",
+      "faculty_count": 15,
+      "budget": 2500000,
+      "course_count": 2
+    },
+    {
+      "department": "Mathematics",
+      "building": "Science Hall",
+      "faculty_count": 12,
+      "budget": 1800000,
+      "course_count": 3
+    },
+    {
+      "department": "Chemistry",
+      "building": "Chemistry Lab",
+      "faculty_count": 11,
+      "budget": 1700000,
+      "course_count": 0
+    },
+    {
+      "department": "Biology",
+      "building": "Life Sciences",
+      "faculty_count": 14,
+      "budget": 1600000,
+      "course_count": 0
+    },
+    {
+      "department": "Physics",
+      "building": "Physics Building",
+      "faculty_count": 10,
+      "budget": 1500000,
+      "course_count": 2
+    }
+  ]
+}

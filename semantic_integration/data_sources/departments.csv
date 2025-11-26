@@ -1,0 +1,7 @@
+department_id,department_name,building,head_of_department,faculty_count,established_year,budget
+D001,Computer Science,Tech Center,Dr. Donald Knuth,15,1985,2500000
+D002,Mathematics,Science Hall,Dr. Emmy Noether,12,1970,1800000
+D003,Physics,Physics Building,Dr. Richard Feynman,10,1975,1500000
+D004,Engineering,Engineering Complex,Dr. Nikola Tesla,18,1980,3000000
+D005,Biology,Life Sciences,Dr. Charles Darwin,14,1972,1600000
+D006,Chemistry,Chemistry Lab,Dr. Marie Curie,11,1978,1700000

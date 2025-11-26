@@ -1,0 +1,357 @@
+{
+  "timestamp": "2025-11-26T22:59:22.773630",
+  "statistics": {
+    "total_triples": 452,
+    "total_queries_executed": 6,
+    "total_validations": 4
+  },
+  "query_results": {
+    "query1": {
+      "description": "Students with majors and GPAs",
+      "count": 10,
+      "results": [
+        {
+          "studentID": "1002",
+          "name": "Emily Johnson",
+          "gpa": 3.9,
+          "major": "Mathematics"
+        },
+        {
+          "studentID": "1007",
+          "name": "James Miller",
+          "gpa": 3.9,
+          "major": "Mathematics"
+        },
+        {
+          "studentID": "1004",
+          "name": "Sarah Brown",
+          "gpa": 3.8,
+          "major": "Computer Science"
+        },
+        {
+          "studentID": "1010",
+          "name": "Jennifer Martinez",
+          "gpa": 3.8,
+          "major": "Engineering"
+        },
+        {
+          "studentID": "1001",
+          "name": "John Smith",
+          "gpa": 3.7,
+          "major": "Computer Science"
+        },
+        {
+          "studentID": "1008",
+          "name": "Maria Davis",
+          "gpa": 3.7,
+          "major": "Chemistry"
+        },
+        {
+          "studentID": "1005",
+          "name": "David Jones",
+          "gpa": 3.6,
+          "major": "Engineering"
+        },
+        {
+          "studentID": "1003",
+          "name": "Michael Williams",
+          "gpa": 3.5,
+          "major": "Physics"
+        },
+        {
+          "studentID": "1009",
+          "name": "Robert Rodriguez",
+          "gpa": 3.5,
+          "major": "Computer Science"
+        },
+        {
+          "studentID": "1006",
+          "name": "Lisa Garcia",
+          "gpa": 3.4,
+          "major": "Biology"
+        }
+      ]
+    },
+    "query2": {
+      "description": "Courses taught by instructors",
+      "count": 10,
+      "results": [
+        {
+          "instructorID": "I006",
+          "instructor": "Marie Curie",
+          "courseCode": "PHYS301",
+          "courseName": "Quantum Mechanics"
+        },
+        {
+          "instructorID": "I004",
+          "instructor": "Carl Gauss",
+          "courseCode": "MATH201",
+          "courseName": "Linear Algebra"
+        },
+        {
+          "instructorID": "I002",
+          "instructor": "Grace Hopper",
+          "courseCode": "CS201",
+          "courseName": "Data Structures"
+        },
+        {
+          "instructorID": "I005",
+          "instructor": "Isaac Newton",
+          "courseCode": "PHYS201",
+          "courseName": "Classical Mechanics"
+        },
+        {
+          "instructorID": "I003",
+          "instructor": "Emmy Noether",
+          "courseCode": "MATH150",
+          "courseName": "Calculus I"
+        },
+        {
+          "instructorID": "I003",
+          "instructor": "Emmy Noether",
+          "courseCode": "MATH301",
+          "courseName": "Abstract Algebra"
+        },
+        {
+          "instructorID": "I007",
+          "instructor": "Nikola Tesla",
+          "courseCode": "ENG101",
+          "courseName": "Engineering Fundamentals"
+        },
+        {
+          "instructorID": "I007",
+          "instructor": "Nikola Tesla",
+          "courseCode": "ENG301",
+          "courseName": "Control Systems"
+        },
+        {
+          "instructorID": "I001",
+          "instructor": "Alan Turing",
+          "courseCode": "CS101",
+          "courseName": "Introduction to Programming"
+        },
+        {
+          "instructorID": "I008",
+          "instructor": "James Watt",
+          "courseCode": "ENG201",
+          "courseName": "Thermodynamics"
+        }
+      ]
+    },
+    "query3": {
+      "description": "Student enrollments with grades",
+      "count": 15,
+      "results": [
+        {
+          "studentID": "1004",
+          "student": "Sarah Brown",
+          "course": "CS101: Introduction to Programming",
+          "semester": "Fall 2022",
+          "grade": "A"
+        },
+        {
+          "studentID": "1004",
+          "student": "Sarah Brown",
+          "course": "ENG101: Engineering Fundamentals",
+          "semester": "Fall 2022",
+          "grade": "B+"
+        },
+        {
+          "studentID": "1004",
+          "student": "Sarah Brown",
+          "course": "CS201: Data Structures",
+          "semester": "Spring 2023",
+          "grade": "A"
+        },
+        {
+          "studentID": "1002",
+          "student": "Emily Johnson",
+          "course": "MATH201: Linear Algebra",
+          "semester": "Fall 2020",
+          "grade": "A"
+        },
+        {
+          "studentID": "1002",
+          "student": "Emily Johnson",
+          "course": "CS101: Introduction to Programming",
+          "semester": "Fall 2020",
+          "grade": "A-"
+        },
+        {
+          "studentID": "1002",
+          "student": "Emily Johnson",
+          "course": "MATH301: Abstract Algebra",
+          "semester": "Spring 2021",
+          "grade": "A"
+        },
+        {
+          "studentID": "1005",
+          "student": "David Jones",
+          "course": "ENG201: Thermodynamics",
+          "semester": "Fall 2020",
+          "grade": "B+"
+        },
+        {
+          "studentID": "1005",
+          "student": "David Jones",
+          "course": "MATH150: Calculus I",
+          "semester": "Fall 2020",
+          "grade": "B"
+        },
+        {
+          "studentID": "1005",
+          "student": "David Jones",
+          "course": "ENG301: Control Systems",
+          "semester": "Spring 2021",
+          "grade": "A-"
+        },
+        {
+          "studentID": "1001",
+          "student": "John Smith",
+          "course": "CS101: Introduction to Programming",
+          "semester": "Fall 2021",
+          "grade": "A"
+        },
+        {
+          "studentID": "1001",
+          "student": "John Smith",
+          "course": "MATH150: Calculus I",
+          "semester": "Fall 2021",
+          "grade": "B+"
+        },
+        {
+          "studentID": "1001",
+          "student": "John Smith",
+          "course": "CS201: Data Structures",
+          "semester": "Spring 2022",
+          "grade": "A-"
+        },
+        {
+          "studentID": "1003",
+          "student": "Michael Williams",
+          "course": "PHYS201: Classical Mechanics",
+          "semester": "Fall 2021",
+          "grade": "B+"
+        },
+        {
+          "studentID": "1003",
+          "student": "Michael Williams",
+          "course": "MATH150: Calculus I",
+          "semester": "Fall 2021",
+          "grade": "B"
+        },
+        {
+          "studentID": "1003",
+          "student": "Michael Williams",
+          "course": "PHYS301: Quantum Mechanics",
+          "semester": "Spring 2022",
+          "grade": "A-"
+        }
+      ]
+    },
+    "query4": {
+      "description": "Department statistics",
+      "count": 6,
+      "results": [
+        {
+          "department": "Engineering",
+          "building": "Engineering Complex",
+          "faculty_count": 18,
+          "budget": 3000000,
+          "course_count": 3
+        },
+        {
+          "department": "Computer Science",
+          "building": "Tech Center",
+          "faculty_count": 15,
+          "budget": 2500000,
+          "course_count": 2
+        },
+        {
+          "department": "Mathematics",
+          "building": "Science Hall",
+          "faculty_count": 12,
+          "budget": 1800000,
+          "course_count": 3
+        },
+        {
+          "department": "Chemistry",
+          "building": "Chemistry Lab",
+          "faculty_count": 11,
+          "budget": 1700000,
+          "course_count": 0
+        },
+        {
+          "department": "Biology",
+          "building": "Life Sciences",
+          "faculty_count": 14,
+          "budget": 1600000,
+          "course_count": 0
+        },
+        {
+          "department": "Physics",
+          "building": "Physics Building",
+          "faculty_count": 10,
+          "budget": 1500000,
+          "course_count": 2
+        }
+      ]
+    },
+    "query5": {
+      "description": "Computer Science students enrollments",
+      "count": 0,
+      "results": []
+    },
+    "query6": {
+      "description": "4-credit courses",
+      "count": 4,
+      "results": [
+        {
+          "courseCode": "ENG201",
+          "courseName": "Thermodynamics",
+          "department": "Engineering",
+          "instructor": "James Watt"
+        },
+        {
+          "courseCode": "MATH150",
+          "courseName": "Calculus I",
+          "department": "Mathematics",
+          "instructor": "Emmy Noether"
+        },
+        {
+          "courseCode": "MATH201",
+          "courseName": "Linear Algebra",
+          "department": "Mathematics",
+          "instructor": "Carl Gauss"
+        },
+        {
+          "courseCode": "PHYS201",
+          "courseName": "Classical Mechanics",
+          "department": "Physics",
+          "instructor": "Isaac Newton"
+        }
+      ]
+    }
+  },
+  "validation_results": {
+    "students_completeness": {
+      "total": 10,
+      "complete": true,
+      "missing_properties": 0
+    },
+    "enrollment_integrity": {
+      "total_enrollments": 15,
+      "all_linked": true
+    },
+    "courses_with_instructors": {
+      "total": 10,
+      "with_instructors": 10,
+      "complete": true
+    },
+    "datatype_consistency": {
+      "valid_gpas": 10,
+      "total_students": 10,
+      "all_valid": true
+    }
+  }
+}

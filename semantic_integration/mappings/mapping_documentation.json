@@ -1,0 +1,71 @@
+{
+  "mappings": {
+    "Students_table_to_RDF": {
+      "source": "students.db - Students table",
+      "target_class": "uni:Student",
+      "mappings": {
+        "student_id": "uni:studentID (xsd:string)",
+        "first_name": "uni:firstName (xsd:string)",
+        "last_name": "uni:lastName (xsd:string)",
+        "email": "uni:email (xsd:string)",
+        "date_of_birth": "uni:dateOfBirth (xsd:date)",
+        "enrollment_year": "uni:enrollmentYear (xsd:gYear)",
+        "gpa": "uni:gpa (xsd:decimal)",
+        "major": "uni:majorIn -> uni:Department"
+      },
+      "uri_pattern": "data:student_{student_id}"
+    },
+    "Enrollments_table_to_RDF": {
+      "source": "students.db - Enrollments table",
+      "target_class": "uni:Enrollment",
+      "mappings": {
+        "enrollment_id": "URI identifier",
+        "student_id": "uni:hasEnrollment (from Student)",
+        "course_code": "uni:enrollmentFor -> uni:Course",
+        "semester": "uni:semester (xsd:string)",
+        "grade": "uni:grade (xsd:string)"
+      },
+      "uri_pattern": "data:enrollment_{enrollment_id}",
+      "relationships": [
+        "Student -> uni:hasEnrollment -> Enrollment",
+        "Enrollment -> uni:enrollmentFor -> Course",
+        "Student -> uni:enrolledIn -> Course"
+      ]
+    },
+    "Courses_XML_to_RDF": {
+      "source": "courses.xml - Course elements",
+      "target_class": "uni:Course",
+      "mappings": {
+        "@courseCode": "uni:courseCode (xsd:string)",
+        "CourseName": "uni:courseName (xsd:string)",
+        "Department": "uni:offeredBy -> uni:Department",
+        "Credits": "uni:credits (xsd:integer)",
+        "Instructor/@instructorID": "Creates uni:Instructor",
+        "Instructor/text()": "Instructor name (firstName, lastName)"
+      },
+      "uri_pattern": "data:course_{courseCode}"
+    },
+    "Departments_CSV_to_RDF": {
+      "source": "departments.csv",
+      "target_class": "uni:Department",
+      "mappings": {
+        "department_id": "uni:departmentID (xsd:string)",
+        "department_name": "uni:departmentName (xsd:string)",
+        "building": "uni:building (xsd:string)",
+        "faculty_count": "uni:facultyCount (xsd:integer)",
+        "established_year": "uni:establishedYear (xsd:gYear)",
+        "budget": "uni:budget (xsd:integer)",
+        "head_of_department": "uni:headedBy -> uni:Instructor"
+      },
+      "uri_pattern": "data:dept_{department_name}"
+    }
+  },
+  "statistics": {
+    "total_triples": 452,
+    "students": 10,
+    "enrollments": 15,
+    "courses": 10,
+    "instructors": 8,
+    "departments": 6
+  }
+}

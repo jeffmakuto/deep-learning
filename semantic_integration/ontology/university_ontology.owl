@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+    <!ENTITY uni "http://university.edu/ontology#" >
+]>
+
+<rdf:RDF xmlns="http://university.edu/ontology#"
+     xml:base="http://university.edu/ontology"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:uni="http://university.edu/ontology#">
+    
+    <!-- Ontology Header -->
+    <owl:Ontology rdf:about="http://university.edu/ontology">
+        <rdfs:label>University Academic Ontology</rdfs:label>
+        <rdfs:comment>Domain ontology for university academic system integration</rdfs:comment>
+        <owl:versionInfo>1.0</owl:versionInfo>
+    </owl:Ontology>
+
+    <!-- =============================================== -->
+    <!-- CLASSES -->
+    <!-- =============================================== -->
+
+    <!-- Person Class -->
+    <owl:Class rdf:about="&uni;Person">
+        <rdfs:label>Person</rdfs:label>
+        <rdfs:comment>A human being in the university context</rdfs:comment>
+    </owl:Class>
+
+    <!-- Student Class -->
+    <owl:Class rdf:about="&uni;Student">
+        <rdfs:label>Student</rdfs:label>
+        <rdfs:comment>A person enrolled in university courses</rdfs:comment>
+        <rdfs:subClassOf rdf:resource="&uni;Person"/>
+    </owl:Class>
+
+    <!-- Instructor Class -->
+    <owl:Class rdf:about="&uni;Instructor">
+        <rdfs:label>Instructor</rdfs:label>
+        <rdfs:comment>A faculty member who teaches courses</rdfs:comment>
+        <rdfs:subClassOf rdf:resource="&uni;Person"/>
+    </owl:Class>
+
+    <!-- Course Class -->
+    <owl:Class rdf:about="&uni;Course">
+        <rdfs:label>Course</rdfs:label>
+        <rdfs:comment>An academic course offered by the university</rdfs:comment>
+    </owl:Class>
+
+    <!-- Department Class -->
+    <owl:Class rdf:about="&uni;Department">
+        <rdfs:label>Department</rdfs:label>
+        <rdfs:comment>An academic department within the university</rdfs:comment>
+    </owl:Class>
+
+    <!-- Enrollment Class -->
+    <owl:Class rdf:about="&uni;Enrollment">
+        <rdfs:label>Enrollment</rdfs:label>
+        <rdfs:comment>A student's enrollment in a specific course</rdfs:comment>
+    </owl:Class>
+
+    <!-- =============================================== -->
+    <!-- OBJECT PROPERTIES -->
+    <!-- =============================================== -->
+
+    <!-- enrolledIn -->
+    <owl:ObjectProperty rdf:about="&uni;enrolledIn">
+        <rdfs:label>enrolled in</rdfs:label>
+        <rdfs:comment>Links a student to a course they are enrolled in</rdfs:comment>
+        <rdfs:domain rdf:resource="&uni;Student"/>
+        <rdfs:range rdf:resource="&uni;Course"/>
+    </owl:ObjectProperty>
+
+    <!-- teaches -->
+    <owl:ObjectProperty rdf:about="&uni;teaches">
+        <rdfs:label>teaches</rdfs:label>
+        <rdfs:comment>Links an instructor to a course they teach</rdfs:comment>
+        <rdfs:domain rdf:resource="&uni;Instructor"/>
+        <rdfs:range rdf:resource="&uni;Course"/>
+    </owl:ObjectProperty>
+
+    <!-- offeredBy -->
+    <owl:ObjectProperty rdf:about="&uni;offeredBy">
+        <rdfs:label>offered by</rdfs:label>
+        <rdfs:comment>Links a course to the department offering it</rdfs:comment>
+        <rdfs:domain rdf:resource="&uni;Course"/>
+        <rdfs:range rdf:resource="&uni;Department"/>
+    </owl:ObjectProperty>
+
+    <!-- hasEnrollment -->
+    <owl:ObjectProperty rdf:about="&uni;hasEnrollment">
+        <rdfs:label>has enrollment</rdfs:label>
+        <rdfs:comment>Links a student to their enrollment record</rdfs:comment>
+        <rdfs:domain rdf:resource="&uni;Student"/>
+        <rdfs:range rdf:resource="&uni;Enrollment"/>
+    </owl:ObjectProperty>
+
+    <!-- enrollmentFor -->
+    <owl:ObjectProperty rdf:about="&uni;enrollmentFor">
+        <rdfs:label>enrollment for</rdfs:label>
+        <rdfs:comment>Links an enrollment to its course</rdfs:comment>
+        <rdfs:domain rdf:resource="&uni;Enrollment"/>
+        <rdfs:range rdf:resource="&uni;Course"/>
+    </owl:ObjectProperty>
+
+    <!-- majorIn -->
+    <owl:ObjectProperty rdf:about="&uni;majorIn">
+        <rdfs:label>major in</rdfs:label>
+        <rdfs:comment>Links a student to their major department</rdfs:comment>
+        <rdfs:domain rdf:resource="&uni;Student"/>
+        <rdfs:range rdf:resource="&uni;Department"/>
+    </owl:ObjectProperty>
+
+    <!-- headedBy -->
+    <owl:ObjectProperty rdf:about="&uni;headedBy">
+        <rdfs:label>headed by</rdfs:label>
+        <rdfs:comment>Links a department to its head</rdfs:comment>
+        <rdfs:domain rdf:resource="&uni;Department"/>
+        <rdfs:range rdf:resource="&uni;Instructor"/>
+    </owl:ObjectProperty>
+
+    <!-- =============================================== -->
+    <!-- DATATYPE PROPERTIES -->
+    <!-- =============================================== -->
+
+    <!-- Person Properties -->
+    <owl:DatatypeProperty rdf:about="&uni;firstName">
+        <rdfs:label>first name</rdfs:label>
+        <rdfs:domain rdf:resource="&uni;Person"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+
+    <owl:DatatypeProperty rdf:about="&uni;lastName">
+        <rdfs:label>last name</rdfs:label>
+        <rdfs:domain rdf:resource="&uni;Person"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+
+    <owl:DatatypeProperty rdf:about="&uni;email">
+        <rdfs:label>email</rdfs:label>
+        <rdfs:domain rdf:resource="&uni;Person"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+
+    <!-- Student Properties -->
+    <owl:DatatypeProperty rdf:about="&uni;studentID">
+        <rdfs:label>student ID</rdfs:label>
+        <rdfs:domain rdf:resource="&uni;Student"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+
+    <owl:DatatypeProperty rdf:about="&uni;dateOfBirth">
+        <rdfs:label>date of birth</rdfs:label>
+        <rdfs:domain rdf:resource="&uni;Student"/>
+        <rdfs:range rdf:resource="&xsd;date"/>
+    </owl:DatatypeProperty>
+
+    <owl:DatatypeProperty rdf:about="&uni;enrollmentYear">
+        <rdfs:label>enrollment year</rdfs:label>
+        <rdfs:domain rdf:resource="&uni;Student"/>
+        <rdfs:range rdf:resource="&xsd;gYear"/>
+    </owl:DatatypeProperty>
+
+    <owl:DatatypeProperty rdf:about="&uni;gpa">
+        <rdfs:label>GPA</rdfs:label>
+        <rdfs:domain rdf:resource="&uni;Student"/>
+        <rdfs:range rdf:resource="&xsd;decimal"/>
+    </owl:DatatypeProperty>
+
+    <!-- Instructor Properties -->
+    <owl:DatatypeProperty rdf:about="&uni;instructorID">
+        <rdfs:label>instructor ID</rdfs:label>
+        <rdfs:domain rdf:resource="&uni;Instructor"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+
+    <!-- Course Properties -->
+    <owl:DatatypeProperty rdf:about="&uni;courseCode">
+        <rdfs:label>course code</rdfs:label>
+        <rdfs:domain rdf:resource="&uni;Course"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+
+    <owl:DatatypeProperty rdf:about="&uni;courseName">
+        <rdfs:label>course name</rdfs:label>
+        <rdfs:domain rdf:resource="&uni;Course"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+
+    <owl:DatatypeProperty rdf:about="&uni;credits">
+        <rdfs:label>credits</rdfs:label>
+        <rdfs:domain rdf:resource="&uni;Course"/>
+        <rdfs:range rdf:resource="&xsd;integer"/>
+    </owl:DatatypeProperty>
+
+    <!-- Department Properties -->
+    <owl:DatatypeProperty rdf:about="&uni;departmentID">
+        <rdfs:label>department ID</rdfs:label>
+        <rdfs:domain rdf:resource="&uni;Department"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+
+    <owl:DatatypeProperty rdf:about="&uni;departmentName">
+        <rdfs:label>department name</rdfs:label>
+        <rdfs:domain rdf:resource="&uni;Department"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+
+    <owl:DatatypeProperty rdf:about="&uni;building">
+        <rdfs:label>building</rdfs:label>
+        <rdfs:domain rdf:resource="&uni;Department"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+
+    <owl:DatatypeProperty rdf:about="&uni;facultyCount">
+        <rdfs:label>faculty count</rdfs:label>
+        <rdfs:domain rdf:resource="&uni;Department"/>
+        <rdfs:range rdf:resource="&xsd;integer"/>
+    </owl:DatatypeProperty>
+
+    <owl:DatatypeProperty rdf:about="&uni;establishedYear">
+        <rdfs:label>established year</rdfs:label>
+        <rdfs:domain rdf:resource="&uni;Department"/>
+        <rdfs:range rdf:resource="&xsd;gYear"/>
+    </owl:DatatypeProperty>
+
+    <owl:DatatypeProperty rdf:about="&uni;budget">
+        <rdfs:label>budget</rdfs:label>
+        <rdfs:domain rdf:resource="&uni;Department"/>
+        <rdfs:range rdf:resource="&xsd;integer"/>
+    </owl:DatatypeProperty>
+
+    <!-- Enrollment Properties -->
+    <owl:DatatypeProperty rdf:about="&uni;semester">
+        <rdfs:label>semester</rdfs:label>
+        <rdfs:domain rdf:resource="&uni;Enrollment"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+
+    <owl:DatatypeProperty rdf:about="&uni;grade">
+        <rdfs:label>grade</rdfs:label>
+        <rdfs:domain rdf:resource="&uni;Enrollment"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+
+</rdf:RDF>

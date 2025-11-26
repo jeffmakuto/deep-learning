@@ -1,0 +1,63 @@
+<?xml version="1.0" ?>
+<UniversityCourses xmlns="http://university.edu/courses" version="1.0">
+  <Course courseCode="CS101">
+    <CourseName>Introduction to Programming</CourseName>
+    <Department>Computer Science</Department>
+    <Credits>3</Credits>
+    <Instructor instructorID="I001">Dr. Alan Turing</Instructor>
+  </Course>
+  <Course courseCode="CS201">
+    <CourseName>Data Structures</CourseName>
+    <Department>Computer Science</Department>
+    <Credits>3</Credits>
+    <Instructor instructorID="I002">Dr. Grace Hopper</Instructor>
+  </Course>
+  <Course courseCode="MATH150">
+    <CourseName>Calculus I</CourseName>
+    <Department>Mathematics</Department>
+    <Credits>4</Credits>
+    <Instructor instructorID="I003">Dr. Emmy Noether</Instructor>
+  </Course>
+  <Course courseCode="MATH201">
+    <CourseName>Linear Algebra</CourseName>
+    <Department>Mathematics</Department>
+    <Credits>4</Credits>
+    <Instructor instructorID="I004">Dr. Carl Gauss</Instructor>
+  </Course>
+  <Course courseCode="MATH301">
+    <CourseName>Abstract Algebra</CourseName>
+    <Department>Mathematics</Department>
+    <Credits>3</Credits>
+    <Instructor instructorID="I003">Dr. Emmy Noether</Instructor>
+  </Course>
+  <Course courseCode="PHYS201">
+    <CourseName>Classical Mechanics</CourseName>
+    <Department>Physics</Department>
+    <Credits>4</Credits>
+    <Instructor instructorID="I005">Dr. Isaac Newton</Instructor>
+  </Course>
+  <Course courseCode="PHYS301">
+    <CourseName>Quantum Mechanics</CourseName>
+    <Department>Physics</Department>
+    <Credits>3</Credits>
+    <Instructor instructorID="I006">Dr. Marie Curie</Instructor>
+  </Course>
+  <Course courseCode="ENG101">
+    <CourseName>Engineering Fundamentals</CourseName>
+    <Department>Engineering</Department>
+    <Credits>3</Credits>
+    <Instructor instructorID="I007">Dr. Nikola Tesla</Instructor>
+  </Course>
+  <Course courseCode="ENG201">
+    <CourseName>Thermodynamics</CourseName>
+    <Department>Engineering</Department>
+    <Credits>4</Credits>
+    <Instructor instructorID="I008">Dr. James Watt</Instructor>
+  </Course>
+  <Course courseCode="ENG301">
+    <CourseName>Control Systems</CourseName>
+    <Department>Engineering</Department>
+    <Credits>3</Credits>
+    <Instructor instructorID="I007">Dr. Nikola Tesla</Instructor>
+  </Course>
+</UniversityCourses>

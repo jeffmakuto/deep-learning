@@ -1,0 +1,66 @@
+{
+  "description": "Students with majors and GPAs",
+  "count": 10,
+  "results": [
+    {
+      "studentID": "1002",
+      "name": "Emily Johnson",
+      "gpa": 3.9,
+      "major": "Mathematics"
+    },
+    {
+      "studentID": "1007",
+      "name": "James Miller",
+      "gpa": 3.9,
+      "major": "Mathematics"
+    },
+    {
+      "studentID": "1004",
+      "name": "Sarah Brown",
+      "gpa": 3.8,
+      "major": "Computer Science"
+    },
+    {
+      "studentID": "1010",
+      "name": "Jennifer Martinez",
+      "gpa": 3.8,
+      "major": "Engineering"
+    },
+    {
+      "studentID": "1001",
+      "name": "John Smith",
+      "gpa": 3.7,
+      "major": "Computer Science"
+    },
+    {
+      "studentID": "1008",
+      "name": "Maria Davis",
+      "gpa": 3.7,
+      "major": "Chemistry"
+    },
+    {
+      "studentID": "1005",
+      "name": "David Jones",
+      "gpa": 3.6,
+      "major": "Engineering"
+    },
+    {
+      "studentID": "1003",
+      "name": "Michael Williams",
+      "gpa": 3.5,
+      "major": "Physics"
+    },
+    {
+      "studentID": "1009",
+      "name": "Robert Rodriguez",
+      "gpa": 3.5,
+      "major": "Computer Science"
+    },
+    {
+      "studentID": "1006",
+      "name": "Lisa Garcia",
+      "gpa": 3.4,
+      "major": "Biology"
+    }
+  ]
+}

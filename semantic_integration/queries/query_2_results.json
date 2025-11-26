@@ -1,0 +1,66 @@
+{
+  "description": "Courses taught by instructors",
+  "count": 10,
+  "results": [
+    {
+      "instructorID": "I006",
+      "instructor": "Marie Curie",
+      "courseCode": "PHYS301",
+      "courseName": "Quantum Mechanics"
+    },
+    {
+      "instructorID": "I004",
+      "instructor": "Carl Gauss",
+      "courseCode": "MATH201",
+      "courseName": "Linear Algebra"
+    },
+    {
+      "instructorID": "I002",
+      "instructor": "Grace Hopper",
+      "courseCode": "CS201",
+      "courseName": "Data Structures"
+    },
+    {
+      "instructorID": "I005",
+      "instructor": "Isaac Newton",
+      "courseCode": "PHYS201",
+      "courseName": "Classical Mechanics"
+    },
+    {
+      "instructorID": "I003",
+      "instructor": "Emmy Noether",
+      "courseCode": "MATH150",
+      "courseName": "Calculus I"
+    },
+    {
+      "instructorID": "I003",
+      "instructor": "Emmy Noether",
+      "courseCode": "MATH301",
+      "courseName": "Abstract Algebra"
+    },
+    {
+      "instructorID": "I007",
+      "instructor": "Nikola Tesla",
+      "courseCode": "ENG101",
+      "courseName": "Engineering Fundamentals"
+    },
+    {
+      "instructorID": "I007",
+      "instructor": "Nikola Tesla",
+      "courseCode": "ENG301",
+      "courseName": "Control Systems"
+    },
+    {
+      "instructorID": "I001",
+      "instructor": "Alan Turing",
+      "courseCode": "CS101",
+      "courseName": "Introduction to Programming"
+    },
+    {
+      "instructorID": "I008",
+      "instructor": "James Watt",
+      "courseCode": "ENG201",
+      "courseName": "Thermodynamics"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "description": "4-credit courses",
+  "count": 4,
+  "results": [
+    {
+      "courseCode": "ENG201",
+      "courseName": "Thermodynamics",
+      "department": "Engineering",
+      "instructor": "James Watt"
+    },
+    {
+      "courseCode": "MATH150",
+      "courseName": "Calculus I",
+      "department": "Mathematics",
+      "instructor": "Emmy Noether"
+    },
+    {
+      "courseCode": "MATH201",
+      "courseName": "Linear Algebra",
+      "department": "Mathematics",
+      "instructor": "Carl Gauss"
+    },
+    {
+      "courseCode": "PHYS201",
+      "courseName": "Classical Mechanics",
+      "department": "Physics",
+      "instructor": "Isaac Newton"
+    }
+  ]
+}
