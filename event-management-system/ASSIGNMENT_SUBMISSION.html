@@ -1,0 +1,959 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang xml:lang>
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>ASSIGNMENT_SUBMISSION</title>
+  <style>
+
+html {
+color: #1a1a1a;
+background-color: #fdfdfd;
+}
+body {
+margin: 0 auto;
+max-width: 36em;
+padding-left: 50px;
+padding-right: 50px;
+padding-top: 50px;
+padding-bottom: 50px;
+hyphens: auto;
+overflow-wrap: break-word;
+text-rendering: optimizeLegibility;
+font-kerning: normal;
+}
+@media (max-width: 600px) {
+body {
+font-size: 0.9em;
+padding: 12px;
+}
+h1 {
+font-size: 1.8em;
+}
+}
+@media print {
+html {
+background-color: white;
+}
+body {
+background-color: transparent;
+color: black;
+font-size: 12pt;
+}
+p, h2, h3 {
+orphans: 3;
+widows: 3;
+}
+h2, h3, h4 {
+page-break-after: avoid;
+}
+}
+p {
+margin: 1em 0;
+}
+a {
+color: #1a1a1a;
+}
+a:visited {
+color: #1a1a1a;
+}
+img {
+max-width: 100%;
+}
+svg {
+height: auto;
+max-width: 100%;
+}
+h1, h2, h3, h4, h5, h6 {
+margin-top: 1.4em;
+}
+h5, h6 {
+font-size: 1em;
+font-style: italic;
+}
+h6 {
+font-weight: normal;
+}
+ol, ul {
+padding-left: 1.7em;
+margin-top: 1em;
+}
+li > ol, li > ul {
+margin-top: 0;
+}
+blockquote {
+margin: 1em 0 1em 1.7em;
+padding-left: 1em;
+border-left: 2px solid #e6e6e6;
+color: #606060;
+}
+code {
+font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+font-size: 85%;
+margin: 0;
+hyphens: manual;
+}
+pre {
+margin: 1em 0;
+overflow: auto;
+}
+pre code {
+padding: 0;
+overflow: visible;
+overflow-wrap: normal;
+}
+.sourceCode {
+background-color: transparent;
+overflow: visible;
+}
+hr {
+border: none;
+border-top: 1px solid #1a1a1a;
+height: 1px;
+margin: 1em 0;
+}
+table {
+margin: 1em 0;
+border-collapse: collapse;
+width: 100%;
+overflow-x: auto;
+display: block;
+font-variant-numeric: lining-nums tabular-nums;
+}
+table caption {
+margin-bottom: 0.75em;
+}
+tbody {
+margin-top: 0.5em;
+border-top: 1px solid #1a1a1a;
+border-bottom: 1px solid #1a1a1a;
+}
+th {
+border-top: 1px solid #1a1a1a;
+padding: 0.25em 0.5em 0.25em 0.5em;
+}
+td {
+padding: 0.125em 0.5em 0.25em 0.5em;
+}
+header {
+margin-bottom: 4em;
+text-align: center;
+}
+#TOC li {
+list-style: none;
+}
+#TOC ul {
+padding-left: 1.3em;
+}
+#TOC > ul {
+padding-left: 0;
+}
+#TOC a:not(:hover) {
+text-decoration: none;
+}
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+
+ul.task-list[class]{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+font-size: inherit;
+width: 0.8em;
+margin: 0 0.8em 0.2em -1.6em;
+vertical-align: middle;
+}
+.display.math{display: block; text-align: center; margin: 0.5rem auto;}
+
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+{ counter-reset: source-line 0; }
+pre.numberSource code > span
+{ position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+{ content: counter(source-line);
+position: relative; left: -1em; text-align: right; vertical-align: baseline;
+border: none; display: inline-block;
+-webkit-touch-callout: none; -webkit-user-select: none;
+-khtml-user-select: none; -moz-user-select: none;
+-ms-user-select: none; user-select: none;
+padding: 0 4px; width: 4em;
+color: #aaaaaa;
+}
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa; padding-left: 4px; }
+div.sourceCode
+{ }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } 
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } 
+code span.at { color: #7d9029; } 
+code span.bn { color: #40a070; } 
+code span.bu { color: #008000; } 
+code span.cf { color: #007020; font-weight: bold; } 
+code span.ch { color: #4070a0; } 
+code span.cn { color: #880000; } 
+code span.co { color: #60a0b0; font-style: italic; } 
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } 
+code span.do { color: #ba2121; font-style: italic; } 
+code span.dt { color: #902000; } 
+code span.dv { color: #40a070; } 
+code span.er { color: #ff0000; font-weight: bold; } 
+code span.ex { } 
+code span.fl { color: #40a070; } 
+code span.fu { color: #06287e; } 
+code span.im { color: #008000; font-weight: bold; } 
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } 
+code span.kw { color: #007020; font-weight: bold; } 
+code span.op { color: #666666; } 
+code span.ot { color: #007020; } 
+code span.pp { color: #bc7a00; } 
+code span.sc { color: #4070a0; } 
+code span.ss { color: #bb6688; } 
+code span.st { color: #4070a0; } 
+code span.va { color: #19177c; } 
+code span.vs { color: #4070a0; } 
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } 
+</style>
+</head>
+<body>
+<h1 id="real-time-event-management-system">Real-Time Event Management
+System</h1>
+<h2 id="assignment-submission">Assignment Submission</h2>
+<p><strong>Student:</strong> Jeff Makuto<br />
+<strong>Date:</strong> November 27, 2025<br />
+<strong>Repository:</strong> <a href="https://github.com/jeffmakuto/deep-learning/tree/master/event-management-system">https://github.com/jeffmakuto/deep-learning/tree/master/event-management-system</a></p>
+<hr />
+<h2 id="executive-summary">Executive Summary</h2>
+<p>This project presents a comprehensive <strong>Real-Time Event
+Management System</strong> designed for educational institutions. The
+system enables schools to manage events with live tracking, push
+notifications, calendar integration, and real-time updates across
+multiple devices. Built using modern web technologies, it demonstrates
+proficiency in full-stack development, real-time communication
+protocols, cloud services integration, and scalable architecture
+design.</p>
+<hr />
+<h2 id="project-overview">Project Overview</h2>
+<h3 id="objectives">Objectives</h3>
+<p>The primary goal was to create a production-ready event management
+platform that addresses the following requirements:</p>
+<ol type="1">
+<li><strong>Real-Time Synchronization</strong> - Instant updates across
+all connected clients</li>
+<li><strong>Scalability</strong> - Support for large numbers of
+concurrent users</li>
+<li><strong>Push Notifications</strong> - Immediate alerts for event
+updates</li>
+<li><strong>Calendar Integration</strong> - Visual event scheduling and
+management</li>
+<li><strong>Live Event Tracking</strong> - Real-time status updates for
+ongoing events</li>
+</ol>
+<h3 id="key-features-implemented">Key Features Implemented</h3>
+<h4 id="real-time-communication">1. Real-Time Communication</h4>
+<ul>
+<li><strong>WebSocket Implementation</strong> using Socket.IO for
+bidirectional communication</li>
+<li><strong>Event Rooms</strong> for efficient targeted
+broadcasting</li>
+<li><strong>Automatic Reconnection</strong> with exponential
+backoff</li>
+<li><strong>Dual Synchronization</strong> strategy (WebSocket + Firebase
+Realtime Database)</li>
+</ul>
+<h4 id="event-management">2. Event Management</h4>
+<ul>
+<li><strong>Comprehensive CRUD Operations</strong> for events</li>
+<li><strong>Multiple Event Categories</strong> (Sports, Academic,
+Cultural, Social, Workshops, Competitions)</li>
+<li><strong>RSVP System</strong> with capacity management
+(Going/Maybe/Not Going)</li>
+<li><strong>Event Analytics</strong> (views, unique visitors,
+check-ins)</li>
+<li><strong>Recurring Events</strong> support</li>
+</ul>
+<h4 id="live-tracking-features">3. Live Tracking Features</h4>
+<ul>
+<li><strong>Live Updates Feed</strong> with real-time message
+streaming</li>
+<li><strong>Score Tracking</strong> for sports events with team-based
+scoring</li>
+<li><strong>Status Updates</strong> (upcoming, ongoing, completed,
+cancelled)</li>
+<li><strong>Viewer Count</strong> tracking for live events</li>
+<li><strong>Check-In Functionality</strong> for event attendance</li>
+</ul>
+<h4 id="calendar-integration">4. Calendar Integration</h4>
+<ul>
+<li><strong>React Big Calendar</strong> integration with multiple
+views</li>
+<li><strong>Month, Week, Day, and Agenda</strong> views</li>
+<li><strong>Color-Coded Events</strong> by category</li>
+<li><strong>Event Selection</strong> from calendar</li>
+<li><strong>Responsive Design</strong> for mobile/desktop</li>
+</ul>
+<h4 id="push-notifications">5. Push Notifications</h4>
+<ul>
+<li><strong>Firebase Cloud Messaging</strong> (FCM) integration</li>
+<li><strong>Background Notifications</strong> via Service Worker</li>
+<li><strong>Multi-Device Support</strong> with FCM token management</li>
+<li><strong>Notification Types</strong>: Event reminders, live updates,
+RSVP confirmations</li>
+<li><strong>Targeted Notifications</strong> to specific users or event
+attendees</li>
+</ul>
+<h4 id="user-management">6. User Management</h4>
+<ul>
+<li><strong>Role-Based Access Control</strong> (Student, Teacher, Admin,
+Organizer)</li>
+<li><strong>JWT Authentication</strong> with secure token-based
+sessions</li>
+<li><strong>Password Hashing</strong> using bcrypt with salt rounds</li>
+<li><strong>User Preferences</strong> for notifications and event
+categories</li>
+<li><strong>Profile Management</strong> with avatar support</li>
+</ul>
+<hr />
+<h2 id="technical-architecture">Technical Architecture</h2>
+<h3 id="technology-stack">Technology Stack</h3>
+<h4 id="backend-technologies">Backend Technologies</h4>
+<table>
+<thead>
+<tr>
+<th>Technology</th>
+<th>Version</th>
+<th>Purpose</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Node.js</td>
+<td>16+</td>
+<td>Server runtime environment</td>
+</tr>
+<tr>
+<td>Express.js</td>
+<td>4.18.2</td>
+<td>RESTful API framework</td>
+</tr>
+<tr>
+<td>Socket.IO</td>
+<td>4.6.1</td>
+<td>WebSocket communication</td>
+</tr>
+<tr>
+<td>MongoDB</td>
+<td>4.4+</td>
+<td>NoSQL database</td>
+</tr>
+<tr>
+<td>Mongoose</td>
+<td>8.0.3</td>
+<td>MongoDB ODM</td>
+</tr>
+<tr>
+<td>Firebase Admin SDK</td>
+<td>12.0.0</td>
+<td>Push notifications, Realtime DB</td>
+</tr>
+<tr>
+<td>JSON Web Token</td>
+<td>9.0.2</td>
+<td>Authentication tokens</td>
+</tr>
+<tr>
+<td>bcryptjs</td>
+<td>2.4.3</td>
+<td>Password hashing</td>
+</tr>
+<tr>
+<td>node-cron</td>
+<td>3.0.3</td>
+<td>Scheduled tasks</td>
+</tr>
+</tbody>
+</table>
+<h4 id="frontend-technologies">Frontend Technologies</h4>
+<table>
+<thead>
+<tr>
+<th>Technology</th>
+<th>Version</th>
+<th>Purpose</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>React</td>
+<td>18.2.0</td>
+<td>UI library</td>
+</tr>
+<tr>
+<td>Socket.IO Client</td>
+<td>4.6.1</td>
+<td>WebSocket client</td>
+</tr>
+<tr>
+<td>Firebase SDK</td>
+<td>10.7.1</td>
+<td>FCM, Realtime Database</td>
+</tr>
+<tr>
+<td>React Router</td>
+<td>6.20.0</td>
+<td>Client-side routing</td>
+</tr>
+<tr>
+<td>React Big Calendar</td>
+<td>1.8.5</td>
+<td>Calendar component</td>
+</tr>
+<tr>
+<td>Axios</td>
+<td>1.6.2</td>
+<td>HTTP client</td>
+</tr>
+<tr>
+<td>React Toastify</td>
+<td>9.1.3</td>
+<td>Toast notifications</td>
+</tr>
+<tr>
+<td>Tailwind CSS</td>
+<td>3.3.5</td>
+<td>Utility-first CSS</td>
+</tr>
+<tr>
+<td>Moment.js</td>
+<td>2.29.4</td>
+<td>Date manipulation</td>
+</tr>
+</tbody>
+</table>
+<h3 id="system-architecture-diagram">System Architecture Diagram</h3>
+<pre><code>┌─────────────────────────────────────────────────────────────────┐
+│                        Client Layer                              │
+│  ┌──────────────┐  ┌──────────────┐  ┌──────────────┐          │
+│  │   Browser    │  │   Browser    │  │   Mobile     │          │
+│  │   Client 1   │  │   Client 2   │  │   Client 3   │          │
+│  └──────┬───────┘  └──────┬───────┘  └──────┬───────┘          │
+│         │                  │                  │                  │
+│         └──────────────────┼──────────────────┘                  │
+│                            │                                     │
+└────────────────────────────┼─────────────────────────────────────┘
+                             │
+              ┌──────────────┼──────────────┐
+              │              │              │
+         WebSocket        REST API      Firebase
+              │              │           Listener
+              ▼              ▼              ▼
+┌─────────────────────────────────────────────────────────────────┐
+│                      Application Server                          │
+│  ┌────────────────────────────────────────────────────────────┐ │
+│  │              Socket.IO Server (Event Rooms)                 │ │
+│  └────────────────────────────────────────────────────────────┘ │
+│  ┌────────────────────────────────────────────────────────────┐ │
+│  │              Express.js REST API                            │ │
+│  │  ┌──────────┐  ┌──────────┐  ┌──────────────┐             │ │
+│  │  │   Auth   │  │  Events  │  │Notifications │             │ │
+│  │  │  Routes  │  │  Routes  │  │   Routes     │             │ │
+│  │  └──────────┘  └──────────┘  └──────────────┘             │ │
+│  └────────────────────────────────────────────────────────────┘ │
+└─────────────┬────────────────────────────┬──────────────────────┘
+              │                            │
+              ▼                            ▼
+┌───────────────────────────┐  ┌─────────────────────────────┐
+│      MongoDB Atlas        │  │   Firebase Platform         │
+│  ┌─────────────────────┐  │  │  ┌───────────────────────┐  │
+│  │   Users Collection  │  │  │  │  Realtime Database    │  │
+│  ├─────────────────────┤  │  │  ├───────────────────────┤  │
+│  │  Events Collection  │  │  │  │  Cloud Messaging      │  │
+│  └─────────────────────┘  │  │  └───────────────────────┘  │
+└───────────────────────────┘  └─────────────────────────────┘</code></pre>
+<h3 id="data-flow-architecture">Data Flow Architecture</h3>
+<h4 id="real-time-update-flow">Real-Time Update Flow</h4>
+<ol type="1">
+<li><strong>User Action</strong> → Frontend component triggers
+event</li>
+<li><strong>API Call</strong> → Axios sends HTTP request to backend</li>
+<li><strong>Database Update</strong> → MongoDB stores the change</li>
+<li><strong>Firebase Sync</strong> → Data persisted to Firebase Realtime
+Database</li>
+<li><strong>WebSocket Broadcast</strong> → Socket.IO emits to event
+room</li>
+<li><strong>Client Update</strong> → All connected clients receive
+update</li>
+<li><strong>UI Refresh</strong> → React components re-render with new
+data</li>
+</ol>
+<h4 id="push-notification-flow">Push Notification Flow</h4>
+<ol type="1">
+<li><strong>Event Trigger</strong> → Server detects notification-worthy
+event</li>
+<li><strong>User Lookup</strong> → Query users with relevant
+preferences</li>
+<li><strong>Token Collection</strong> → Gather FCM tokens from user
+records</li>
+<li><strong>Firebase FCM</strong> → Send notification via Firebase Cloud
+Messaging</li>
+<li><strong>WebSocket Fallback</strong> → Emit Socket.IO event for
+active users</li>
+<li><strong>Client Reception</strong> → Service Worker handles
+background notification</li>
+<li><strong>User Notification</strong> → Browser displays
+notification</li>
+</ol>
+<hr />
+<h2 id="implementation-details">Implementation Details</h2>
+<h3 id="backend-implementation">Backend Implementation</h3>
+<h4 id="database-models">1. Database Models</h4>
+<p><strong>User Model</strong> (<code>models/User.js</code>) - Fields:
+name, email, password (hashed), role, avatar, phone, department - FCM
+Tokens array for multi-device support - Notification preferences -
+Methods: <code>comparePassword()</code>, <code>addFCMToken()</code>,
+<code>removeFCMToken()</code></p>
+<p><strong>Event Model</strong> (<code>models/Event.js</code>) -
+Comprehensive event schema with 25+ fields - Live tracking: enabled
+flag, status, updates array, score object - RSVP system: required flag,
+deadline, attendees with status - Analytics: views, unique visitors,
+RSVP count, check-ins - Methods: <code>addAttendee()</code>,
+<code>removeAttendee()</code>, <code>updateLiveStatus()</code>,
+<code>updateScore()</code></p>
+<h4 id="api-endpoints-20-routes">2. API Endpoints (20+ Routes)</h4>
+<p><strong>Authentication Routes</strong> (<code>routes/auth.js</code>)
+- <code>POST /api/auth/register</code> - User registration -
+<code>POST /api/auth/login</code> - User authentication with JWT -
+<code>GET /api/auth/me</code> - Get current user (protected) -
+<code>PUT /api/auth/profile</code> - Update user profile -
+<code>POST /api/auth/fcm-token</code> - Add FCM token -
+<code>DELETE /api/auth/fcm-token</code> - Remove FCM token</p>
+<p><strong>Event Routes</strong> (<code>routes/events.js</code>) -
+<code>GET /api/events</code> - List events with filters, pagination -
+<code>GET /api/events/:id</code> - Get single event (track view) -
+<code>POST /api/events</code> - Create event (organizer/admin) -
+<code>PUT /api/events/:id</code> - Update event (owner/admin) -
+<code>DELETE /api/events/:id</code> - Delete event (owner/admin) -
+<code>POST /api/events/:id/rsvp</code> - RSVP to event -
+<code>DELETE /api/events/:id/rsvp</code> - Cancel RSVP -
+<code>POST /api/events/:id/live-update</code> - Post live update -
+<code>POST /api/events/:id/score</code> - Update score -
+<code>POST /api/events/:id/check-in</code> - Check in to event -
+<code>GET /api/events/my/organized</code> - User’s organized events -
+<code>GET /api/events/my/attending</code> - User’s attending events</p>
+<p><strong>Notification Routes</strong>
+(<code>routes/notifications.js</code>) -
+<code>POST /api/notifications/send</code> - Send to specific users -
+<code>POST /api/notifications/event-reminder/:eventId</code> - Event
+reminder - <code>POST /api/notifications/broadcast</code> - Broadcast
+(admin only)</p>
+<h4 id="websocket-implementation">3. WebSocket Implementation</h4>
+<p><strong>Socket.IO Server</strong> (<code>server.js</code>) - Event
+rooms using Map data structures - Active users tracking - Connection
+handling with user authentication - Event emitters for real-time
+updates</p>
+<p><strong>WebSocket Events:</strong></p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode javascript"><code class="sourceCode javascript"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co">// Client → Server</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>socket<span class="op">.</span><span class="fu">emit</span>(<span class="st">&#39;user:join&#39;</span><span class="op">,</span> userData)<span class="op">;</span></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>socket<span class="op">.</span><span class="fu">emit</span>(<span class="st">&#39;event:join&#39;</span><span class="op">,</span> eventId)<span class="op">;</span></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>socket<span class="op">.</span><span class="fu">emit</span>(<span class="st">&#39;event:leave&#39;</span><span class="op">,</span> eventId)<span class="op">;</span></span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>socket<span class="op">.</span><span class="fu">emit</span>(<span class="st">&#39;event:update&#39;</span><span class="op">,</span> { eventId<span class="op">,</span> message<span class="op">,</span> type })<span class="op">;</span></span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>socket<span class="op">.</span><span class="fu">emit</span>(<span class="st">&#39;event:score-update&#39;</span><span class="op">,</span> { eventId<span class="op">,</span> score })<span class="op">;</span></span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>socket<span class="op">.</span><span class="fu">emit</span>(<span class="st">&#39;event:rsvp&#39;</span><span class="op">,</span> { eventId<span class="op">,</span> userId<span class="op">,</span> status })<span class="op">;</span></span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a><span class="co">// Server → Client</span></span>
+<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a>socket<span class="op">.</span><span class="fu">emit</span>(<span class="st">&#39;event:live-update&#39;</span><span class="op">,</span> { eventId<span class="op">,</span> update })<span class="op">;</span></span>
+<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a>socket<span class="op">.</span><span class="fu">emit</span>(<span class="st">&#39;event:score-change&#39;</span><span class="op">,</span> { eventId<span class="op">,</span> score })<span class="op">;</span></span>
+<span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a>socket<span class="op">.</span><span class="fu">emit</span>(<span class="st">&#39;event:rsvp-update&#39;</span><span class="op">,</span> { eventId<span class="op">,</span> attendeeCount })<span class="op">;</span></span>
+<span id="cb2-13"><a href="#cb2-13" aria-hidden="true" tabindex="-1"></a>socket<span class="op">.</span><span class="fu">emit</span>(<span class="st">&#39;event:viewers&#39;</span><span class="op">,</span> count)<span class="op">;</span></span>
+<span id="cb2-14"><a href="#cb2-14" aria-hidden="true" tabindex="-1"></a>socket<span class="op">.</span><span class="fu">emit</span>(<span class="st">&#39;notification&#39;</span><span class="op">,</span> notification)<span class="op">;</span></span></code></pre></div>
+<h4 id="firebase-integration">4. Firebase Integration</h4>
+<p><strong>Admin SDK</strong> (<code>config/firebase.js</code>) -
+Initialization with service account credentials - Realtime Database
+connection - Cloud Messaging setup - Functions:
+<code>sendPushNotification()</code>, <code>sendMulticast()</code></p>
+<p><strong>Data Persistence:</strong></p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode javascript"><code class="sourceCode javascript"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co">// Store live updates</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>firebase<span class="op">.</span><span class="fu">database</span>()<span class="op">.</span><span class="fu">ref</span>(<span class="vs">`events/</span><span class="sc">${</span>eventId<span class="sc">}</span><span class="vs">/liveUpdates`</span>)<span class="op">.</span><span class="fu">push</span>(update)<span class="op">;</span></span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a><span class="co">// Broadcast to all clients</span></span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>io<span class="op">.</span><span class="fu">to</span>(eventId)<span class="op">.</span><span class="fu">emit</span>(<span class="st">&#39;event:live-update&#39;</span><span class="op">,</span> { eventId<span class="op">,</span> update })<span class="op">;</span></span></code></pre></div>
+<h3 id="frontend-implementation">Frontend Implementation</h3>
+<h4 id="service-layer">1. Service Layer</h4>
+<p><strong>Socket Service</strong>
+(<code>services/socketService.js</code>) - Singleton pattern for single
+connection - Auto-reconnection with exponential backoff - Event room
+management - Typed event emitters and listeners - Connection state
+tracking</p>
+<p><strong>API Service</strong> (<code>services/api.js</code>) - Axios
+instance with interceptors - Automatic JWT token attachment - 401 error
+handling (logout redirect) - Modular API methods (auth, events,
+notifications)</p>
+<p><strong>Firebase Service</strong> (<code>services/firebase.js</code>)
+- Firebase app initialization - FCM token request with permission
+handling - Foreground message listener - Realtime Database helpers:
+<code>dbRef()</code>, <code>dbSet()</code>, <code>dbUpdate()</code>,
+<code>dbListen()</code></p>
+<h4 id="react-components">2. React Components</h4>
+<p><strong>EventDetail Component</strong>
+(<code>components/EventDetail.js</code>) - Real-time event details with
+live updates - WebSocket integration for instant updates - Firebase
+listener for historical data - RSVP management UI - Live score display
+for sports - Check-in functionality - Viewer count display - Toast
+notifications</p>
+<p><strong>Calendar Component</strong>
+(<code>components/Calendar.js</code>) - React Big Calendar integration -
+Multiple view modes (month/week/day/agenda) - Color-coded events by
+category - Event selection handler - Legend for categories - Responsive
+design</p>
+<p><strong>LiveDashboard Component</strong>
+(<code>components/LiveDashboard.js</code>) - Multi-event monitoring -
+Tab-based event selection - Live feed with real-time updates -
+Scoreboard widget for sports - Viewer count per event - Event meta
+information display</p>
+<hr />
+<h2 id="code-quality-best-practices">Code Quality &amp; Best
+Practices</h2>
+<h3 id="security-measures">1. Security Measures</h3>
+<ul>
+<li><strong>Password Hashing</strong>: bcrypt with 10 salt rounds</li>
+<li><strong>JWT Tokens</strong>: Signed with secret, 30-day
+expiration</li>
+<li><strong>Input Validation</strong>: Mongoose schema validation</li>
+<li><strong>CORS Configuration</strong>: Whitelist specific origins</li>
+<li><strong>Environment Variables</strong>: Sensitive data in
+<code>.env</code> files</li>
+<li><strong>Role-Based Access</strong>: Middleware checks for protected
+routes</li>
+</ul>
+<h3 id="error-handling">2. Error Handling</h3>
+<div class="sourceCode" id="cb4"><pre class="sourceCode javascript"><code class="sourceCode javascript"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="co">// Centralized error handling middleware</span></span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>app<span class="op">.</span><span class="fu">use</span>((err<span class="op">,</span> req<span class="op">,</span> res<span class="op">,</span> next) <span class="kw">=&gt;</span> {</span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>  <span class="bu">console</span><span class="op">.</span><span class="fu">error</span>(err<span class="op">.</span><span class="at">stack</span>)<span class="op">;</span></span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>  res<span class="op">.</span><span class="fu">status</span>(err<span class="op">.</span><span class="at">status</span> <span class="op">||</span> <span class="dv">500</span>)<span class="op">.</span><span class="fu">json</span>({</span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a>    <span class="dt">success</span><span class="op">:</span> <span class="kw">false</span><span class="op">,</span></span>
+<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a>    <span class="dt">message</span><span class="op">:</span> err<span class="op">.</span><span class="at">message</span> <span class="op">||</span> <span class="st">&#39;Server Error&#39;</span></span>
+<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a>  })<span class="op">;</span></span>
+<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a>})<span class="op">;</span></span></code></pre></div>
+<h3 id="code-organization">3. Code Organization</h3>
+<ul>
+<li><strong>Modular Structure</strong>: Separation of concerns</li>
+<li><strong>Single Responsibility</strong>: Each module has one
+purpose</li>
+<li><strong>DRY Principle</strong>: Reusable services and utilities</li>
+<li><strong>Consistent Naming</strong>: camelCase, descriptive
+names</li>
+<li><strong>Comments</strong>: JSDoc style for functions</li>
+</ul>
+<h3 id="performance-optimization">4. Performance Optimization</h3>
+<ul>
+<li><strong>Database Indexes</strong>: On frequently queried fields</li>
+<li><strong>Pagination</strong>: Limit results, offset-based
+pagination</li>
+<li><strong>Event Rooms</strong>: Targeted broadcasting (not
+global)</li>
+<li><strong>Lazy Loading</strong>: React lazy for code splitting</li>
+<li><strong>Compression</strong>: gzip compression for responses</li>
+</ul>
+<hr />
+<h2 id="testing-validation">Testing &amp; Validation</h2>
+<h3 id="manual-testing-performed">Manual Testing Performed</h3>
+<h4 id="authentication-flow">1. Authentication Flow</h4>
+<ul>
+<li>User registration with validation</li>
+<li>Login with JWT token generation</li>
+<li>Protected route access</li>
+<li>Token expiration handling</li>
+<li>Multiple device login</li>
+</ul>
+<h4 id="real-time-features">2. Real-Time Features</h4>
+<ul>
+<li>WebSocket connection establishment</li>
+<li>Event room join/leave</li>
+<li>Live update broadcasting</li>
+<li>Score update synchronization</li>
+<li>Viewer count accuracy</li>
+<li>Multi-client synchronization</li>
+</ul>
+<h4 id="event-management-1">3. Event Management</h4>
+<ul>
+<li>Create event with all fields</li>
+<li>Update event details</li>
+<li>Delete event (authorization check)</li>
+<li>RSVP functionality (Going/Maybe/Not Going)</li>
+<li>Capacity enforcement</li>
+<li>Check-in tracking</li>
+</ul>
+<h4 id="push-notifications-1">4. Push Notifications</h4>
+<ul>
+<li>FCM token registration</li>
+<li>Foreground notifications</li>
+<li>Background notifications via Service Worker</li>
+<li>Notification click handling</li>
+<li>Multi-device delivery</li>
+</ul>
+<h4 id="calendar-integration-1">5. Calendar Integration</h4>
+<ul>
+<li>Month view display</li>
+<li>Week/day view switching</li>
+<li>Event color coding</li>
+<li>Event selection from calendar</li>
+<li>Responsive layout</li>
+</ul>
+<h3 id="edge-cases-handled">Edge Cases Handled</h3>
+<ul>
+<li>WebSocket disconnection → Auto-reconnect</li>
+<li>Concurrent RSVP updates → Atomic operations</li>
+<li>Event capacity exceeded → Rejection with message</li>
+<li>Invalid JWT token → 401 response, redirect to login</li>
+<li>Missing Firebase config → Graceful degradation</li>
+<li>MongoDB connection failure → Error logging, retry logic</li>
+</ul>
+<hr />
+<h2 id="scalability-considerations">Scalability Considerations</h2>
+<h3 id="horizontal-scaling">1. Horizontal Scaling</h3>
+<ul>
+<li><strong>Stateless API</strong>: JWT authentication enables multiple
+servers</li>
+<li><strong>Event Rooms</strong>: Efficient targeted broadcasting
+reduces overhead</li>
+<li><strong>Database Sharding</strong>: MongoDB supports sharding by
+date/category</li>
+<li><strong>Load Balancing</strong>: Nginx/AWS ELB for traffic
+distribution</li>
+</ul>
+<h3 id="socket.io-scaling">2. Socket.IO Scaling</h3>
+<div class="sourceCode" id="cb5"><pre class="sourceCode javascript"><code class="sourceCode javascript"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="co">// Redis adapter for multi-server WebSocket</span></span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="kw">const</span> redis <span class="op">=</span> <span class="pp">require</span>(<span class="st">&#39;socket.io-redis&#39;</span>)<span class="op">;</span></span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>io<span class="op">.</span><span class="fu">adapter</span>(<span class="fu">redis</span>({ <span class="dt">host</span><span class="op">:</span> <span class="st">&#39;localhost&#39;</span><span class="op">,</span> <span class="dt">port</span><span class="op">:</span> <span class="dv">6379</span> }))<span class="op">;</span></span></code></pre></div>
+<h3 id="database-optimization">3. Database Optimization</h3>
+<ul>
+<li><strong>Indexes</strong>: <code>startDate + category</code>,
+<code>status + visibility</code>, <code>organizer.userId</code></li>
+<li><strong>Query Optimization</strong>: Lean queries, projection</li>
+<li><strong>Connection Pooling</strong>: Mongoose default pool size</li>
+</ul>
+<h3 id="caching-strategy">4. Caching Strategy</h3>
+<ul>
+<li><strong>Redis Cache</strong>: Frequently accessed events</li>
+<li><strong>CDN</strong>: Static assets (images, CSS, JS)</li>
+<li><strong>Browser Cache</strong>: Service Worker cache</li>
+</ul>
+<hr />
+<h2 id="deployment-devops">Deployment &amp; DevOps</h2>
+<h3 id="environment-configuration">1. Environment Configuration</h3>
+<ul>
+<li><strong>Development</strong>: Local MongoDB, localhost URLs</li>
+<li><strong>Staging</strong>: MongoDB Atlas, Heroku backend</li>
+<li><strong>Production</strong>: Managed MongoDB, AWS/DigitalOcean</li>
+</ul>
+<h3 id="cicd-pipeline-recommended">2. CI/CD Pipeline (Recommended)</h3>
+<div class="sourceCode" id="cb6"><pre class="sourceCode yaml"><code class="sourceCode yaml"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="co"># .github/workflows/deploy.yml</span></span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="fu">name</span><span class="kw">:</span><span class="at"> Deploy</span></span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a><span class="fu">on</span><span class="kw">:</span><span class="at"> push</span></span>
+<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a><span class="fu">jobs</span><span class="kw">:</span></span>
+<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">deploy</span><span class="kw">:</span></span>
+<span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="kw">-</span><span class="at"> npm install</span></span>
+<span id="cb6-7"><a href="#cb6-7" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="kw">-</span><span class="at"> npm test</span></span>
+<span id="cb6-8"><a href="#cb6-8" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="kw">-</span><span class="at"> npm run build</span></span>
+<span id="cb6-9"><a href="#cb6-9" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="kw">-</span><span class="at"> deploy to production</span></span></code></pre></div>
+<h3 id="monitoring-logging">3. Monitoring &amp; Logging</h3>
+<ul>
+<li><strong>Application Logs</strong>: Winston logger</li>
+<li><strong>Error Tracking</strong>: Sentry integration</li>
+<li><strong>Performance</strong>: Firebase Performance Monitoring</li>
+<li><strong>Uptime</strong>: Pingdom/UptimeRobot</li>
+</ul>
+<h3 id="backup-strategy">4. Backup Strategy</h3>
+<ul>
+<li><strong>Database Backups</strong>: Daily MongoDB dumps</li>
+<li><strong>Firebase Backups</strong>: Realtime Database exports</li>
+<li><strong>Retention Policy</strong>: 30-day backup retention</li>
+</ul>
+<hr />
+<h2 id="documentation-quality">Documentation Quality</h2>
+<h3 id="comprehensive-guides-created">1. Comprehensive Guides
+Created</h3>
+<ul>
+<li><strong>README.md</strong> (500+ lines): Project overview, features,
+API documentation</li>
+<li><strong>SETUP_GUIDE.md</strong> (400+ lines): Step-by-step
+installation for Windows</li>
+<li><strong>DEPLOYMENT.md</strong> (450+ lines): Production deployment
+(Heroku/AWS/DO)</li>
+</ul>
+<h3 id="code-documentation">2. Code Documentation</h3>
+<ul>
+<li>Inline comments for complex logic</li>
+<li>JSDoc for function signatures</li>
+<li>Environment variable templates (<code>.env.example</code>)</li>
+<li>API endpoint documentation with examples</li>
+</ul>
+<h3 id="user-documentation">3. User Documentation</h3>
+<ul>
+<li>Installation prerequisites</li>
+<li>Configuration instructions</li>
+<li>Troubleshooting guide</li>
+<li>Common errors and solutions</li>
+</ul>
+<hr />
+<h2 id="learning-outcomes-skills-demonstrated">Learning Outcomes &amp;
+Skills Demonstrated</h2>
+<h3 id="technical-skills">Technical Skills</h3>
+<ol type="1">
+<li><strong>Full-Stack Development</strong>: Complete application from
+database to UI</li>
+<li><strong>Real-Time Systems</strong>: WebSocket implementation,
+event-driven architecture</li>
+<li><strong>Cloud Services</strong>: Firebase (FCM, Realtime DB),
+MongoDB Atlas</li>
+<li><strong>Authentication</strong>: JWT tokens, password hashing,
+role-based access</li>
+<li><strong>API Design</strong>: RESTful principles, versioning, error
+handling</li>
+<li><strong>Frontend Architecture</strong>: React hooks, service layer,
+state management</li>
+<li><strong>Database Design</strong>: Schema modeling, relationships,
+indexing</li>
+<li><strong>DevOps</strong>: Environment configuration, deployment
+strategies</li>
+</ol>
+<h3 id="soft-skills">Soft Skills</h3>
+<ol type="1">
+<li><strong>Problem Solving</strong>: Dual synchronization strategy for
+reliability</li>
+<li><strong>Architecture Design</strong>: Scalable, maintainable system
+structure</li>
+<li><strong>Documentation</strong>: Comprehensive guides for setup and
+deployment</li>
+<li><strong>Best Practices</strong>: Security, performance, code
+quality</li>
+<li><strong>Project Planning</strong>: Feature breakdown, implementation
+sequence</li>
+</ol>
+<hr />
+<h2 id="challenges-solutions">Challenges &amp; Solutions</h2>
+<h3 id="challenge-1-real-time-synchronization">Challenge 1: Real-Time
+Synchronization</h3>
+<p><strong>Problem</strong>: Ensuring data consistency across WebSocket
+and Firebase<br />
+<strong>Solution</strong>: Dual synchronization strategy - WebSocket for
+instant updates, Firebase for persistence and offline support</p>
+<h3 id="challenge-2-scalability-with-websockets">Challenge 2:
+Scalability with WebSockets</h3>
+<p><strong>Problem</strong>: Broadcasting to all users is
+inefficient<br />
+<strong>Solution</strong>: Event rooms pattern - users join specific
+event rooms, receive only relevant updates</p>
+<h3 id="challenge-3-push-notification-reliability">Challenge 3: Push
+Notification Reliability</h3>
+<p><strong>Problem</strong>: Notifications may fail if user
+offline<br />
+<strong>Solution</strong>: Store FCM tokens, implement retry logic,
+fallback to WebSocket for active users</p>
+<h3 id="challenge-4-multi-device-support">Challenge 4: Multi-Device
+Support</h3>
+<p><strong>Problem</strong>: Users have multiple devices, each needs
+notifications<br />
+<strong>Solution</strong>: Array of FCM tokens per user, each with
+device identifier</p>
+<h3 id="challenge-5-live-event-performance">Challenge 5: Live Event
+Performance</h3>
+<p><strong>Problem</strong>: High-frequency updates (e.g., sports
+scores) can overwhelm server<br />
+<strong>Solution</strong>: Event throttling, efficient database writes,
+targeted broadcasting</p>
+<hr />
+<h2 id="future-enhancements">Future Enhancements</h2>
+<h3 id="planned-features">Planned Features</h3>
+<ol type="1">
+<li><strong>Email Notifications</strong>: Nodemailer integration for
+email reminders</li>
+<li><strong>QR Code Check-In</strong>: Generate QR codes for contactless
+attendance</li>
+<li><strong>Event Feedback</strong>: Post-event surveys and ratings</li>
+<li><strong>Image Upload</strong>: Cloudinary integration for event
+images</li>
+<li><strong>Video Streaming</strong>: WebRTC for live video
+broadcasts</li>
+<li><strong>Analytics Dashboard</strong>: Charts and graphs for event
+statistics</li>
+<li><strong>Mobile App</strong>: React Native for iOS/Android</li>
+<li><strong>iCal Export</strong>: Export events to Apple Calendar/Google
+Calendar</li>
+<li><strong>Multi-Language</strong>: i18n for internationalization</li>
+<li><strong>Advanced Search</strong>: Elasticsearch for full-text
+search</li>
+</ol>
+<h3 id="potential-optimizations">Potential Optimizations</h3>
+<ul>
+<li>GraphQL API for flexible queries</li>
+<li>Server-side rendering (Next.js) for SEO</li>
+<li>Progressive Web App (PWA) for offline support</li>
+<li>Kubernetes deployment for auto-scaling</li>
+<li>Machine learning for event recommendations</li>
+</ul>
+<hr />
+<h2 id="conclusion">Conclusion</h2>
+<p>This Real-Time Event Management System demonstrates a comprehensive
+understanding of modern web development practices, including:</p>
+<ul>
+<li><strong>Full-stack development</strong> with Node.js and React</li>
+<li><strong>Real-time communication</strong> using WebSocket and
+Firebase</li>
+<li><strong>Cloud services integration</strong> for scalability</li>
+<li><strong>Security best practices</strong> with authentication and
+authorization</li>
+<li><strong>Production-ready code</strong> with proper error handling
+and logging</li>
+<li><strong>Comprehensive documentation</strong> for setup and
+deployment</li>
+</ul>
+<p>The system is designed to handle real-world requirements including
+high concurrency, data consistency, push notifications, and scalability.
+With over <strong>2,400 lines of production code</strong> and
+<strong>1,350 lines of documentation</strong>, this project showcases
+the ability to build complex, feature-rich applications from conception
+to deployment.</p>
+<h3 id="project-statistics">Project Statistics</h3>
+<ul>
+<li><strong>Backend Files</strong>: 11 files, ~1,500 lines of code</li>
+<li><strong>Frontend Files</strong>: 8 files, ~900 lines of code</li>
+<li><strong>Documentation</strong>: 3 comprehensive guides, ~1,350
+lines</li>
+<li><strong>API Endpoints</strong>: 20+ RESTful routes</li>
+<li><strong>WebSocket Events</strong>: 10+ real-time events</li>
+<li><strong>Database Models</strong>: 2 comprehensive schemas</li>
+<li><strong>Dependencies</strong>: 25+ npm packages</li>
+<li><strong>Features</strong>: 15+ major features implemented</li>
+</ul>
+<h3 id="repository-access">Repository Access</h3>
+<p>Complete source code, documentation, and setup instructions available
+at:<br />
+<strong><a href="https://github.com/jeffmakuto/deep-learning/tree/master/event-management-system">https://github.com/jeffmakuto/deep-learning/tree/master/event-management-system</a></strong></p>
+<hr />
+<p><strong>Submitted by:</strong> Jeff Makuto<br />
+<strong>Date:</strong> November 27, 2025<br />
+<strong>Project Duration:</strong> Complete full-stack
+implementation<br />
+<strong>Technologies:</strong> Node.js, Express, Socket.IO, MongoDB,
+Firebase, React, Tailwind CSS</p>
+</body>
+</html>
